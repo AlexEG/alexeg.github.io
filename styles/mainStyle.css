@@ -18,3 +18,17 @@ span{
     font-size: 23px;
     font-family:Impact,sans-serif;
 }
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+.btn{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    background-color: hsla(347, 96%, 69%, 0.428);
+    position: absolute;
+cursor: pointer;
+    top: 20px;
+}
