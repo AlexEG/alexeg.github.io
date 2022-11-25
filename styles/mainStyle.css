@@ -1,3 +1,20 @@
 body{
-    background-color:hsl(348, 81%, 48%) ;
+    background-color:hsl(0, 0%, 0%) ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    padding-bottom: 1000px;
+}
+.test-one{
+width: 150px;
+height: 150px;
+border-radius: 50%; ;
+    box-shadow: 0 0 55px 10px hsla(275, 94%, 57%, 0.725);
+    position: fixed;
+}
+span{
+    color: rgb(255, 0, 106);
+    font-size: 23px;
+    font-family:Impact,sans-serif;
 }
