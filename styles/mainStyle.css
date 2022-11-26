@@ -22,4 +22,12 @@ body{
     background-image:url(/images/brian-mcgowan-I0fDR8xtApA-unsplash.jpg);
     background-size: cover;
 }
+.section-three{
+    width:100%;
+    height: 100vh;
+    top: 200vh;
+    position: absolute;
+    background-image:url(/images/mathew-schwartz-7YiZKj9A3DM-unsplash.jpg);
+    background-size: cover;
+}
 
