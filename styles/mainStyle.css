@@ -1,34 +1,25 @@
 body{
-    background-color:hsl(0, 0%, 0%) ;
     display: flex;
     justify-content: center;
     align-items:center;
     min-height: 100vh;
-    padding-bottom: 1000px;
+    padding-bottom: 10px;
 }
-.test-one{
-width: 150px;
-height: 150px;
-border-radius: 50%; ;
-    box-shadow: 0 0 55px 10px hsla(275, 94%, 57%, 0.725);
-    position: fixed;
-}
-span{
-    color: rgb(255, 0, 106);
-    font-size: 23px;
-    font-family:Impact,sans-serif;
-}
-a{
-    color: white;
-    text-decoration: none;
-    
-}
-.btn{
-    width: 150px;
-    height: 20px;
-    text-align: center;
-    background-color: hsla(347, 96%, 69%, 0.428);
+.section-one{
+    width:100%;
+    height: 100vh;
+    top: 0;
     position: absolute;
-cursor: pointer;
-    top: 20px;
+    background-image:url(/images/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg);
+    background-size: cover;
 }
+
+.section-two{
+    width:100%;
+    height: 100vh;
+    top: 100vh;
+    position: absolute;
+    background-image:url(/images/brian-mcgowan-I0fDR8xtApA-unsplash.jpg);
+    background-size: cover;
+}
+
