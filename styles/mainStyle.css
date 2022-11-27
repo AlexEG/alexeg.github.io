@@ -2,11 +2,12 @@
 :root {
     --bg-color: rgb(5, 5, 5);
     --card-color: rgb(23, 23, 23);
+    --navbar-color:hsl(0 0% 100% / 0);
 }
 
 /* ==========GLOBAL VARIABLES [end here]========== */
 
-/* ==========TYPE & UNIVERSAL SELECTORS [start here]========== */
+/* ==========BODY & UNIVERSAL SELECTORS [start here]========== */
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +15,14 @@
 }
 
 body {
-    background-color: rgb(6, 6, 6);
+    background-color: var(--bg-color);
+    background-image: url(/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    padding-bottom: 1000px;
 }
 
-/* ==========TYPE & UNIVERSAL SELECTORS [end here]========== */
+/* ==========BODY & UNIVERSAL SELECTORS [end here]========== */
 
 
 /* ========== Grouping SELECTORS [start here]========== */
@@ -29,8 +34,34 @@ body {
 /*===============
 Navigation Bar [strat here]
 ===============*/
+.primary-navigation{
+    display: flex;
+    background-color: var(--navbar-color);
+    justify-content: center;
+    height: 2.5rem;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(1rem);
+}
+
+.primary-navigation li{
+    margin: 5px;
+    list-style: none;
+}
+
+.primary-navigation span{
+    text-decoration: none;
+    color: red;
+}
 
 
+.primary-navigation a{
+    backdrop-filter: blur(5rem);
+    text-decoration: none;
+}
 
 /*===============
 Navigation Bar [end here]
