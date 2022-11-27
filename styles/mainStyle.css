@@ -1,33 +1,3 @@
 body{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    min-height: 100vh;
-    padding-bottom: 10px;
+    background-color: rgb(6, 6, 6);
 }
-.section-one{
-    width:100%;
-    height: 100vh;
-    top: 0;
-    position: absolute;
-    background-image:url(/images/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg);
-    background-size: cover;
-}
-
-.section-two{
-    width:100%;
-    height: 100vh;
-    top: 100vh;
-    position: absolute;
-    background-image:url(/images/brian-mcgowan-I0fDR8xtApA-unsplash.jpg);
-    background-size: cover;
-}
-.section-three{
-    width:100%;
-    height: 100vh;
-    top: 200vh;
-    position: absolute;
-    background-image:url(/images/mathew-schwartz-7YiZKj9A3DM-unsplash.jpg);
-    background-size: cover;
-}
-
