@@ -19,7 +19,7 @@ body {
     background-image: url(/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg);
     background-size: cover;
     background-repeat:no-repeat ;
-    padding-bottom: 1000px;
+    padding-bottom: 2000px;
 }
 
 /* ==========BODY & UNIVERSAL SELECTORS [end here]========== */
@@ -38,7 +38,7 @@ Navigation Bar [strat here]
     display: flex;
     background-color: var(--navbar-color);
     justify-content: center;
-    height: 2.5rem;
+    height: 2.7rem;
     position: fixed;
     width: 100%;
     position: fixed;
@@ -48,7 +48,7 @@ Navigation Bar [strat here]
 }
 
 .primary-navigation li{
-    margin: 5px;
+    margin: 5px 15px;
     list-style: none;
 }
 
@@ -67,4 +67,11 @@ Navigation Bar [strat here]
 Navigation Bar [end here]
 ===============*/
 
-
+pre{
+    color: white;
+    margin: 90px 0 0;
+    font-size: 1.5rem;
+}
+pre span{
+    color: hsl(184, 100%, 50%);
+}
