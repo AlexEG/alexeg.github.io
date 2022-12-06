@@ -2,7 +2,7 @@
 :root {
     --bg-color: rgb(5, 5, 5);
     --card-color: rgb(23, 23, 23);
-    --navbar-color:hsl(0 0% 100% / 0);
+    --navbar-color:hsla(0, 100%, 19%, 0.123);
     --font-Oleo: 'Oleo Script Swash Caps', cursive;
 }
 
@@ -47,6 +47,8 @@ Navigation Bar [strat here]
     top: 0;
     z-index: 999;
     backdrop-filter: blur(1rem);
+    border: solid 1px transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.116) ;
 }
 
 .primary-navigation li{
@@ -69,7 +71,7 @@ li span::before {
     bottom: 0;
     right: 0;
     background: hsl(246, 98%, 50%);
-    transition: all 0.4s ;
+    transition: width 200ms ;
   }
   
 li span:hover::before {
@@ -78,7 +80,7 @@ li span:hover::before {
 
 .primary-navigation span{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
     position: relative;
     font-weight: 500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -89,87 +91,76 @@ li span:hover::before {
 
 
 .primary-navigation a{
-    backdrop-filter: blur(5rem);
     text-decoration: none;
 }
 .logo {
 }
 .logo span{
     color: red;
-    border: solid 3px red;
-    margin-left: -485px;
+    border: solid 0.5px red;
+    
 }
 /*===============
 Navigation Bar [end here]
 ===============*/
 
-pre{
-    color: white;
-    margin: 90px 0 0;
-    font-size: 1.5rem;
-}
-pre span{
-    color: hsl(184, 100%, 50%);
-}
-
-
 
 /* ================= ABOUT Page [start here] ================= */
 .main-container-about{
-    background-image: linear-gradient(to top right, hsl(272, 100%, 34%),hsl(258, 92%, 5%));
+    background-image: linear-gradient(to top right, hsl(340, 100%, 50%),hsl(278, 100%, 50%));
     min-height: 100vh;
 }
 .main-container-about a{
-    color: black;
+    color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
 /* ================= ABOUT Page [end here] ================= */
 
-/* ================= Page2 [start here] ================= */
-.main-container-about{
-    background-image: linear-gradient(to top right, hsl(272, 100%, 34%),hsl(258, 92%, 5%));
+/* ================= Page1 [start here] ================= */
+.main-container-page1{
+    background-image: linear-gradient(to top right, hsl(106, 94%, 42%),hsl(0, 0%, 0%));
     min-height: 100vh;
 }
-.main-container-about a{
-    color: black;
+.main-container-page1 a{
+    color: white;
+    font-size: 30px;
+    font-family: var(--font-Oleo);
+}
+/* ================= Page1 [end here] ================= */
+
+/* ================= Page2 [start here] ================= */
+.main-container-page2{
+    background-image: linear-gradient(to top right, hsl(355, 100%, 35%),rgb(0, 0, 0));
+    min-height: 100vh;
+}
+.main-container-page2 a{
+    color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
 /* ================= Page2 [end here] ================= */
 
 /* ================= Page3 [start here] ================= */
-.main-container-about{
-    background-image: linear-gradient(to top right, hsl(272, 100%, 34%),hsl(258, 92%, 5%));
+.main-container-page3{
+    background-image: linear-gradient(to top right, hsl(241, 100%, 29%),hsl(0, 0%, 0%));
     min-height: 100vh;
 }
-.main-container-about a{
-    color: black;
+.main-container-page3 a{
+    color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
 /* ================= Page3 [end here] ================= */
 
 /* ================= Page4 [start here] ================= */
-.main-container-about{
-    background-image: linear-gradient(to top right, hsl(272, 100%, 34%),hsl(258, 92%, 5%));
+.main-container-page4{
+    background-image: linear-gradient(to top right, hsl(175, 100%, 34%),hsl(0, 0%, 0%));
     min-height: 100vh;
 }
-.main-container-about a{
-    color: black;
+.main-container-page4 a{
+    color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
 /* ================= Page4 [end here] ================= */
-
-/* ================= Page5 [start here] ================= */
-.main-container-about{
-    background-image: linear-gradient(to top right, hsl(272, 100%, 34%),hsl(258, 92%, 5%));
-    min-height: 100vh;
-}
-.main-container-about a{
-    color: black;
-    font-size: 30px;
-    font-family: var(--font-Oleo);
-}
-/* ================= Page5 [end here] ================= */
