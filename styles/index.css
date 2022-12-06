@@ -27,6 +27,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* ==========BODY & UNIVERSAL SELECTORS [end here]========== */
+
 
 
 
@@ -93,8 +95,7 @@ li span:hover::before {
 .primary-navigation a{
     text-decoration: none;
 }
-.logo {
-}
+
 .logo span{
     color: red;
     border: solid 0.5px red;
@@ -103,6 +104,8 @@ li span:hover::before {
 /*===============
 Navigation Bar [end here]
 ===============*/
+
+
 
 
 /* ================= ABOUT Page [start here] ================= */
