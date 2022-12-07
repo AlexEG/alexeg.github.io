@@ -17,10 +17,10 @@
 
 body {
     background-color: var(--bg-color);
- background-image: linear-gradient(to top right, hsl(304, 100%, 20%),hsl(207, 100%, 6%));
+    background-image: linear-gradient(to top right, hsl(304, 100%, 20%),hsl(207, 100%, 6%));
     background-size: cover;
     background-repeat:no-repeat ;
-    padding-bottom: 2000px;
+    padding-bottom: 1000px;
 }
 .flex{
     display: flex;
@@ -38,52 +38,40 @@ body {
 /*===============
 Navigation Bar [strat here]
 ===============*/
-.primary-navigation{
-    display: flex;
+.aa{
+    position: fixed;
     background-color: var(--navbar-color);
-    justify-content: center;
-    height: 2.7rem;
-    position: fixed;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
     backdrop-filter: blur(1rem);
     border: solid 1px transparent;
     border-bottom-color: rgba(255, 255, 255, 0.116) ;
+    z-index: 999;
+    height: 2em;
+    width: 100%;
+}
+.primary-navigation{
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
 }
 
 .primary-navigation li{
-    margin: 0 1px;
+
     list-style: none;
-    background-color:inherit;
-    width: 100px;
-    height: 40px;
-    line-height: 42px;
+    background-color:rgb(100, 0, 0);
+    width: 5em;
+    height: 2em;
     padding: 0;
-    border: none;
+    border: solid 1px green;
     text-align: center;
+    display: block;
 }
 
-li span::before {
-    width: 0%;
-    height: 2px;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    background: hsl(246, 98%, 50%);
-    transition: width 200ms ;
-  }
-  
-li span:hover::before {
-    width: 100%;
-  }
 
 .primary-navigation span{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
-    position: relative;
     font-weight: 500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: block;
@@ -99,7 +87,13 @@ li span:hover::before {
 .logo span{
     color: red;
     border: solid 0.5px red;
-    
+    width: 3em;
+
+}
+.primary-navigation .logo {
+    width: 3em;
+    position: absolute;
+    left: 0;
 }
 /*===============
 Navigation Bar [end here]
