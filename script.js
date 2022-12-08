@@ -8,3 +8,11 @@
     card.style.setProperty("--mouse-y", `${y}px`);
   };
 }
+
+
+
+function gotoCssBattle(link){
+  location.href = "./assets/cssbattle/cssbattle.html";
+}
+
+
