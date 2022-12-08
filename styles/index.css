@@ -124,19 +124,7 @@ body {
 
 
 /* *******************  ABOUT Page [start here]  ******************* */
-.main-container-about {
-    background-image: linear-gradient(to top right, hsl(340, 100%, 50%), hsl(278, 100%, 50%));
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.main-container-about a {
-    color: white;
-    font-size: 30px;
-    font-family: var(--font-Oleo);
-}
 
 /* *******************  ABOUT Page [end here]  ******************* */
 
