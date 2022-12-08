@@ -1,14 +1,40 @@
-/* ==========GLOBAL VARIABLES [start here]========== */
+/*==================================================
+====================================================*/
+/*
+------  Line | Section's name | Last Update  -------
+
+[25]   //  The main global variables   //  2022-12-7
+[36]   //  BODY & UNIVERSAL SELECTORS  //  2022-12-7
+[68]   //  Navigation Bar              //  2022-12-7
+[115]  //  Home Page                   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+
+*/
+/*==================================================
+======================================================*/
+
+
+
+/* ==========  The main global variables  [start here]  ========== */
+
 :root {
-    --bg-color: rgb(5, 5, 5);
-    --card-color: rgb(23, 23, 23);
-    --navbar-color:hsla(0, 100%, 19%, 0.123);
+    --bg-color: hsl(0, 0%, 2%);
+    --card-color: hsl(0, 0%, 9%);
+    --navbar-color: hsla(0, 100%, 19%, 0.123);
     --font-Oleo: 'Oleo Script Swash Caps', cursive;
 }
 
-/* ==========GLOBAL VARIABLES [end here]========== */
+/* ==========  The main global variables  [end here]  ========== */
 
-/* ==========BODY & UNIVERSAL SELECTORS [start here]========== */
+
+
+/* ==========  BODY & UNIVERSAL SELECTORS  [start here]  ========== */
 * {
     margin: 0;
     padding: 0;
@@ -16,154 +42,156 @@
 }
 
 body {
-    background-color: var(--bg-color);
- background-image: linear-gradient(to top right, hsl(304, 100%, 20%),hsl(207, 100%, 6%));
-    background-size: cover;
-    background-repeat:no-repeat ;
-    padding-bottom: 2000px;
+    padding-bottom: 10px;
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* ==========BODY & UNIVERSAL SELECTORS [end here]========== */
+/* ========== BODY & UNIVERSAL SELECTORS  [end here]  ========== */
 
 
 
-
-
-
-
-/*===============
-Navigation Bar [strat here]
-===============*/
-.primary-navigation{
-    display: flex;
+/* ==========  Navigation Bar   [strat here]  ========== */
+.aa {
+    position: fixed;
     background-color: var(--navbar-color);
-    justify-content: center;
-    height: 2.7rem;
-    position: fixed;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
     backdrop-filter: blur(1rem);
     border: solid 1px transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.116) ;
-}
-
-.primary-navigation li{
-    margin: 0 1px;
-    list-style: none;
-    background-color:inherit;
-    width: 100px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    text-align: center;
-}
-
-li span::before {
-    width: 0%;
-    height: 2px;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    background: hsl(246, 98%, 50%);
-    transition: width 200ms ;
-  }
-  
-li span:hover::before {
+    border-bottom-color: rgba(255, 255, 255, 0.116);
+    z-index: 999;
+    height: 2em;
     width: 100%;
-  }
+}
 
-.primary-navigation span{
+.primary-navigation {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.primary-navigation li {
+
+    list-style: none;
+    background-color: rgb(100, 0, 0);
+    width: 5em;
+    height: 2em;
+    padding: 0;
+    border: solid 1px green;
+    text-align: center;
+    display: block;
+}
+
+
+.primary-navigation span {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
-    position: relative;
     font-weight: 500;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: block;
     width: 100%;
     height: 100%;
 }
 
 
-.primary-navigation a{
+.primary-navigation a {
     text-decoration: none;
 }
 
-.logo span{
+.logo span {
     color: red;
     border: solid 0.5px red;
-    
+    width: 3em;
+
 }
-/*===============
-Navigation Bar [end here]
-===============*/
+
+.primary-navigation .logo {
+    width: 3em;
+    position: absolute;
+    left: 0;
+}
+/* ==========  Navigation Bar   [end here]  ========== */
 
 
 
-
-/* ================= ABOUT Page [start here] ================= */
-.main-container-about{
-    background-image: linear-gradient(to top right, hsl(340, 100%, 50%),hsl(278, 100%, 50%));
+/* *******************  HOME Page [start here]  ******************* */
+.main-container-home-page{
+    background-color: #050505;
+    width: 100%;
     min-height: 100vh;
+
 }
-.main-container-about a{
+/* *******************  HOME Page [end here]  ******************* */
+
+
+
+/* *******************  ABOUT Page [start here]  ******************* */
+
+
+/* *******************  ABOUT Page [end here]  ******************* */
+
+/* *******************  Page1 [start here]  ******************* */
+.main-container-page1 {
+    background-image: linear-gradient(to top right, hsl(106, 94%, 42%), hsl(0, 0%, 0%));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-page1 a {
     color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
-/* ================= ABOUT Page [end here] ================= */
 
-/* ================= Page1 [start here] ================= */
-.main-container-page1{
-    background-image: linear-gradient(to top right, hsl(106, 94%, 42%),hsl(0, 0%, 0%));
+/* *******************  Page1 [end here]  ******************* */
+
+/* *******************  Page2 [start here]  ******************* */
+.main-container-page2 {
+    background-image: linear-gradient(to top right, hsl(355, 100%, 35%), rgb(0, 0, 0));
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.main-container-page1 a{
+
+.main-container-page2 a {
     color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
-/* ================= Page1 [end here] ================= */
 
-/* ================= Page2 [start here] ================= */
-.main-container-page2{
-    background-image: linear-gradient(to top right, hsl(355, 100%, 35%),rgb(0, 0, 0));
+/* *******************  Page2 [end here]  ******************* */
+
+/* *******************  Page3 [start here]  ******************* */
+.main-container-page3 {
+    background-image: linear-gradient(to top right, hsl(241, 100%, 29%), hsl(0, 0%, 0%));
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.main-container-page2 a{
+
+.main-container-page3 a {
     color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
-/* ================= Page2 [end here] ================= */
 
-/* ================= Page3 [start here] ================= */
-.main-container-page3{
-    background-image: linear-gradient(to top right, hsl(241, 100%, 29%),hsl(0, 0%, 0%));
+/* *******************  Page3 [end here]  ******************* */
+
+/* *******************  Page4 [start here]  ******************* */
+.main-container-page4 {
+    background-image: linear-gradient(to top right, hsl(175, 100%, 34%), hsl(0, 0%, 0%));
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.main-container-page3 a{
+
+.main-container-page4 a {
     color: white;
     font-size: 30px;
     font-family: var(--font-Oleo);
 }
-/* ================= Page3 [end here] ================= */
 
-/* ================= Page4 [start here] ================= */
-.main-container-page4{
-    background-image: linear-gradient(to top right, hsl(175, 100%, 34%),hsl(0, 0%, 0%));
-    min-height: 100vh;
-}
-.main-container-page4 a{
-    color: white;
-    font-size: 30px;
-    font-family: var(--font-Oleo);
-}
-/* ================= Page4 [end here] ================= */
+/* *******************  Page4 [end here]  ******************* */
