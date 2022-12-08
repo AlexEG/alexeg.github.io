@@ -1,0 +1,8 @@
+.main{
+  background-image: linear-gradient(to top right, hsl(0, 99%, 45%), hsl(0, 0%, 0%));
+  width: 100%;
+  height: 100vh;
+}
+body{
+  margin: 0;
+}
