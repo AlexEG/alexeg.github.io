@@ -1,12 +1,13 @@
 .main-container-css-battle{
 background-color: hsl(0, 0%, 6%);
-  width: 100%;
-  height: 100vh;
+  width: calc(100% - 300px) ;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+  padding: 100px 150px;
 }
 body{
   margin: 0;
@@ -31,11 +32,12 @@ img{
 
   position: relative;
   overflow: hidden;
-  margin: 3px;
+  margin:0 5px 20px 5px;
 }
 .top-sec{
   display: flex;
   justify-content: center;
+  
   border: none;
 }
 .bottom-sec{
