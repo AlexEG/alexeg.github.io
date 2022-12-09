@@ -66,7 +66,6 @@ img {
 }
 
 .details {
-
   transform: rotate(-13deg);
   background-color: hsl(0, 0%, 100%);
   width: 60%;
@@ -76,17 +75,33 @@ img {
   height: 100px;
   padding: 10px;
   position: relative;
-  
-
 }
-.details a{
+.details p:first-of-type {
+color: rgba(0, 0, 0, 0.562);
+font-weight: 200;
+font-size: 1rem;
+letter-spacing: 0.4px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+cursor: default;
+}
+
+.details p:last-of-type {
+color: rgb(0, 0, 0);
+font-weight: 400;
+font-size: 1rem;
+margin-top: -10px;
+font-family:'Oleo Script Swash Caps',  ;
+cursor: default;
+}
+
+.details a {
   position: absolute;
   right: -60px;
-  top:70px;
+  top: 70px;
   background-color: hsla(264, 100%, 50%, 0.233);
   font-size: .9rem;
   color: black;
-  padding: 1px 2px;
+  padding: 1px 0px 1px 3px;
   z-index: 1;
   background-color: #ffffff;
   border: 2px solid transparent;
@@ -98,14 +113,17 @@ img {
   border-image: linear-gradient(to right, #ff005d, transparent);
   border-image-slice: 1;
   outline: none;
+  transition: color 400ms ease;
 
 }
+
 .details a:hover {
   background-size: 100%;
   background-image: linear-gradient(to right, #ff005d, transparent);
   border-right-style: none;
   color: white;
 }
+
 /* ======= Cards Color [strat here] ==========  */
 :root {
 
@@ -119,6 +137,7 @@ img {
 
 
 }
+
 /* ======= Cards Color [end here] ==========  */
 
 /* *****color1***** */
@@ -137,7 +156,6 @@ img {
 /* *****color2***** */
 .card-4,
 .card-10,
-.card-16,
 .card-20,
 .card-30 {
   background-color: var(--color2);
@@ -147,6 +165,7 @@ img {
 .card-5,
 .card-7,
 .card-13,
+.card-16,
 .card-19 {
   background-color: var(--color3);
 }
@@ -189,9 +208,6 @@ img {
 .card-58 {
   background-color: var(--color7);
 }
-
-
-
 
 /* *****other colors [start here]***** */
 
@@ -270,4 +286,5 @@ img {
 .card-55 {
   background-color: #194240;
 }
+
 /* *****other colors [end here]***** */
