@@ -71,15 +71,38 @@ img{
   height: 100px;
   padding: 10px;
 }
+
+/* ======= Cards Color [strat here] ==========  */
+:root{
+
+  --color1:#6592cf;
+}
+
+
+
+
+/* ======= Cards Color [end here] ==========  */
+
+
+/* *****color1***** */
+.card-3,.card-8,.card-26,.card-37,.card-40,.card-43,.card-49,.card-52,.card-59
+{
+  background-color: var(--color1);
+}
+/* *****color2***** */
+
+
+
+
+
+
 .card-1{
   background-color: #5d3a3a;
 }
 .card-2 {
   background-color: #62374e;
 }
-.card-3{
-  background-color: #6592cf;
-}
+
 .card-4 {
   background-color: #62306d;
 }
@@ -92,9 +115,7 @@ img{
 .card-7{
   background-color: #0b2429;
 }
-.card-8 {
-  background-color: #6592cf;
-}
+
 .card-9{
   background-color: #222730;
 }
@@ -147,9 +168,7 @@ img{
 .card-25{
   background-color: #998235;
 }
-.card-26 {
-  background-color: #6592cf;
-}
+
 .card-27{
   background-color: #e28d65;
 }
@@ -181,15 +200,64 @@ img{
 .card-36 {
   background-color: #1a4341;
 }
-.card-37{
-  background-color: #6592cf;
-}
+
 .card-38 {
   background-color: #293462;
 }
 .card-39{
   background-color: #1a4341;
 }
-.card-40 {
-  background-color: #6592cf;
+
+.card-41{
+  background-color: #293462;
+}
+.card-42 {
+  background-color: #293462;
+}
+
+.card-44 {
+  background-color: #1a4341;
+}
+.card-45{
+  background-color: #194240;
+}
+.card-46 {
+  background-color: #293462;
+}
+.card-47{
+  background-color: #1a4341;
+}
+.card-48 {
+  background-color: #293462;
+}
+
+.card-50 {
+  background-color: #1a4341;
+}
+
+.card-51{
+  background-color: #293462;
+}
+
+.card-53{
+  background-color: #19191a;
+}
+.card-54 {
+  background-color: #f9e492;
+}
+.card-55{
+  background-color: #194240;
+}
+.card-56 {
+  background-color: #293462;
+}
+.card-57{
+  background-color: #1a4341;
+}
+.card-58 {
+  background-color: #293462;
+}
+
+.card-60 {
+  background-color: #1a4341;
 }
