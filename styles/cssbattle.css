@@ -75,8 +75,37 @@ img {
   border-radius: 0 30px 0 0;
   height: 100px;
   padding: 10px;
-}
+  position: relative;
+  
 
+}
+.details a{
+  position: absolute;
+  right: -60px;
+  top:70px;
+  background-color: hsla(264, 100%, 50%, 0.233);
+  font-size: .9rem;
+  color: black;
+  padding: 1px 2px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 6em;
+  height: 1.5em;
+  display: inline-block;
+  border-image: linear-gradient(to right, #ff005d, transparent);
+  border-image-slice: 1;
+  outline: none;
+
+}
+.details a:hover {
+  background-size: 100%;
+  background-image: linear-gradient(to right, #ff005d, transparent);
+  border-right-style: none;
+  color: white;
+}
 /* ======= Cards Color [strat here] ==========  */
 :root {
 
