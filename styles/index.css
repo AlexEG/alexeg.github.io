@@ -26,7 +26,7 @@
 :root {
     --bg-color: rgb(20, 20, 20);
     --card-color: hsl(0, 0%, 9%);
-    --navbar-color: hsla(0, 100%, 19%, 0.123);
+    --navbar-color: hsla(0, 0%, 100%, 0);
     --font-Oleo: 'Oleo Script Swash Caps', cursive;
     --card-color: rgb(23, 23, 23);
 }

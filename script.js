@@ -16,3 +16,17 @@ function gotoCssBattle(link){
 }
 
 
+/*
+let navbarList = document.getElementById('navbarList')
+navbarList.addEventListener('click', event => {
+  event.preventDefault();
+  if (event.target.dataset.nav) {
+    document
+      .getElementById(`${event.target.dataset.nav}`)
+      .scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      location.hash = `${event.target.dataset.nav}`;
+    }, 380);
+  }
+});
+*/
