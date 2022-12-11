@@ -1,5 +1,5 @@
 .main-container-css-battle {
-  background-color: hsl(0, 0%, 5%);
+  background-color: hsl(0, 0%, 4%);
   width: calc(100% - 30%);
   min-height: 100vh;
   display: flex;
@@ -14,7 +14,35 @@ body {
   margin: 0;
 }
 
+/*! ===== scrollbar [start here] ===== */
 
+body::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+  background-color: hsl(0, 0%, 4%);
+}
+
+body::-webkit-scrollbar-track {
+  background-image: linear-gradient(
+    to top,
+    rgba(102, 0, 51, 0.253),
+    hsla(293, 100%, 20%, 0)
+  );
+  border-radius: 100vw 0 0 100vw;
+  margin-top: 3em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(0, 95%, 34%, 0.459);
+  /* border: 0.25em solid rgba(255, 0, 0, 0.877); */
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 95%, 34%, 0.659);
+}
+
+/*! ===== scrollbar [end here] ===== */
 
 img {
   width: 20em;
@@ -70,22 +98,23 @@ img {
   padding: 10px;
   position: relative;
 }
+
 .details p:first-of-type {
-color: rgba(0, 0, 0, 0.562);
-font-weight: 200;
-font-size: 1rem;
-letter-spacing: 0.4px;
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-cursor: default;
+  color: rgba(0, 0, 0, 0.562);
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: default;
 }
 
 .details p:last-of-type {
-color: rgb(0, 0, 0);
-font-weight: 400;
-font-size: 1rem;
-margin-top: -10px;
-font-family:'Oleo Script Swash Caps',  ;
-cursor: default;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: -10px;
+  font-family: "Oleo Script Swash Caps";
+  cursor: default;
 }
 
 .details a {
@@ -93,7 +122,7 @@ cursor: default;
   right: -60px;
   top: 70px;
   background-color: hsla(264, 100%, 50%, 0.233);
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: black;
   padding: 1px 0px 1px 3px;
   z-index: 1;
@@ -109,7 +138,6 @@ cursor: default;
   outline: none;
   transition: color 400ms ease;
   text-decoration: none;
-
 }
 
 .details a:hover {
@@ -119,13 +147,13 @@ cursor: default;
   color: white;
 }
 
-
-.line{
+.line {
   width: 100%;
   height: 1em;
-  background-color:inherit;
+  background-color: inherit;
 }
-.navigation-bar-cssbattle{
+
+.navigation-bar-cssbattle {
   position: fixed;
   width: 100%;
   height: 40px;
@@ -133,19 +161,20 @@ cursor: default;
   border: solid 1px transparent;
   border-bottom-color: rgba(255, 255, 255, 0.116);
   z-index: 999;
-  top:0;
+  top: 0;
   display: flex;
   /* justify-content: center; */
 }
+
 .back {
   color: white;
   font-size: 30px;
   text-decoration: none;
   position: absolute;
   left: 0;
-
 }
-.links-container{
+
+.links-container {
   position: relative;
   width: 100%;
   height: 40px;
@@ -155,7 +184,7 @@ cursor: default;
   text-align: center;
 }
 
-.links{
+.links {
   margin: 0 2px;
   text-decoration: none;
   color: white;
@@ -166,9 +195,9 @@ cursor: default;
   border: solid 1px #fff;
   text-shadow: 0 0 5px red;
 }
+
 /* ======= Cards Color [strat here] ==========  */
 :root {
-
   --color1: #6592cf;
   --color2: #62306d;
   --color3: #0b2429;
@@ -176,8 +205,6 @@ cursor: default;
   --color5: #f3ac3c;
   --color6: #1a4341;
   --color7: #293462;
-
-
 }
 
 /* ======= Cards Color [end here] ==========  */
