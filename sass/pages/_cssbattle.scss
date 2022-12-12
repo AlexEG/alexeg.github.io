@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-/*! ===== scrollbar [start here] ===== */
+// ===== scrollbar [start here] ===== 
 
 body::-webkit-scrollbar {
   width: 1em;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: hsla(0, 95%, 34%, 0.459);
-  /* border: 0.25em solid rgba(255, 0, 0, 0.877); */
+  // border: 0.25em solid rgba(255, 0, 0, 0.877);
   border-radius: 100vw;
 }
 
@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: hsla(0, 95%, 34%, 0.659);
 }
 
-/*! ===== scrollbar [end here] ===== */
+//===== scrollbar [end here] ===== 
 
 img {
   width: 20em;
@@ -163,7 +163,7 @@ img {
   z-index: 999;
   top: 0;
   display: flex;
-  /* justify-content: center; */
+  // justify-content: center; 
 }
 
 .back {
@@ -196,7 +196,7 @@ img {
   text-shadow: 0 0 5px red;
 }
 
-/* ======= Cards Color [strat here] ==========  */
+//======= Cards Color [strat here] ==========
 :root {
   --color1: #6592cf;
   --color2: #62306d;
@@ -207,9 +207,9 @@ img {
   --color7: #293462;
 }
 
-/* ======= Cards Color [end here] ==========  */
+//======= Cards Color [end here] ==========
 
-/* *****color1***** */
+//*****color1***** 
 .card-3,
 .card-8,
 .card-26,
@@ -222,7 +222,7 @@ img {
   background-color: var(--color1);
 }
 
-/* *****color2***** */
+//*****color2***** 
 .card-4,
 .card-10,
 .card-20,
@@ -230,7 +230,7 @@ img {
   background-color: var(--color2);
 }
 
-/* *****color3***** */
+//*****color3***** 
 .card-5,
 .card-7,
 .card-13,
@@ -239,19 +239,19 @@ img {
   background-color: var(--color3);
 }
 
-/* *****color4***** */
+//*****color4***** 
 .card-12,
 .card-22 {
   background-color: var(--color4);
 }
 
-/* *****color5***** */
+//*****color5*****
 .card-23,
 .card-29 {
   background-color: var(--color5);
 }
 
-/* *****color6***** */
+//*****color6***** 
 .card-28,
 .card-33,
 .card-36,
@@ -264,7 +264,7 @@ img {
   background-color: var(--color6);
 }
 
-/* *****color7***** */
+//*****color7*****
 .card-35,
 .card-38,
 .card-41,
@@ -278,7 +278,7 @@ img {
   background-color: var(--color7);
 }
 
-/* *****other colors [start here]***** */
+//*****other colors [start here]*****
 
 .card-1 {
   background-color: #5d3a3a;
@@ -356,4 +356,4 @@ img {
   background-color: #194240;
 }
 
-/* *****other colors [end here]***** */
+//*****other colors [end here]*****
