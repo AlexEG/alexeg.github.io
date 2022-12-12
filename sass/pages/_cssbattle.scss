@@ -1,0 +1,359 @@
+.main-container-css-battle {
+  background-color: hsl(0, 0%, 4%);
+  width: calc(100% - 30%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 100px 15%;
+}
+
+body {
+  margin: 0;
+}
+
+// ===== scrollbar [start here] ===== 
+
+body::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+  background-color: hsl(0, 0%, 4%);
+}
+
+body::-webkit-scrollbar-track {
+  background-image: linear-gradient(
+    to top,
+    rgba(102, 0, 51, 0.253),
+    hsla(293, 100%, 20%, 0)
+  );
+  border-radius: 100vw 0 0 100vw;
+  margin-top: 3em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(0, 95%, 34%, 0.459);
+  // border: 0.25em solid rgba(255, 0, 0, 0.877);
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 95%, 34%, 0.659);
+}
+
+//===== scrollbar [end here] ===== 
+
+img {
+  width: 20em;
+  margin: 1px;
+}
+
+.cards {
+  width: 260px;
+  height: 350px;
+  border-radius: 10px;
+
+  position: relative;
+  overflow: hidden;
+  margin: 0 5px 20px 5px;
+}
+
+.top-sec {
+  display: flex;
+  justify-content: center;
+
+  border: none;
+}
+
+.bottom-sec {
+  position: absolute;
+  bottom: -30px;
+  left: -25px;
+  width: 290px;
+  height: 150px;
+  background-color: hsl(0, 0%, 100%);
+  transform: rotate(13deg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card-1 img {
+  position: absolute;
+  top: -1px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details {
+  transform: rotate(-13deg);
+  background-color: hsl(0, 0%, 100%);
+  width: 60%;
+  margin-left: 24px;
+  margin-bottom: 15px;
+  border-radius: 0 30px 0 0;
+  height: 100px;
+  padding: 10px;
+  position: relative;
+}
+
+.details p:first-of-type {
+  color: rgba(0, 0, 0, 0.562);
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: default;
+}
+
+.details p:last-of-type {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: -10px;
+  font-family: "Oleo Script Swash Caps";
+  cursor: default;
+}
+
+.details a {
+  position: absolute;
+  right: -60px;
+  top: 70px;
+  background-color: hsla(264, 100%, 50%, 0.233);
+  font-size: 0.9rem;
+  color: black;
+  padding: 1px 0px 1px 3px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 6em;
+  height: 1.5em;
+  display: inline-block;
+  border-image: linear-gradient(to right, #ff005d, transparent);
+  border-image-slice: 1;
+  outline: none;
+  transition: color 400ms ease;
+  text-decoration: none;
+}
+
+.details a:hover {
+  background-size: 100%;
+  background-image: linear-gradient(to right, #ff005d, transparent);
+  border-right-style: none;
+  color: white;
+}
+
+.line {
+  width: 100%;
+  height: 1em;
+  background-color: inherit;
+}
+
+.navigation-bar-cssbattle {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  backdrop-filter: blur(0.3rem);
+  border: solid 1px transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.116);
+  z-index: 999;
+  top: 0;
+  display: flex;
+  // justify-content: center; 
+}
+
+.back {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+}
+
+.links-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.links {
+  margin: 0 2px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  border: #5d3a3a;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #fff;
+  text-shadow: 0 0 5px red;
+}
+
+//======= Cards Color [strat here] ==========
+:root {
+  --color1: #6592cf;
+  --color2: #62306d;
+  --color3: #0b2429;
+  --color4: #f5d6b4;
+  --color5: #f3ac3c;
+  --color6: #1a4341;
+  --color7: #293462;
+}
+
+//======= Cards Color [end here] ==========
+
+//*****color1***** 
+.card-3,
+.card-8,
+.card-26,
+.card-37,
+.card-40,
+.card-43,
+.card-49,
+.card-52,
+.card-59 {
+  background-color: var(--color1);
+}
+
+//*****color2***** 
+.card-4,
+.card-10,
+.card-20,
+.card-30 {
+  background-color: var(--color2);
+}
+
+//*****color3***** 
+.card-5,
+.card-7,
+.card-13,
+.card-16,
+.card-19 {
+  background-color: var(--color3);
+}
+
+//*****color4***** 
+.card-12,
+.card-22 {
+  background-color: var(--color4);
+}
+
+//*****color5*****
+.card-23,
+.card-29 {
+  background-color: var(--color5);
+}
+
+//*****color6***** 
+.card-28,
+.card-33,
+.card-36,
+.card-39,
+.card-44,
+.card-47,
+.card-50,
+.card-57,
+.card-60 {
+  background-color: var(--color6);
+}
+
+//*****color7*****
+.card-35,
+.card-38,
+.card-41,
+.card-42,
+.card-45,
+.card-46,
+.card-48,
+.card-51,
+.card-56,
+.card-58 {
+  background-color: var(--color7);
+}
+
+//*****other colors [start here]*****
+
+.card-1 {
+  background-color: #5d3a3a;
+}
+
+.card-2 {
+  background-color: #62374e;
+}
+
+.card-6 {
+  background-color: #e3516e;
+}
+
+.card-9 {
+  background-color: #222730;
+}
+
+.card-11 {
+  background-color: #191210;
+}
+
+.card-14 {
+  background-color: #f2f2b6;
+}
+
+.card-15 {
+  background-color: #09042a;
+}
+
+.card-17 {
+  background-color: #09042a;
+}
+
+.card-18 {
+  background-color: #5c434c;
+}
+
+.card-21 {
+  background-color: #222222;
+}
+
+.card-24 {
+  background-color: #62306c;
+}
+
+.card-25 {
+  background-color: #998235;
+}
+
+.card-27 {
+  background-color: #e28d65;
+}
+
+.card-31 {
+  background-color: #aa445f;
+}
+
+.card-32 {
+  background-color: #ffffff;
+}
+
+.card-34 {
+  background-color: #007065;
+}
+
+.card-53 {
+  background-color: #19191a;
+}
+
+.card-54 {
+  background-color: #f9e492;
+}
+
+.card-55 {
+  background-color: #194240;
+}
+
+//*****other colors [end here]*****

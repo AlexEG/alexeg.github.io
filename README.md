@@ -4,8 +4,10 @@
 <hr>
 
 ## last update
-![Alt text](ScreenShot/v3.2.11.gif)
+![Alt text](ScreenShot/v3.2.14.gif)
 
+### v3.2.11
+![v3.2.11](ScreenShot/v3.2.11.gif)
 ### v3.2.5
 ![v3.2.5](ScreenShot/v3.2.5.gif)
 ### v3.2.1

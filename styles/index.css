@@ -26,7 +26,7 @@
 :root {
     --bg-color: rgb(20, 20, 20);
     --card-color: hsl(0, 0%, 9%);
-    --navbar-color: hsla(0, 100%, 19%, 0.123);
+    --navbar-color: hsla(0, 0%, 100%, 0);
     --font-Oleo: 'Oleo Script Swash Caps', cursive;
     --card-color: rgb(23, 23, 23);
 }
@@ -55,7 +55,7 @@ body {
 .aa {
     position: fixed;
     background-color: var(--navbar-color);
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(0.2rem);
     border: solid 1px transparent;
     border-bottom-color: rgba(255, 255, 255, 0.116);
     z-index: 999;
