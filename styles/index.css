@@ -55,7 +55,7 @@ body {
 .aa {
     position: fixed;
     background-color: var(--navbar-color);
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(0.2rem);
     border: solid 1px transparent;
     border-bottom-color: rgba(255, 255, 255, 0.116);
     z-index: 999;
