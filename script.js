@@ -12,7 +12,7 @@
 
 
 function gotoCssBattle(link){
-  location.href = "./assets/cssbattle/cssbattle.html";
+  location.href = "./pages/cssbattle.html";
 }
 function gotoYoutubePage(link){
   location.href = "./pages/youtube.html";

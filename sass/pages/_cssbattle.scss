@@ -1,6 +1,21 @@
-.main-container-css-battle {
+//==================================================
+//==================================================
+// Line  |       Section's name        | Last Update  
+/*
+[12]   //  ----------------------      //  2022-12-0
+[28]   //  ----------------------      //  2022-12-0
+[72]   //  ----------------------      //  2022-12-0
+[150]  //  Cards Color                 //  2022-12-14
+*/
+//==================================================
+//==================================================
+
+
+
+
+.cards__container__cssbattle {
   background-color: hsl(0, 0%, 4%);
-  width: 120%;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -125,50 +140,14 @@ img {
   background-color: inherit;
 }
 
-.navigation-bar-cssbattle {
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  backdrop-filter: blur(0.3rem);
-  border: solid 1px transparent;
-  border-bottom-color: rgba(255, 255, 255, 0.116);
-  z-index: 999;
-  top: 0;
-  display: flex;
-  // justify-content: center; 
-}
 
-.back {
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-  position: absolute;
-  left: 0;
-}
 
-.links-container {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.links {
-  margin: 0 2px;
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  border: #5d3a3a;
-  width: 20px;
-  height: 20px;
-  border: solid 1px #fff;
-  text-shadow: 0 0 5px red;
-}
 
-//======= Cards Color [strat here] ==========
+
+
+
+//*==========  Cards Color [START here]  ==========*//
 :root {
   --color1: #6592cf;
   --color2: #62306d;
@@ -179,7 +158,6 @@ img {
   --color7: #293462;
 }
 
-//======= Cards Color [end here] ==========
 
 //*****color1***** 
 .card-3,
@@ -250,7 +228,7 @@ img {
   background-color: var(--color7);
 }
 
-//*****other colors [start here]*****
+//*****other colors [start here]*****//
 
 .card-1 {
   background-color: #5d3a3a;
@@ -328,4 +306,5 @@ img {
   background-color: #194240;
 }
 
-//*****other colors [end here]*****
+//*****other colors [end here]*****//
+//*==========  Cards Color [END here]  ==========*//
