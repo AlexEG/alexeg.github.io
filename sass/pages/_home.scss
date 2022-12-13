@@ -1,6 +1,5 @@
 //==================================================
 //==================================================
-
 //-----  Line | Section's name | Last Update  ------
 /*
 [25]   //  The main global variables   //  2022-12-7
@@ -15,17 +14,15 @@
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
 */
-
 //==================================================
 //==================================================
 
 
 
 //==========  The main global variables  [start here]  ========== 
-
 :root {
-  --bg-color: rgb(20, 20, 20);
-  --card-color: hsl(0, 0%, 9%);
+  --bg-color: hsl(0, 0%, 2%);
+  --card-color: hsl(165, 8%, 9%);
   --navbar-color: hsla(0, 0%, 100%, 0);
   --font-Oleo: 'Oleo Script Swash Caps', cursive;
   --card-color: rgb(23, 23, 23);
@@ -41,11 +38,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  padding-bottom: 1000px;
-}
-
 
 //========== BODY & UNIVERSAL SELECTORS  [end here]  ========== 
 
@@ -114,7 +106,7 @@ body {
 }
 //=========  Navigation Bar   [end here]  ========== 
 
-//******************* */
+//**************************************************
 .main-container-home-page{
   background-color: #050505;
   align-items: center;
@@ -124,11 +116,12 @@ body {
   justify-content: center;
   margin: 0px;
   overflow: hidden;
-  padding: 0px;
+  padding: 0 ;
 }
-.main-container-home-page #cards img{
+.main-container-home-page #cards .card-image{
 width: 100%;
 border-radius: 4px;
+box-shadow: 0 0 10px 0 hsl(0, 0%, 2%);
 }
 
 #cards {
@@ -210,9 +203,6 @@ h1, h2, h3, h4, span {
   margin: 0px;
 }
 
-i {  
-  color: rgb(240, 240, 240);
-}
 
 .card-image {
   align-items: center;
@@ -222,10 +212,7 @@ i {
   overflow: hidden;
 }
 
-.card-image > i {
-  font-size: 6em;
-  opacity: 0.25;
-}
+
 
 .card-info-wrapper {
   align-items: center;
@@ -239,12 +226,6 @@ i {
   align-items: flex-start;
   display: flex;
   gap: 10px;
-}
-
-.card-info > i {  
-  font-size: 1em;
-  height: 20px;
-  line-height: 20px;
 }
 
 .card-info-title > h3 {
@@ -285,17 +266,11 @@ i {
     height: 80px;  
   }
   
-  .card-image > i {
-    font-size: 3em;
-  }
     
   .card-info-wrapper {
     padding: 0px 10px;
   }
   
-  .card-info > i { 
-    font-size: 0.8em; 
-  }
   
   .card-info-title > h3 {
     font-size: 0.9em;

@@ -14,6 +14,9 @@
 function gotoCssBattle(link){
   location.href = "./assets/cssbattle/cssbattle.html";
 }
+function gotoYoutubePage(link){
+  location.href = "./pages/youtube.html";
+}
 
 
 /*

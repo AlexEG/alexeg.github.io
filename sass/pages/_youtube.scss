@@ -1,0 +1,55 @@
+//==================================================
+//==================================================
+//-----  Line | Section Name | Last Update  ------
+/*
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+*/
+//==================================================
+//==================================================
+
+.main__container__youtube__page {
+  background-color: #060606;
+  width: 100%;
+  min-height: 100vh;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.icon__container {
+  position: relative;
+  height: 400px;
+  user-select: none;
+  max-width: 1023px;
+  margin-block: 0;
+  margin-inline: auto;
+  background-color: hsla(0, 0%, 100%, 0.521);
+  overflow: hidden;
+}
+
+.icon__container::before {
+  content: "";
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px 200px #060606;
+}
+.icon__container::after {
+  content: "";
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px 200px #060606;
+}
+
