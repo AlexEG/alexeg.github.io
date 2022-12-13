@@ -6,9 +6,9 @@
 
 |  Version |          Reviwe         |  Day release |              Summery           |
 |:---------|:-----------------------:|:------------:|:-------------------------------|
-|v3.3.1    |[png & GIFs](https://github.com/AlexEG/CSS_Battle/tree/main/BATTLE%20%5B(%203%20)%5D#readme)    |  2022-12-13  |7-1 sass architecture           |
-|v3.3.0    |  GIF                    |  2022-12-12  |Introducing SCSS to the project |
-|          |                         |  2022-12-00  |                                |
-|          |                         |  2022-12-00  |                                |
-|          |                         |  2022-00-00  |                                |
+|v3.0.0    |[]()|  2022-12-13  ||
+|v3.3.0    |[PNG](https://github.com/AlexEG/Projects__History/blob/main/alexeg.github.io/Version__History/v3.3.0/README.md.md)|  2022-12-13  |7-1 sass architecture|
+|v3.2.11   |[GIF](https://github.com/AlexEG/Projects__History/blob/main/alexeg.github.io/Version__History/v3.1.1%20v3.2.11/README.md.md)|  2022-12-009  |Create CSSbattle page|
+|v3.0.0    |[GIF](https://github.com/AlexEG/Projects__History/blob/main/alexeg.github.io/Version__History/v3.0.0/README.md.md)|  2022-12-8  |add cards links to home page|
+|v1.0.0    |[PNG](https://github.com/AlexEG/Projects__History/blob/main/alexeg.github.io/Version__History/v1.0.0/README.md.md)|  2022-12-6  |add the navbar|
 
