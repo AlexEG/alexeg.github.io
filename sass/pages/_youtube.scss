@@ -42,7 +42,7 @@
   height: 100%;
   position: absolute;
   left: 0;
-  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px 200px #060606;
+  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px  200px #060606;
   z-index: 50;
 }
 .icon__container::after {
@@ -51,8 +51,9 @@
   height: 100%;
   position: absolute;
   right: 0;
-  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px 200px #060606;
+  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px  200px #060606;
   z-index: 50;
+
 }
 
 .icons {
@@ -63,7 +64,6 @@
   animation-timing-function: linear;
   animation-play-state: running;
   animation-name: icons;
-
 }
 
 @keyframes icons {
@@ -83,6 +83,7 @@
   animation-delay: 9s;
 
 }
+
 .icon2 {
   animation-duration: 15s;
   animation-delay: 11.5s;

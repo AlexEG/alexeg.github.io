@@ -39,6 +39,9 @@
   box-sizing: border-box;
 }
 
+body{
+  padding-bottom: 1000px;
+}
 //========== BODY & UNIVERSAL SELECTORS  [end here]  ========== 
 
 
@@ -108,7 +111,6 @@
 
 //**************************************************
 .main-container-home-page{
-  background-color: #050505;
   align-items: center;
   background-color: var(--bg-color);
   display: flex;
@@ -117,6 +119,7 @@
   margin: 0px;
   overflow: hidden;
   padding: 0 ;
+
 }
 .main-container-home-page #cards .card-image{
 width: 100%;
