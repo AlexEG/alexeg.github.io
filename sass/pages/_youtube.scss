@@ -43,6 +43,7 @@
   position: absolute;
   left: 0;
   box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px 200px #060606;
+  z-index: 50;
 }
 .icon__container::after {
   content: "";
@@ -51,5 +52,82 @@
   position: absolute;
   right: 0;
   box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px 200px #060606;
+  z-index: 50;
 }
 
+.icons {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-name: icons;
+
+}
+
+@keyframes icons {
+  from{
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+
+.icon1 {
+  animation-duration: 15s;
+  background-color: rgb(5, 255, 213);
+  top: 20px;
+  animation-delay: 9s;
+
+}
+.icon2 {
+  animation-duration: 15s;
+  animation-delay: 11.5s;
+  background-color: rgb(179, 0, 179);
+  top: 90px;
+}
+.icon3 {
+  animation-duration: 15s;
+  background-color: rgb(0, 140, 255);
+  top: 160px;
+  animation-delay: 3.7s;
+
+}
+.icon4 {
+  animation-duration: 15s;
+  background-color: rgb(76, 0, 255);
+  top: 230px;
+  animation-delay: 6.3s;
+
+}
+.icon5 {
+  animation-duration: 15s;
+  background-color: rgb(0, 255, 106);
+  top: 300px;
+  animation-delay: 5s;
+
+}
+.icon6 {
+  animation-duration: 15s;
+  background-color: red;
+  top: 300px;
+  animation-delay: 1s;
+
+}
+.icon7 {
+  animation-duration: 15s;
+  background-color: rgb(255, 27, 84);
+  top: 20px;
+  animation-delay: 7s;
+
+}
+.icon8 {
+  animation-duration: 15s;
+  background-color: rgb(229, 255, 0);
+  top: 230px;
+  animation-delay: 12s;
+
+}
