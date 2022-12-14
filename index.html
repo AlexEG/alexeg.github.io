@@ -18,13 +18,15 @@
       sizes="32x32"
       href="./assets/images/ALEXEG.png"
     />
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/homepage.css">
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="./dist/normalize.css">
   </head>
   <body>
-    <div class="main-container-home-page">
-      <!-- navigation bar start here -->
-      <nav class="aa">
+    <main class="main-container-home-page">
+      <!--!--------------[ main ]---------------->
+
+      <!--*============  Navigation Bar [START here] ============*-->
+      <nav class="navigation__bar__home">
         <ul class="primary-navigation">
           <li class="logo">
             <a href="./assets/about/index.html"><span>logo</span></a>
@@ -43,12 +45,15 @@
           </li>
         </ul>
       </nav>
-      <!-- navigation bar end here -->
+            <!--*============  Navigation Bar [END here] ============*-->
+
+
+            <!--*============  Magic Cards  [START here] ============*-->
       <div id="cards">
         <div class="card" onclick="gotoCssBattle(this)">
           <div class="card-content">
             <div class="card-image">
-            <img src="/assets/images/banner.png" alt="">
+            <img src="/assets/images/cssbattle.png" alt="">
             </div>
             <div class="card-info-wrapper">
               <div class="card-info">
@@ -60,6 +65,7 @@
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-content">
             <div class="card-image">
@@ -74,19 +80,23 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        
+        <div class="card" onclick="gotoYoutubePage(this)">
           <div class="card-content">
-            <div class="card-image"></div>
+            <div class="card-image">
+            <img class="youtube__image" src="/assets/images/youtube_logo_dark-920x460.webp" alt="">
+            </div>
             <div class="card-info-wrapper">
               <div class="card-info">
                 <div class="card-info-title">
-                  <h3>############</h3>
-                  <h4>************************</h4>
+                  <h3>My Subscriptions</h3>
+                  <h4>Find here my favorite YoutTube channels of all time</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
         <div class="card">
           <div class="card-content">
             <div class="card-image"></div>
@@ -127,7 +137,11 @@
           </div>
         </div>
       </div>
-    </div>
+            <!--*============  Magic Cards  [END here] ============*-->
+
+  
+    <!--!--------------[ main ]---------------->
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

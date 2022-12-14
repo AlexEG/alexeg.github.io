@@ -1,0 +1,407 @@
+//==================================================
+//==================================================
+//-----  Line | Section Name | Last Update  ------
+/*
+[17]   //  Main container              //  2022-12-14
+[29]   //  Icons Container             //  2022-12-14
+[85]   //  Channels Icons              //  2022-12-14
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+*/
+//==================================================
+//==================================================
+
+
+//*==========  main Container YouTube Page [START here]  ==========*//
+
+.main__container__youtube__page {
+  background-color: #060606;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+//*==========  Main Container YouTube Page [END here]  ==========*//
+
+
+//*==========  Icons Container [START here]  ==========*//
+.icons__container {
+  position: relative;
+  height: 400px;
+  user-select: none;
+  max-width: 1023px;
+  margin-block: 0;
+  margin-inline: auto;
+  background-color: 060606;
+  overflow: hidden;
+}
+
+.icons__container::before {
+  content: "";
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 50px 75px #060606, 0 0 100px 150px #060606, 0 0 200px 200px #060606;
+  z-index: 50;
+}
+
+.icons__container::after {
+  content: "";
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 50px 75px #060606, 0 0 100px 150px #060606, 0 0 200px 200px #060606;
+  z-index: 50;
+
+}
+
+.icons__container .top__shadow {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 10px 5px #060606, 0 0 20px 5px #060606;
+  z-index: 50;
+}
+
+.icons__container .bottom__shadow {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 10px 5px #060606, 0 0 20px 5px #060606;
+  z-index: 50;
+}
+
+//*==========  Icons Container [END here]  ==========*//
+
+
+
+
+//*==========  Channels Icons  [START here]  ==========*//
+.icons {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-name: icons;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 0px #060606;
+}
+
+@keyframes icons {
+  from {
+    right: 0%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+
+// 400px / 80px /16px / 2&4 animation-delay: 1.5s  1&3 animation-delay: 1.6s/ 10 logo per line = 40 logo
+//Line 1 = top:16px     speed:13.5
+//Line 2 = top:112px    speed:15
+//Line 3 = bottom:112px speed:13.5
+//Line 4 = bottom:16px  speed:15
+
+//**Line 1**//
+.icon1 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Beyond\ Fireship.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 0.5s;
+}
+.icon2 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Vox.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 2.2s;
+}
+.icon3 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 3.9s;
+}
+.icon4 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Johnny\ Harris.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 5.6s;
+}
+.icon5 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Web\ Dev\ Simplified.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 7.3s;
+}
+.icon6 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Eddie\ Jaoude.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 9s;
+}
+.icon7 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/TechLinked.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 10.7s;
+}
+.icon8 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/WVFRM\ Podcast.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 12.4s;
+}
+.icon9 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Jack\ Rhysider.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 14.25s;
+}
+.icon10 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Kevin\ Powell.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 16.1s;
+}
+
+
+//**Line 2**//
+.icon11 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Wendover\ Productions.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 0.5s;
+}
+.icon12 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Veritasium.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 2s;
+}
+.icon13 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Real\ Science.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 3.5s;
+}
+.icon14 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Real\ Engineering.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 5s;
+}
+.icon15 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Journey\ to\ the\ Microcosmos.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 6.5s;
+}
+.icon16 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Kurzgesagt\ –\ In\ a\ Nutshell.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 8s;
+}
+.icon17 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/TED-Ed.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 9.5s;
+}
+.icon18 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/neo.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 11s;
+}
+.icon19 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/RealLifeLore.jpg);
+  background-position: center;
+  top: 112px;;
+  animation-delay: 12.5s;
+}
+.icon20 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/zefrank1.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 14s;
+}
+
+
+//**Line 3**//
+.icon21 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Marques\ Brownlee.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 0.5s;
+}
+.icon22 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Linus\ Tech\ Tips.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 2.2s;
+}
+.icon23 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/CGP\ Grey.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 3.9s;
+}
+.icon24 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/MrSuicideSheep.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 5.6s;
+}
+.icon25 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/NetworkChuck.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 7.3s;
+}
+.icon26 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Fireship.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 9s;
+}
+.icon27 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/The\ PC\ Security\ Channel.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 10.7s;
+}
+.icon28 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp.org.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 12.4s;
+}
+.icon29 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp\ Talks.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 14.25s;
+}
+.icon30 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Hyperplexed.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 16.1s;
+}
+
+
+//**Line 4**//
+.icon31 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/The\ Net\ Ninja.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 0.5s;
+}
+.icon32 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Joma\ Tech.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 2s;
+}
+.icon33 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/PowerfulJRE.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 3.5s;
+}
+.icon34 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/WIRED.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 5s;
+}
+.icon35 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Johnny\ Harris.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 6.5s;
+}
+.icon36 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Eddie\ Jaoude.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 8s;
+}
+.icon37 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp\ Talks.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 9.5s;
+}
+.icon38 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 11s;
+}
+.icon39 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Jack\ Rhysider.jpg);
+  background-position: center;
+  bottom: 16px;;
+  animation-delay: 12.5s;
+}
+.icon40 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Joma\ Tech.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 14s;
+}
+
+
+  //*==========  Channels Icons  [END here]  ==========*//
