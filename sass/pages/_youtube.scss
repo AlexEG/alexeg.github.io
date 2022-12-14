@@ -2,9 +2,9 @@
 //==================================================
 //-----  Line | Section Name | Last Update  ------
 /*
-[00]   //  -------------------------   //  2022-12-0
-[00]   //  -------------------------   //  2022-12-0
-[00]   //  -------------------------   //  2022-12-0
+[17]   //  Main container              //  2022-12-14
+[29]   //  Icons Container             //  2022-12-14
+[85]   //  Channels Icons              //  2022-12-14
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
@@ -13,122 +13,140 @@
 //==================================================
 //==================================================
 
+
+//*==========  main Container YouTube Page [START here]  ==========*//
+
 .main__container__youtube__page {
   background-color: #060606;
   width: 100%;
   min-height: 100vh;
+  padding-top: 40px;
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+//*==========  Main Container YouTube Page [END here]  ==========*//
 
-.icon__container {
+
+//*==========  Icons Container [START here]  ==========*//
+.icons__container {
   position: relative;
   height: 400px;
   user-select: none;
   max-width: 1023px;
   margin-block: 0;
   margin-inline: auto;
-  background-color: hsla(0, 0%, 100%, 0.521);
+  background-color: 060606;
   overflow: hidden;
 }
 
-.icon__container::before {
+.icons__container::before {
   content: "";
   width: 0px;
   height: 100%;
   position: absolute;
   left: 0;
-  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px  200px #060606;
+  box-shadow: 0 0 50px 75px #060606, 0 0 100px 150px #060606, 0 0 200px 200px #060606;
   z-index: 50;
 }
-.icon__container::after {
+
+.icons__container::after {
   content: "";
   width: 0px;
   height: 100%;
   position: absolute;
   right: 0;
-  box-shadow: 0 0 50px 75px #060606,0 0 200px 150px #060606,0 0 300px  200px #060606;
+  box-shadow: 0 0 50px 75px #060606, 0 0 100px 150px #060606, 0 0 200px 200px #060606;
   z-index: 50;
 
 }
 
+.icons__container .top__shadow {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 10px 5px #060606, 0 0 20px 5px #060606;
+  z-index: 50;
+}
+
+.icons__container .bottom__shadow {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 10px 5px #060606, 0 0 20px 5px #060606;
+  z-index: 50;
+}
+
+//*==========  Icons Container [END here]  ==========*//
+
+
+
+
+//*==========  Channels Icons  [START here]  ==========*//
 .icons {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-play-state: running;
   animation-name: icons;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px 0px #060606;
 }
 
 @keyframes icons {
-  from{
+  from {
     right: 0%;
   }
+
   to {
     right: 100%;
   }
 }
+// 400px 70px 24px
+//Line 1 = top:24px     speed:13.5
+//Line 2 = top:118px    speed:15
+//Line 3 = bottom:118px speed:13.5
+//Line 4 = bottom:24px  speed:15
 
-
+//**Line 1**//
 .icon1 {
   animation-duration: 15s;
-  background-color: rgb(5, 255, 213);
-  top: 20px;
-  animation-delay: 9s;
+  background-image: url(../../assets/images/youtube_channels/Beyond\ Fireship.jpg);
+  top: 24px;
+  animation-delay: 0s;
 
 }
 
+
+//**Line 2**//
 .icon2 {
-  animation-duration: 15s;
-  animation-delay: 11.5s;
+  animation-duration: 13s;
+  animation-delay: 0s;
   background-color: rgb(179, 0, 179);
-  top: 90px;
+  top: 118px;
 }
+
+
+//**Line 3**//
 .icon3 {
-  animation-duration: 15s;
+  animation-duration: 14s;
   background-color: rgb(0, 140, 255);
-  top: 160px;
-  animation-delay: 3.7s;
+  bottom: 118px;
+  animation-delay: 0s;
 
 }
+
+
+//**Line 4**//
 .icon4 {
-  animation-duration: 15s;
+  animation-duration: 13s;
   background-color: rgb(76, 0, 255);
-  top: 230px;
-  animation-delay: 6.3s;
+  bottom: 24px;
+  animation-delay: 0s;
 
 }
-.icon5 {
-  animation-duration: 15s;
-  background-color: rgb(0, 255, 106);
-  top: 300px;
-  animation-delay: 5s;
 
-}
-.icon6 {
-  animation-duration: 15s;
-  background-color: red;
-  top: 300px;
-  animation-delay: 1s;
 
-}
-.icon7 {
-  animation-duration: 15s;
-  background-color: rgb(255, 27, 84);
-  top: 20px;
-  animation-delay: 7s;
-
-}
-.icon8 {
-  animation-duration: 15s;
-  background-color: rgb(229, 255, 0);
-  top: 230px;
-  animation-delay: 12s;
-
-}
+  //*==========  Channels Icons  [END here]  ==========*//
