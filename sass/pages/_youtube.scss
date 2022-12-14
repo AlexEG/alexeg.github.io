@@ -104,48 +104,303 @@
     right: 100%;
   }
 }
-// 400px 70px 24px
-//Line 1 = top:24px     speed:13.5
-//Line 2 = top:118px    speed:15
-//Line 3 = bottom:118px speed:13.5
-//Line 4 = bottom:24px  speed:15
+
+
+// 400px / 80px /16px / animation-delay: 1.5s / 10 logo per line = 40 logo
+//Line 1 = top:16px     speed:13.5
+//Line 2 = top:112px    speed:15
+//Line 3 = bottom:112px speed:13.5
+//Line 4 = bottom:16px  speed:15
 
 //**Line 1**//
 .icon1 {
-  animation-duration: 15s;
+  animation-duration:17.5s;
   background-image: url(../../assets/images/youtube_channels/Beyond\ Fireship.jpg);
-  top: 24px;
-  animation-delay: 0s;
-
+  background-position: center;
+  top: 16px;
+  animation-delay: 0.5s;
+}
+.icon2 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp.org.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 2s;
+}
+.icon3 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/CGP\ Grey.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 3.5s;
+}
+.icon4 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 5s;
+}
+.icon5 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Johnny\ Harris.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 6.5s;
+}
+.icon6 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Eddie\ Jaoude.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 8s;
+}
+.icon7 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp\ Talks.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 9.5s;
+}
+.icon8 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 11s;
+}
+.icon9 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Jack\ Rhysider.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 12.5s;
+}
+.icon10 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Joma\ Tech.jpg);
+  background-position: center;
+  top: 16px;
+  animation-delay: 14s;
 }
 
 
 //**Line 2**//
-.icon2 {
-  animation-duration: 13s;
-  animation-delay: 0s;
-  background-color: rgb(179, 0, 179);
-  top: 118px;
+.icon11 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Beyond\ Fireship.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 0.5s;
+}
+.icon12 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp.org.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 2s;
+}
+.icon13 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/CGP\ Grey.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 3.5s;
+}
+.icon14 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 5s;
+}
+.icon15 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Johnny\ Harris.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 6.5s;
+}
+.icon16 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Eddie\ Jaoude.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 8s;
+}
+.icon17 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp\ Talks.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 9.5s;
+}
+.icon18 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 11s;
+}
+.icon19 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Jack\ Rhysider.jpg);
+  background-position: center;
+  top: 112px;;
+  animation-delay: 12.5s;
+}
+.icon20 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Joma\ Tech.jpg);
+  background-position: center;
+  top: 112px;
+  animation-delay: 14s;
 }
 
 
 //**Line 3**//
-.icon3 {
-  animation-duration: 14s;
-  background-color: rgb(0, 140, 255);
-  bottom: 118px;
-  animation-delay: 0s;
-
+.icon21 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Beyond\ Fireship.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 0.5s;
+}
+.icon22 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp.org.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 2s;
+}
+.icon23 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/CGP\ Grey.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 3.5s;
+}
+.icon24 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 5s;
+}
+.icon25 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Johnny\ Harris.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 6.5s;
+}
+.icon26 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Eddie\ Jaoude.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 8s;
+}
+.icon27 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp\ Talks.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 9.5s;
+}
+.icon28 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 11s;
+}
+.icon29 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Jack\ Rhysider.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 12.5s;
+}
+.icon30 {
+  animation-duration:17.5s;
+  background-image: url(../../assets/images/youtube_channels/Joma\ Tech.jpg);
+  background-position: center;
+  bottom: 112px;
+  animation-delay: 14s;
 }
 
 
 //**Line 4**//
-.icon4 {
-  animation-duration: 13s;
-  background-color: rgb(76, 0, 255);
-  bottom: 24px;
-  animation-delay: 0s;
-
+.icon31 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Beyond\ Fireship.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 0.5s;
+}
+.icon32 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp.org.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 2s;
+}
+.icon33 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/CGP\ Grey.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 3.5s;
+}
+.icon34 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 5s;
+}
+.icon35 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Johnny\ Harris.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 6.5s;
+}
+.icon36 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Eddie\ Jaoude.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 8s;
+}
+.icon37 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/freeCodeCamp\ Talks.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 9.5s;
+}
+.icon38 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Coder\ Coder.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 11s;
+}
+.icon39 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Jack\ Rhysider.jpg);
+  background-position: center;
+  bottom: 16px;;
+  animation-delay: 12.5s;
+}
+.icon40 {
+  animation-duration: 15s;
+  background-image: url(../../assets/images/youtube_channels/Joma\ Tech.jpg);
+  background-position: center;
+  bottom: 16px;
+  animation-delay: 14s;
 }
 
 
