@@ -17,7 +17,8 @@
 .navigation__bar__markdown {
   height: 35px;
   width: 100%;
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
   border: solid 1px transparent;
   border-bottom-color: rgba(255, 255, 255, 0.116);
   position: fixed;
