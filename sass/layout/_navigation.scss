@@ -18,7 +18,7 @@
   height: 35px;
   width: 100%;
   -webkit-backdrop-filter: blur(0.3rem);
-          backdrop-filter: blur(0.3rem);
+  backdrop-filter: blur(0.3rem);
   border: solid 1px transparent;
   border-bottom-color: rgba(255, 255, 255, 0.116);
   position: fixed;
@@ -140,6 +140,7 @@
     text-decoration: none;
   }
 }
+
 //*==========  Navigation Bar YouTube  [END here]  ==========*//
 
 
@@ -153,6 +154,7 @@
     text-decoration: none;
   }
 }
+
 //*==========  Navigation Bar markdown  [END here]  ==========*//
 
 
@@ -161,10 +163,11 @@
 .navigation__bar__markdown__sidebar {
   height: 1000px;
   width: 180px;
-  background-image:linear-gradient(to top , rgba(255, 0, 128, 0.5), rgba(68, 0, 255, 0));
+  background-image: linear-gradient(to top, rgba(255, 0, 128, 0.5), rgba(68, 0, 255, 0));
   position: absolute;
   left: 0;
   top: 35px;
-  
-  }
+
+}
+
 //*==========  Navigation SideBar markdown  [END here]  ==========*//

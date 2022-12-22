@@ -22,6 +22,8 @@ function gotoMarkdown(link){
 }
 
 
+
+
 /*
 let navbarList = document.getElementById('navbarList')
 navbarList.addEventListener('click', event => {

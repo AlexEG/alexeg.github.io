@@ -1,6 +1,6 @@
 //==================================================
 //==================================================
-// Line  |       Section's name        | Last Update  
+// Line  |       Section's name        | Last Update
 /*
 [12]   //  ----------------------      //  2022-12-0
 [28]   //  ----------------------      //  2022-12-0
@@ -9,9 +9,6 @@
 */
 //==================================================
 //==================================================
-
-
-
 
 .cards__container__cssbattle {
   background-color: hsl(0, 0%, 4%);
@@ -24,9 +21,6 @@
   align-content: center;
   padding: 100px 15%;
 }
-
-
-
 
 img {
   width: 20em;
@@ -137,13 +131,6 @@ img {
   background-color: inherit;
 }
 
-
-
-
-
-
-
-
 //*==========  Cards Color [START here]  ==========*//
 :root {
   --color1: #6592cf;
@@ -155,8 +142,7 @@ img {
   --color7: #293462;
 }
 
-
-//*****color1***** 
+//*****color1*****
 .card-3,
 .card-8,
 .card-26,
@@ -169,7 +155,7 @@ img {
   background-color: var(--color1);
 }
 
-//*****color2***** 
+//*****color2*****
 .card-4,
 .card-10,
 .card-20,
@@ -177,7 +163,7 @@ img {
   background-color: var(--color2);
 }
 
-//*****color3***** 
+//*****color3*****
 .card-5,
 .card-7,
 .card-13,
@@ -186,7 +172,7 @@ img {
   background-color: var(--color3);
 }
 
-//*****color4***** 
+//*****color4*****
 .card-12,
 .card-22 {
   background-color: var(--color4);
@@ -198,7 +184,7 @@ img {
   background-color: var(--color5);
 }
 
-//*****color6***** 
+//*****color6*****
 .card-28,
 .card-33,
 .card-36,

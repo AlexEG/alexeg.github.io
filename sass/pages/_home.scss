@@ -17,41 +17,21 @@
 //==================================================
 //==================================================
 
-
-
-//==========  The main global variables  [start here]  ========== 
+//==========  The main global variables  [start here]  ==========
 :root {
   --bg-color: hsl(0, 0%, 2%);
   --card-color: hsl(165, 8%, 9%);
   --navbar-color: hsla(0, 0%, 100%, 0);
-  --font-Oleo: 'Oleo Script Swash Caps', cursive;
+  --font-Oleo: "Oleo Script Swash Caps", cursive;
   --card-color: rgb(23, 23, 23);
 }
 
-//==========  The main global variables  [end here]  ========== 
+//==========  The main global variables  [end here]  ==========
 
-
-
-
-//==========  Navigation Bar   [strat here]  ========== 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//==========  Navigation Bar   [strat here]  ==========
 
 //**************************************************
-.main-container-home-page{
+.main-container-home-page {
   align-items: center;
   background-color: var(--bg-color);
   display: flex;
@@ -59,19 +39,19 @@
   justify-content: center;
   margin: 0px;
   overflow: hidden;
-  padding: 0 ;
-
+  padding: 0;
 }
-.main-container-home-page #cards .card-image{
-width: 100%;
-border-radius: 4px;
-box-shadow: 0 0 10px 0 hsl(0, 0%, 2%);
+
+.main-container-home-page #cards .card-image {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 hsl(0, 0%, 2%);
 }
 
 #cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;  
+  gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
 }
@@ -88,7 +68,7 @@ box-shadow: 0 0 10px 0 hsl(0, 0%, 2%);
   height: 260px;
   flex-direction: column;
   position: relative;
-  width: 300px;  
+  width: 300px;
 }
 
 .card:hover::before {
@@ -110,16 +90,16 @@ box-shadow: 0 0 10px 0 hsl(0, 0%, 2%);
 
 .card::before {
   background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), 
+    800px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.06),
     transparent 40%
   );
   z-index: 3;
 }
 
-.card::after {  
+.card::after {
   background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
+    600px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.4),
     transparent 40%
   );
@@ -140,13 +120,16 @@ box-shadow: 0 0 10px 0 hsl(0, 0%, 2%);
 
 // -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ --
 
-h1, h2, h3, h4, span {
+h1,
+h2,
+h3,
+h4,
+span {
   color: rgb(240, 240, 240);
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   margin: 0px;
 }
-
 
 .card-image {
   align-items: center;
@@ -155,8 +138,6 @@ h1, h2, h3, h4, span {
   justify-content: center;
   overflow: hidden;
 }
-
-
 
 .card-info-wrapper {
   align-items: center;
@@ -182,40 +163,39 @@ h1, h2, h3, h4, span {
   font-size: 0.85em;
   margin-top: 8px;
 }
+
 // -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ --
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .main-container-home-page {
-    align-items: flex-start;  
+    align-items: flex-start;
     overflow: auto;
   }
-  
-  #cards {    
+
+  #cards {
     max-width: 1000px;
     padding: 10px 0px;
   }
-  
+
   .card {
     flex-shrink: 1;
     width: calc(50% - 4px);
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .card {
     height: 180px;
   }
-  
+
   .card-image {
-    height: 80px;  
+    height: 80px;
   }
-  
-    
+
   .card-info-wrapper {
     padding: 0px 10px;
   }
-  
-  
+
   .card-info-title > h3 {
     font-size: 0.9em;
   }
@@ -226,7 +206,7 @@ h1, h2, h3, h4, span {
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .card {
     width: 100%;
   }
