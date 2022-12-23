@@ -13,9 +13,11 @@
 //*==========  Navigation Bar All Pages  [START here]  ==========*//
 .navigation__bar__cssbattle,
 .navigation__bar__home,
-.navigation__bar__youtube {
+.navigation__bar__youtube,
+.navigation__bar__markdown {
   height: 35px;
   width: 100%;
+  -webkit-backdrop-filter: blur(0.3rem);
   backdrop-filter: blur(0.3rem);
   border: solid 1px transparent;
   border-bottom-color: rgba(255, 255, 255, 0.116);
@@ -129,6 +131,8 @@
 //*==========  Navigation Bar HOME  [END here]  ==========*//
 
 
+
+
 //*==========  Navigation Bar YouTube  [START here]  ==========*//
 .navigation__bar__youtube {
 
@@ -138,3 +142,32 @@
 }
 
 //*==========  Navigation Bar YouTube  [END here]  ==========*//
+
+
+
+
+
+//*==========  Navigation Bar markdown  [START here]  ==========*//
+.navigation__bar__markdown {
+
+  a {
+    text-decoration: none;
+  }
+}
+
+//*==========  Navigation Bar markdown  [END here]  ==========*//
+
+
+
+//*==========  Navigation SideBar markdown  [START here]  ==========*//
+.navigation__bar__markdown__sidebar {
+  height: 1000px;
+  width: 180px;
+  background-image: linear-gradient(to top, rgba(255, 0, 128, 0.5), rgba(68, 0, 255, 0));
+  position: absolute;
+  left: 0;
+  top: 35px;
+
+}
+
+//*==========  Navigation SideBar markdown  [END here]  ==========*//

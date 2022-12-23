@@ -17,6 +17,11 @@ function gotoCssBattle(link){
 function gotoYoutubePage(link){
   location.href = "./pages/youtube.html";
 }
+function gotoMarkdown(link){
+  location.href = "./pages/markdown.html";
+}
+
+
 
 
 /*
