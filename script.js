@@ -1,40 +1,20 @@
-  document.getElementById("cards").onmousemove = e => {
-  for(const card of document.getElementsByClassName("card")) {
+document.getElementById("cards").onmousemove = (e) => {
+  for (const card of document.getElementsByClassName("card")) {
     const rect = card.getBoundingClientRect(),
-          x = e.clientX - rect.left,
-          y = e.clientY - rect.top;
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
 
     card.style.setProperty("--mouse-x", `${x}px`);
     card.style.setProperty("--mouse-y", `${y}px`);
-  };
-}
+  }
+};
 
-
-
-function gotoCssBattle(link){
+function gotoCssBattle(link) {
   location.href = "./pages/cssbattle.html";
 }
-function gotoYoutubePage(link){
+function gotoYoutubePage(link) {
   location.href = "./pages/youtube.html";
 }
-function gotoMarkdown(link){
+function gotoMarkdown(link) {
   location.href = "./pages/markdown.html";
 }
-
-
-
-
-/*
-let navbarList = document.getElementById('navbarList')
-navbarList.addEventListener('click', event => {
-  event.preventDefault();
-  if (event.target.dataset.nav) {
-    document
-      .getElementById(`${event.target.dataset.nav}`)
-      .scrollIntoView({ behavior: 'smooth' });
-    setTimeout(() => {
-      location.hash = `${event.target.dataset.nav}`;
-    }, 380);
-  }
-});
-*/
