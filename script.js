@@ -18,3 +18,6 @@ function gotoYoutubePage(link) {
 function gotoMarkdown(link) {
   location.href = "./pages/markdown.html";
 }
+function gotoHTMLpage(link) {
+  location.href = "./pages/html.html";
+}
