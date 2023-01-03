@@ -4,7 +4,7 @@
 /*
 [17]   //  Main container              //  2022-12-14
 [29]   //  ----                        //  2022-12-14
-[85]   //   ---                        //  2022-12-14
+[85]   //  ----                        //  2022-12-14
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
@@ -13,28 +13,97 @@
 //==================================================
 //==================================================
 
-
 //*==========  main Container markdown Page [START here]  ==========*//
+
 .main__container__markdown__page {
-  background-color: hsl(0, 0%, 2%);
+  background-color: hsl(0, 0%, 3%);
   width: 100%;
   min-height: 100vh;
-  padding-top: 40px;
-  padding-bottom: 500px;
+  padding: 85px 200px 100px 250px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 
 //*==========  Main Container markdown Page [END here]  ==========*//
 
-
-
 //*==========  main Container markdown Page [START here]  ==========*//
 .contant__container {
-
   .subject__title {
     color: white;
     text-align: center;
-
   }
 }
 
 //*==========  Main Container markdown Page [END here]  ==========*//
+
+//*==========  Banner Container markdown Page [START here]  ==========*//
+.banner__container__markdown {
+  background-color: #00a2e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -45px -200px 0px -50px;
+  margin-top: -45px;
+  margin-left: -50px;
+  margin-right: -200px;
+  margin-bottom: 100px;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+}
+//*==========  Banner Container markdown Page [END here]  ==========*//
+
+//*==========  Main Content Container markdown [START here]  ==========*//
+.main__contant__container__markdown {
+  max-width: 855px;
+  margin-inline: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+
+  section {
+    margin-bottom: 200px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    letter-spacing: 1.05px;
+    word-spacing: 1.5px;
+    font-weight: 400;
+    margin-bottom: 45px;
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #00a2e3;
+    }
+
+    &.notes {
+      background-color: hsl(269, 50%, 10%);
+      position: relative;
+      padding-left: 15px;
+      padding-block: 5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background-color: hsl(269, 100%, 50%);
+      }
+    }
+  }
+}
+
+//*==========  Main Content Container markdown [END here]  ==========*//

@@ -1,146 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlexEG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlexEG</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/ALEXEG.png"
+    />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/ALEXEG.png" />
-  <link rel="stylesheet" href="/dist/main.css">
-  <link rel="stylesheet" href="./dist/normalize.css">
-</head>
+  <body>
+    <main class="main-container-home-page">
+      <!--!--------------[ main ]---------------->
 
-<body>
-  <main class="main-container-home-page">
-    <!--!--------------[ main ]---------------->
+      <!--*============  Navigation Bar [START here] ============*-->
+      <nav class="navigation__bar__home">
+        <ul class="primary-navigation">
+          <li class="logo">
+            <a href="./assets/about/index.html"><span>logo</span></a>
+          </li>
+          <li class="page-one">
+            <a href="./assets/page1/index.html"><span>##### 1</span></a>
+          </li>
+          <li class="page-two">
+            <a href="./assets/page2/index.html"><span>##### 2</span></a>
+          </li>
+          <li class="page-three">
+            <a href="./assets/page3/index.html"><span>##### 3</span></a>
+          </li>
+          <li class="page-four">
+            <a href="./assets/page4/index.html"><span>##### 4</span></a>
+          </li>
+        </ul>
+      </nav>
+      <!--*============  Navigation Bar [END here] ============*-->
 
-    <!--*============  Navigation Bar [START here] ============*-->
-    <nav class="navigation__bar__home">
-      <ul class="primary-navigation">
-        <li class="logo">
-          <a href="./assets/about/index.html"><span>logo</span></a>
-        </li>
-        <li class="page-one">
-          <a href="./assets/page1/index.html"><span>##### 1</span></a>
-        </li>
-        <li class="page-two">
-          <a href="./assets/page2/index.html"><span>##### 2</span></a>
-        </li>
-        <li class="page-three">
-          <a href="./assets/page3/index.html"><span>##### 3</span></a>
-        </li>
-        <li class="page-four">
-          <a href="./assets/page4/index.html"><span>##### 4</span></a>
-        </li>
-      </ul>
-    </nav>
-    <!--*============  Navigation Bar [END here] ============*-->
-
-
-    <!--*============  Magic Cards  [START here] ============*-->
-    <div id="cards">
-      <div class="card" onclick="gotoCssBattle(this)">
-        <div class="card-content">
-          <div class="card-image">
-            <img src="/assets/images/cssbattle.png" alt="">
+      <!--*============  Magic Cards  [START here] ============*-->
+      <div id="cards">
+        <div class="card" onclick="gotoCssBattle(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="/assets/images/cssbattle.png" alt="" />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <div class="card-info-title">
+                  <h3>CSS Battle</h3>
+                  <h4>
+                    Find here my solutions and some note plus tips & tricks
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-info-wrapper">
-            <div class="card-info">
-              <div class="card-info-title">
-                <h3>CSS Battle</h3>
-                <h4>Find here my solutions and some note plus tips & tricks </h4>
+        </div>
+
+        <div class="card" onclick="gotoMarkdown(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="/assets/images/markdown-guide-og.jpg" alt="" />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <div class="card-info-title">
+                  <h3>Markdown Guide</h3>
+                  <h4>
+                    A reference to the Markdown syntax plus Hacks for github
+                    profiles and more....
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="gotoYoutubePage(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <img
+                class="youtube__image"
+                src="/assets/images/youtube_logo_dark-920x460.webp"
+                alt=""
+              />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <div class="card-info-title">
+                  <h3>My Subscriptions</h3>
+                  <h4>Find here my favorite YoutTube channels of all time</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="gotoHTMLpage(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <img class="y" src="/assets/images/html-card-bg.png" alt="" />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <div class="card-info-title">
+                  <h3>HTML</h3>
+                  <h4>HTML5</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image"></div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <div class="card-info-title">
+                  <h3>############</h3>
+                  <h4>************************</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image"></div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <div class="card-info-title">
+                  <h3>############</h3>
+                  <h4>************************</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!--*============  Magic Cards  [END here] ============*-->
 
-      <div class="card" onclick="gotoMarkdown(this)">
-        <div class="card-content">
-          <div class="card-image">
-            <img src="/assets/images/markdown-guide-og.jpg" alt="">
-          </div>
-          <div class="card-info-wrapper">
-            <div class="card-info">
-              <div class="card-info-title">
-                <h3>Markdown Guide</h3>
-                <h4>A reference to the Markdown syntax plus Hacks for github profiles and more.... </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" onclick="gotoYoutubePage(this)">
-        <div class="card-content">
-          <div class="card-image">
-            <img class="youtube__image" src="/assets/images/youtube_logo_dark-920x460.webp" alt="">
-          </div>
-          <div class="card-info-wrapper">
-            <div class="card-info">
-              <div class="card-info-title">
-                <h3>My Subscriptions</h3>
-                <h4>Find here my favorite YoutTube channels of all time</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" onclick="gotoHTMLpage(this)">
-        <div class="card-content">
-          <div class="card-image">
-            <img class="y" src="/assets/images/html-card-bg.png" alt="">
-          </div>
-          <div class="card-info-wrapper">
-            <div class="card-info">
-              <div class="card-info-title">
-                <h3>HTML</h3>
-                <h4>HTML5</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-image"></div>
-          <div class="card-info-wrapper">
-            <div class="card-info">
-              <div class="card-info-title">
-                <h3>############</h3>
-                <h4>************************</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-image"></div>
-          <div class="card-info-wrapper">
-            <div class="card-info">
-              <div class="card-info-title">
-                <h3>############</h3>
-                <h4>************************</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--*============  Magic Cards  [END here] ============*-->
-
-
-    <!--!--------------[ main ]---------------->
-  </main>
-  <script src="script.js"></script>
-</body>
-
+      <!--!--------------[ main ]---------------->
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
