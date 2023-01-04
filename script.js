@@ -21,3 +21,34 @@ function gotoMarkdown(link) {
 function gotoHTMLpage(link) {
   location.href = "./pages/html.html";
 }
+
+// // funcation to add smooth behavior to side bar links
+// function smooth() {
+//   // Scroll to a certain element
+//   document.getElementById("kicking-the-tire").scrollIntoView({
+//     behavior: "smooth",
+//   });
+// }
+
+// let anchorlinks = document.querySelectorAll('a[href^="#"]');
+// for (let item of anchorlinks) {
+//   // relitere
+//   item.addEventListener("click", (e) => {
+//     let hashval = item.getAttribute("href");
+//     let target = document.querySelector(hashval);
+//     target.scrollIntoView({
+//       behavior: "smooth",
+//       block: "start",
+//     });
+//     history.pushState(null, null, hashval);
+//     e.preventDefault();
+//   });
+// }
+
+// let testone = document.getElementById("what-is-markdown");
+// function test() {
+//   testone.scrollIntoView({
+//     behavior: "smooth",
+//     block: "center",
+//   });
+// }
