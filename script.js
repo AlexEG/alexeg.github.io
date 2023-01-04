@@ -21,6 +21,9 @@ function gotoMarkdown(link) {
 function gotoHTMLpage(link) {
   location.href = "./pages/html.html";
 }
+function gotoTesting(link) {
+  location.href = "./pages/testing.html";
+}
 
 // // funcation to add smooth behavior to side bar links
 // function smooth() {
