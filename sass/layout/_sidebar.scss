@@ -149,26 +149,44 @@
     .scroolbox {
       color: #ffffff;
 
+      .mdn {
+        width: 120px;
+        margin-block: 10px;
+      }
       h1 {
         font-size: 1.3rem;
         word-wrap: normal;
         font-weight: 500;
         letter-spacing: 1.5px;
+        pointer-events: none;
       }
 
       h2 {
         font-size: 0.9rem;
         word-wrap: normal;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 0.9px;
         color: hsl(0, 0%, 80%);
+        pointer-events: none;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        word-wrap: normal;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: hsl(0, 0%, 90%);
+        pointer-events: none;
       }
 
       div {
+        // outline: solid 1px red; ///////////
         padding-left: 10px;
         position: relative;
-        height: 30px;
+        height: 40px;
+        margin-block: 10px;
         text-align: left;
+
         transition: text-shadow, padding-left 300ms;
         padding-block: calc((30px - 19px) / 2);
         &::before {
