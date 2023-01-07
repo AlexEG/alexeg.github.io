@@ -4,10 +4,10 @@
 /*
 [12]   //  Navigation Bar  All Pages   //  2023-1-4
 [28]   //  Navigation Bar  CSSbattle   //  2022-12-14
-[72]   //  Navigation Bar  HOME        //  2022-12-14
 [120]  //  Navigation Bar  YouTube     //  2022-12-14
 [127]  //  Navigation Bar  Markdown    //  2023-1-4
 [134]  //  Navigation Bar  HTML        //  2023-1-4
+[134]  //  Navigation Bar  Home        //  2023-1-4
 
 */
 //==================================================
@@ -18,7 +18,8 @@
 .navigation__bar__home,
 .navigation__bar__youtube,
 .navigation__bar__markdown,
-.navigation__bar__html {
+.navigation__bar__html,
+.navigation__bar__home {
   height: 40px;
   width: 100%;
   -webkit-backdrop-filter: blur(0.3rem);
@@ -31,6 +32,10 @@
   z-index: 999;
   margin: 0;
   padding: 0;
+
+  a {
+    text-decoration: none;
+  }
 }
 //*==========  Navigation Bar All Pages  [END here]  ==========*//
 
@@ -71,52 +76,6 @@
 
 //*==========  CSSbattle  [END here]  ==========*//
 
-//*==========  HOME  [START here]  ==========*//
-.navigation__bar__home {
-  .primary-navigation {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .primary-navigation li {
-    list-style: none;
-    background-color: inherit;
-    width: 5em;
-    height: 2em;
-    padding: 0;
-    border: solid 1px green;
-    text-align: center;
-    display: block;
-  }
-
-  .primary-navigation span {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-weight: 500;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .primary-navigation a {
-    text-decoration: none;
-  }
-
-  .logo span {
-    color: rgb(13, 201, 160);
-    border: solid 0.5px rgb(0, 0, 0);
-    width: 3em;
-  }
-
-  .primary-navigation .logo {
-    width: 3em;
-    position: absolute;
-    left: 0;
-  }
-}
-//*==========  HOME  [END here]  ==========*//
 //*==========  YouTube  [START here]  ==========*//
 .navigation__bar__youtube {
   a {
