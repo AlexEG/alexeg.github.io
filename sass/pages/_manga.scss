@@ -1,0 +1,104 @@
+//==================================================
+//==================================================
+//-----  Line | Section Name | Last Update  ------
+/*
+[15]   //  -------------------------   //  2023-1-7
+[79]   //  -------------------------   //  2023-1-7
+[89]   //  -------------------------   //  2023-1-7
+[98]   //  -------------------------   //  2023-1-7
+
+*/
+//==================================================
+//==================================================
+
+.main__container__manga__page {
+  background-color: hsl(0, 0%, 2%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 100px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  position: relative;
+
+  ///////////
+
+  .manga__main__contanier {
+    outline: solid 2px red; ///////
+    min-width: 500px;
+    max-width: 1000px;
+    min-height: 500px;
+    z-index: 11;
+    margin-inline: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    ///////////
+
+    //*==========  manga__card [START here]  ==========*//
+    .manga__card {
+      outline: 2px blue solid; //////
+      width: 300px;
+      height: 430px;
+      text-align: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      h2 {
+        color: #ffffff;
+        font-size: 1rem;
+      }
+    }
+
+    //todo book__card [END]
+
+    //*==========  manga__card [END here]  ==========*//
+    //*==========  Cards [START here]  ==========*//
+    .card1 {
+      background-image: url(../../assets/manga/Chainsaw_Man.PNG);
+    }
+    .card2 {
+      background-image: url(../../assets/manga/Awkward_Senpai.PNG);
+    }
+    .card3 {
+      background-image: url(../../assets/manga/2.5_Dimensional_Seduction.PNG);
+    }
+    .card4 {
+      background-image: url(../../assets/manga/7_troublesome_days__Vol.1_Ch.5-26.png);
+    }
+    .card5 {
+      background-image: url(../../assets/manga/Berserk_of_Gluttony.PNG);
+    }
+    .card6 {
+      background-image: url(../../assets/manga/FBEfBXwVgAQRSE1.jpg);
+    }
+    .card7 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss.PNG);
+    }
+    .card8 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 4\,\ Ch.\ 32_\ Decision\ -\ 2.jpg);
+    }
+    .card9 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 6\,\ Ch.\ 49_\ Waiting\ for\ Spring\ -\ 2.jpg);
+    }
+    .card10 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 8\,\ Ch.\ 78\ -\ 2.jpg);
+    }
+    .card11 {
+      background-image: url(../../assets/manga/ID_INVADED_BRAKE_BROKEN.PNG);
+    }
+    .card12 {
+      background-image: url(../../assets/manga/Im_Not_That_Kind_of_Talent.PNG);
+    }
+
+    //*==========  Cards [END here]  ==========*//
+
+    //todo books__contanier [END]
+  }
+}

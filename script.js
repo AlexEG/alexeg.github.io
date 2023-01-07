@@ -27,6 +27,9 @@ function gotoTesting(link) {
 function gotoBooks(link) {
   location.href = "./pages/books.html";
 }
+function gotoManga(link) {
+  location.href = "./pages/manga.html";
+}
 
 // // funcation to add smooth behavior to side bar links
 // function smooth() {
