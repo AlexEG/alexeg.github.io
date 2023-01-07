@@ -8,6 +8,7 @@
 [127]  //  Navigation Bar  Markdown    //  2023-1-4
 [134]  //  Navigation Bar  HTML        //  2023-1-4
 [134]  //  Navigation Bar  Home        //  2023-1-4
+[134]  //  Navigation Bar  Books       //  2023-1-4
 
 */
 //==================================================
@@ -19,7 +20,8 @@
 .navigation__bar__youtube,
 .navigation__bar__markdown,
 .navigation__bar__html,
-.navigation__bar__home {
+.navigation__bar__home,
+.navigation__bar__books {
   height: 40px;
   width: 100%;
   -webkit-backdrop-filter: blur(0.3rem);

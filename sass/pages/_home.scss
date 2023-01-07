@@ -135,7 +135,7 @@
   .card-image {
     align-items: center;
     display: flex;
-    height: 140px;
+    max-height: 140px;
     justify-content: center;
     overflow: hidden;
   }
