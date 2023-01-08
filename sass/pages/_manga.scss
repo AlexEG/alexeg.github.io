@@ -34,7 +34,7 @@
   //*==========  main__container__manga__page [END here]  ==========*//
   //*==========  manga__main__contanier [START here]  ==========*//
   .manga__main__contanier {
-    outline: solid 2px red; ///////
+    // outline: solid 2px red; ///////
     min-width: 390px;
     max-width: 1000px;
     min-height: 500px;
@@ -50,7 +50,7 @@
 
     //*==========  manga__card [START here]  ==========*//
     .manga__card {
-      outline: 2px blue solid; //////
+      // outline: 2px blue solid; //////
       width: 300px;
       height: 430px;
       text-align: center;
@@ -237,47 +237,110 @@
 
 //*==========  Banner Manga [START here]  ==========*//
 .banner__manga__page {
-  outline: 1px red solid; //////
+  // outline: 1px red solid; //////
   width: 100%;
-  height: 420px;
+  height: 400px;
   background-color: hsl(0, 0%, 2%);
-
   padding-top: 40px;
+  z-index: -555;
+  position: relative;
+  /////////////////////////
 
-  .container2 {
+  &::before {
+    content: "";
     width: 100%;
     height: 100%;
-    background-color: hsla(288, 100%, 10%, 0.404);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.292),
+        rgb(0, 0, 0)
+      ),
+      url(../../assets/manga/Awkward_Senpai.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -999;
   }
+  /////////////////////////
+  .back__next__button {
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+    width: 84px;
+
+    .go__back,
+    .go__next {
+      width: 40px;
+      height: 40px;
+      right: 50px;
+      bottom: 0px;
+      display: inline-block;
+      background-image: url(../../assets/arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 99;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .go__back {
+      transform: rotate(0deg);
+    }
+    .go__next {
+      transform: rotate(180deg);
+    }
+  }
+
   /////////////////////////
   .inside__conainer {
     // outline: solid 2px red; ///////
-    margin-inline: auto;
-    max-width: 1200px;
-    height: 100%;
 
+    margin-inline: auto;
+    width: 100%;
+    // max-width: 1200px;
+    height: 100%;
+    z-index: 5;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
 
     //////////////////////////////////
 
     //////////////////////////////////
     .manga__image {
-      // outline: solid 2px red; ///////
-
+      // outline: solid 3px rgb(0, 255, 34); ///////
       width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      place-content: center;
+      object-fit: cover;
 
-      .img {
-        // outline: solid 2px rgb(0, 26, 255); ///////
-        width: 220px;
+      img {
+        margin: 0 50px;
+        width: 230px;
       }
     }
     //todo inside__conainer [END]
+  }
+
+  .manga__info {
+    h1 {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+    p {
+      color: #ffffff;
+      font-size: 1rem;
+      margin: 2px;
+      word-wrap: normal;
+    }
+
+    //todo manga__info [END]
   }
   //todo banner__manga__page [END]
 }
