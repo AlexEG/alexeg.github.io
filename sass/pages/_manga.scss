@@ -2,15 +2,16 @@
 //==================================================
 //-----  Line | Section Name | Last Update  ------
 /*
-[15]   //  -------------------------   //  2023-1-7
-[79]   //  -------------------------   //  2023-1-7
-[89]   //  -------------------------   //  2023-1-7
-[98]   //  -------------------------   //  2023-1-7
+[14]   //  main__container__manga__page//  2023-1-7
+[36]   //  manga__main__contanier      //  2023-1-7
+[89]   //  manga__card                 //  2023-1-7
+[89]   //  Cards                       //  2023-1-7
+[98]   //  banner__manga__page         //  2023-1-7
 
 */
 //==================================================
 //==================================================
-
+//*==========  main__container__manga__page [START here]  ==========*//
 .main__container__manga__page {
   background-color: hsl(0, 0%, 2%);
   width: 100%;
@@ -21,11 +22,20 @@
   line-height: 1.5;
   position: relative;
 
-  ///////////
-
+  @media (max-width: 1200px) {
+    padding: 150px 75px;
+  }
+  @media (max-width: 910px) {
+    padding: 150px 50px;
+  }
+  @media (min-width: 300px) {
+    padding: 100px 5px;
+  }
+  //*==========  main__container__manga__page [END here]  ==========*//
+  //*==========  manga__main__contanier [START here]  ==========*//
   .manga__main__contanier {
     outline: solid 2px red; ///////
-    min-width: 500px;
+    min-width: 390px;
     max-width: 1000px;
     min-height: 500px;
     z-index: 11;
@@ -33,8 +43,10 @@
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    // justify-content: space-between;
+    row-gap: 30px;
     ///////////
+    //*==========  manga__main__contanier [END here]  ==========*//
 
     //*==========  manga__card [START here]  ==========*//
     .manga__card {
@@ -45,6 +57,48 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
+
+      @media (max-width: 1200px) {
+        width: 280px;
+        height: 410px;
+        row-gap: 30px;
+      }
+      @media (max-width: 1100px) {
+        width: 255px;
+        height: 385px;
+        row-gap: 25px;
+      }
+      @media (max-width: 1000px) {
+        width: 225px;
+        height: 365px;
+        row-gap: 20px;
+      }
+      @media (max-width: 900px) {
+        width: 200px;
+        height: 340px;
+        row-gap: 15px;
+      }
+      @media (max-width: 800px) {
+        width: 150px;
+        height: 290px;
+        row-gap: 10px;
+      }
+      @media (max-width: 600px) {
+        width: 120px;
+        height: 220px;
+        row-gap: 10px;
+      }
+      @media (max-width: 500px) {
+        width: 110px;
+        height: 210px;
+        row-gap: 5px;
+      }
+      @media (max-width: 400px) {
+        width: 100px;
+        height: 240px;
+        row-gap: 5px;
+      }
 
       img {
         max-width: 100%;
@@ -54,51 +108,177 @@
         color: #ffffff;
         font-size: 1rem;
       }
+      ////////////////////////////////////////////
+
+      &::after {
+        // outline: solid 2px red; ///////
+
+        position: absolute;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 60px;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+        background-image: -moz-linear-gradient(to top, #000000, transparent);
+        background-image: -webkit-linear-gradient(to top, #000000, transparent);
+        background-image: linear-gradient(to top, #000000, transparent);
+        z-index: 10;
+        opacity: 0;
+        transition: opacity 300ms;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+      ////////////////////////////////////////////
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background-color 350ms;
+      }
+      &:hover:before {
+        background-color: hsla(0, 0%, 0%, 0.35);
+      }
+      /////////////////////////////////
+      ///
     }
 
-    //todo book__card [END]
+    //todo manga__card [END]
 
     //*==========  manga__card [END here]  ==========*//
     //*==========  Cards [START here]  ==========*//
-    .card1 {
-      background-image: url(../../assets/manga/Chainsaw_Man.PNG);
-    }
-    .card2 {
-      background-image: url(../../assets/manga/Awkward_Senpai.PNG);
-    }
-    .card3 {
-      background-image: url(../../assets/manga/2.5_Dimensional_Seduction.PNG);
-    }
-    .card4 {
-      background-image: url(../../assets/manga/7_troublesome_days__Vol.1_Ch.5-26.png);
-    }
-    .card5 {
-      background-image: url(../../assets/manga/Berserk_of_Gluttony.PNG);
-    }
-    .card6 {
-      background-image: url(../../assets/manga/FBEfBXwVgAQRSE1.jpg);
-    }
-    .card7 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss.PNG);
-    }
-    .card8 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 4\,\ Ch.\ 32_\ Decision\ -\ 2.jpg);
-    }
-    .card9 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 6\,\ Ch.\ 49_\ Waiting\ for\ Spring\ -\ 2.jpg);
-    }
-    .card10 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 8\,\ Ch.\ 78\ -\ 2.jpg);
+    .card12 {
+      background-image: url(../../assets/manga/Im_Not_That_Kind_of_Talent.PNG);
+
+      &::after {
+        content: "I'm Not That Kind of Talent";
+      }
     }
     .card11 {
       background-image: url(../../assets/manga/ID_INVADED_BRAKE_BROKEN.PNG);
+      &::after {
+        content: "ID INVADED #BRAKE BROKEN";
+      }
     }
-    .card12 {
-      background-image: url(../../assets/manga/Im_Not_That_Kind_of_Talent.PNG);
+    .card10 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 8\,\ Ch.\ 78\ -\ 2.jpg);
+      &::after {
+        content: "Boy's Abyss  [Vol. 8]  [Ch. 78]";
+      }
     }
-
+    .card9 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 6\,\ Ch.\ 49_\ Waiting\ for\ Spring\ -\ 2.jpg);
+      &::after {
+        content: "Name of mangjgfdhfghjfdgha and some other info";
+      }
+    }
+    .card8 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 4\,\ Ch.\ 32_\ Decision\ -\ 2.jpg);
+      &::after {
+        content: "Name of mangdfghdfhfda and some other info";
+      }
+    }
+    .card6 {
+      background-image: url(../../assets/manga/FBEfBXwVgAQRSE1.jpg);
+      &::after {
+        content: "Name of manga and somedfghdfghfd other info";
+      }
+    }
+    .card7 {
+      background-image: url(../../assets/manga/Boy-s\ Abyss.PNG);
+      &::after {
+        content: "Boy's Abyss";
+      }
+    }
+    .card5 {
+      background-image: url(../../assets/manga/Berserk_of_Gluttony.PNG);
+      &::after {
+        content: "Berserk of Gluttony";
+      }
+    }
+    .card4 {
+      background-image: url(../../assets/manga/7_troublesome_days__Vol.1_Ch.5-26.png);
+      &::after {
+        content: "Sometimes Even Reality Is a Lie!";
+      }
+    }
+    .card3 {
+      background-image: url(../../assets/manga/2.5_Dimensional_Seduction.PNG);
+      &::after {
+        content: "2.5 Dimensional Seduction";
+      }
+    }
+    .card2 {
+      background-image: url(../../assets/manga/Awkward_Senpai.PNG);
+      &::after {
+        content: "Awkward Senpai";
+      }
+    }
+    .card1 {
+      background-image: url(../../assets/manga/Chainsaw_Man.PNG);
+      &::after {
+        content: "Chainsaw Man";
+      }
+    }
     //*==========  Cards [END here]  ==========*//
 
-    //todo books__contanier [END]
+    //todo manga__main__contanier [END]
   }
+
+  //todo main__container__manga__page [END]
 }
+
+//*==========  Banner Manga [START here]  ==========*//
+.banner__manga__page {
+  outline: 1px red solid; //////
+  width: 100%;
+  height: 420px;
+  background-color: hsl(0, 0%, 2%);
+
+  padding-top: 40px;
+
+  .container2 {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(288, 100%, 10%, 0.404);
+  }
+  /////////////////////////
+  .inside__conainer {
+    // outline: solid 2px red; ///////
+    margin-inline: auto;
+    max-width: 1200px;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+
+    //////////////////////////////////
+
+    //////////////////////////////////
+    .manga__image {
+      // outline: solid 2px red; ///////
+
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .img {
+        // outline: solid 2px rgb(0, 26, 255); ///////
+        width: 220px;
+      }
+    }
+    //todo inside__conainer [END]
+  }
+  //todo banner__manga__page [END]
+}
+//*==========  Banner Manga [END here]  ==========*//
