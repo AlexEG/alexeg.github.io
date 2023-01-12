@@ -19,8 +19,13 @@
 .books__page__footer,
 .manga__page__footer {
   color: #fff;
-  height: 200px;
+  height: 100px;
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    hsl(0, 0%, 2%) 50%,
+    transparent 50%
+  );
 
   .alexeg {
     display: flex;
@@ -32,6 +37,12 @@
       width: 25px;
       margin-top: 3px;
       margin-inline: 3px;
+
+      @media (max-width: 400px) {
+        width: 15px;
+        margin-top: 1px;
+        margin-inline: 1px;
+      }
     }
   }
   .accounts {
@@ -47,7 +58,13 @@
       cursor: pointer;
       font-size: 2.5rem;
       margin-inline: 3px;
+
+      @media (max-width: 400px) {
+        font-size: 1.5rem;
+        margin-inline: 3px;
+      }
     }
+
     i:hover {
       color: #00a2e3;
     }
@@ -65,14 +82,15 @@
     width: 100%;
     height: 100px;
     overflow: hidden;
+
     &::before {
       content: "";
       width: 100%;
       height: 1px;
       position: absolute;
-      bottom: 0;
+      bottom: -2px;
       left: 0;
-      box-shadow: 0 0 50px 5px hsl(218, 100%, 59%);
+      box-shadow: 0 0 50px 20px hsl(218, 100%, 59%);
     }
   }
 }
@@ -91,31 +109,27 @@
 //*==========  html__page__footer  [START here]  ==========*//
 
 .html__page__footer {
-  width: calc(100% - 250px);
-  background-color: hsl(0, 0%, 3%);
-  margin-left: 250px;
   // outline: solid 1px red; //////
+  width: calc(100% - 250px);
+  margin-left: 250px;
 }
 //*==========  html__page__footer  [END here]  ==========*//
 //*==========  home__page__footer  [START here]  ==========*//
 
 .home__page__footer {
-  width: 100%;
-  background-color: hsl(0, 0%, 2%);
   // outline: solid 1px red; ///////
+  width: 100%;
 }
 //*==========  home__page__footer  [END here]  ==========*//
 //*==========  books__page__footer  [START here]  ==========*//
 .books__page__footer {
-  width: 100%;
-  background-color: hsl(0, 0%, 2%);
   // outline: solid 1px red; ///////
+  width: 100%;
 }
 //*==========  books__page__footer  [END here]  ==========*//
 //*==========  manga__page__footer  [START here]  ==========*//
 .manga__page__footer {
-  width: 100%;
-  background-color: hsl(0, 0%, 2%);
   // outline: solid 1px red; ///////
+  width: 100%;
 }
 //*==========  manga__page__footer  [END here]  ==========*//
