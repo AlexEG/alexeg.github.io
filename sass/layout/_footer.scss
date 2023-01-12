@@ -7,7 +7,7 @@
 [89]   //  html__page__foot            //  2023-1-7
 [98]   //  home__page__footer          //  2023-1-7
 [98]   //  books__page__footer         //  2023-1-7
-[00]   //  -------------------------   //  2022-12-0
+[00]   //  manga__page__footer         //  2022-12-0
 */
 //==================================================
 //==================================================
@@ -16,7 +16,8 @@
 .markdown__page__footer,
 .html__page__footer,
 .home__page__footer,
-.books__page__footer {
+.books__page__footer,
+.manga__page__footer {
   color: #fff;
   height: 200px;
   font-family: "Roboto", sans-serif;
@@ -111,3 +112,10 @@
   // outline: solid 1px red; ///////
 }
 //*==========  books__page__footer  [END here]  ==========*//
+//*==========  manga__page__footer  [START here]  ==========*//
+.manga__page__footer {
+  width: 100%;
+  background-color: hsl(0, 0%, 2%);
+  // outline: solid 1px red; ///////
+}
+//*==========  manga__page__footer  [END here]  ==========*//

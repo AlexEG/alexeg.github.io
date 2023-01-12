@@ -269,7 +269,7 @@
   .back__next__button {
     position: absolute;
     right: 15px;
-    bottom: 0px;
+    bottom: 0;
     width: 84px;
 
     .go__back,
@@ -277,7 +277,7 @@
       width: 40px;
       height: 40px;
       right: 50px;
-      bottom: 0px;
+      bottom: 0;
       display: inline-block;
       background-image: url(../../assets/arrow.png);
       background-repeat: no-repeat;

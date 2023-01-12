@@ -22,11 +22,26 @@ ____________________________________________________
   background-color: hsl(0, 0%, 3%);
   width: 100%;
   min-height: 100vh;
-  padding: 85px 200px 0px 250px;
+  padding: 85px 200px 0 250px;
   margin: 0;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   position: relative;
+
+  .right__side__nav {
+    width: 100px;
+    min-height: 200px;
+    background-color: hsla(281, 100%, 50%, 0.242);
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 2;
+
+    :target {
+      border: solid 1px red;
+      color: #00a2e3;
+    }
+  }
 }
 
 //*==========  Main Container markdown Page [END here]  ==========*//
@@ -37,12 +52,14 @@ ____________________________________________________
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -45px -200px 100px 0px;
+  margin: -45px -200px 100px 0;
   overflow: hidden;
   // outline: solid 1px red; //////
+  z-index: 6;
 
   img {
     height: 100%;
+    z-index: 6;
   }
 }
 //*==========  Banner Container markdown Page [END here]  ==========*//
@@ -80,8 +97,6 @@ ____________________________________________________
       width: 650px;
 
       box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
-      -webkit-box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
-      -moz-box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
     }
   }
 
