@@ -31,9 +31,100 @@
   @media (min-width: 300px) {
     padding: 100px 5px;
   }
+  //////////////////////////////////////
+  //*==========  Magic controller [START here]  ==========*//
+  .controller__container {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      width: 250px;
+      height: 60px;
+      border-radius: 0;
+    }
+
+    .cards:hover > .card::after {
+      opacity: 1;
+    }
+
+    .card {
+      // background-color: rgba(255, 255, 255, 0.849);
+      cursor: pointer;
+      height: 50px;
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card::before,
+    .card::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: opacity 500ms;
+    }
+
+    .card::before {
+      background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+      );
+      z-index: 3;
+    }
+
+    .card::after {
+      background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y),
+        hsla(0, 0%, 100%, 0.425),
+        transparent 30%
+      );
+      z-index: 1;
+    }
+
+    .card > .card-content {
+      background-color: var(--card-color);
+
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      inset: 1px;
+      padding: 10px;
+      position: absolute;
+      z-index: 2;
+
+      span {
+        color: hsl(0, 0%, 60%);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: auto;
+      }
+    }
+    .card > .active {
+      background-color: hsla(283, 82%, 20%, 0.545);
+    }
+  }
+  //*==========  Magic controller [END here]  ==========*//
+  //////////////////////////////////////
+
   //*==========  main__container__manga__page [END here]  ==========*//
   //*==========  manga__main__contanier [START here]  ==========*//
-  .manga__main__contanier {
+  .manga__contaner {
     // outline: solid 2px red; ///////
     min-width: 390px;
     max-width: 1000px;
@@ -153,85 +244,328 @@
     //todo manga__card [END]
 
     //*==========  manga__card [END here]  ==========*//
+    //todo manga__contaner [END]
+  }
+  ///////////////////////////////////////////////////////
+  .manga1 {
     //*==========  Cards [START here]  ==========*//
-    .card12 {
-      background-image: url(../../assets/manga/Im_Not_That_Kind_of_Talent.PNG);
-
-      &::after {
-        content: "I'm Not That Kind of Talent";
-      }
-    }
-    .card11 {
-      background-image: url(../../assets/manga/ID_INVADED_BRAKE_BROKEN.PNG);
-      &::after {
-        content: "ID INVADED #BRAKE BROKEN";
-      }
-    }
-    .card10 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 8\,\ Ch.\ 78\ -\ 2.jpg);
-      &::after {
-        content: "Boy's Abyss  [Vol. 8]  [Ch. 78]";
-      }
-    }
-    .card9 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 6\,\ Ch.\ 49_\ Waiting\ for\ Spring\ -\ 2.jpg);
-      &::after {
-        content: "Name of mangjgfdhfghjfdgha and some other info";
-      }
-    }
-    .card8 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss\ -\ Vol.\ 4\,\ Ch.\ 32_\ Decision\ -\ 2.jpg);
-      &::after {
-        content: "Name of mangdfghdfhfda and some other info";
-      }
-    }
-    .card6 {
-      background-image: url(../../assets/manga/FBEfBXwVgAQRSE1.jpg);
-      &::after {
-        content: "Name of manga and somedfghdfghfd other info";
-      }
-    }
-    .card7 {
-      background-image: url(../../assets/manga/Boy-s\ Abyss.PNG);
-      &::after {
-        content: "Boy's Abyss";
-      }
-    }
-    .card5 {
-      background-image: url(../../assets/manga/Berserk_of_Gluttony.PNG);
-      &::after {
-        content: "Berserk of Gluttony";
-      }
-    }
-    .card4 {
-      background-image: url(../../assets/manga/7_troublesome_days__Vol.1_Ch.5-26.png);
-      &::after {
-        content: "Sometimes Even Reality Is a Lie!";
-      }
-    }
-    .card3 {
-      background-image: url(../../assets/manga/2.5_Dimensional_Seduction.PNG);
-      &::after {
-        content: "2.5 Dimensional Seduction";
-      }
-    }
-    .card2 {
-      background-image: url(../../assets/manga/Awkward_Senpai.PNG);
-      &::after {
-        content: "Awkward Senpai";
-      }
-    }
     .card1 {
-      background-image: url(../../assets/manga/Chainsaw_Man.PNG);
+      background-image: url(../../assets/manga/page1/Chainsaw_Man.PNG);
       &::after {
         content: "Chainsaw Man";
       }
     }
+    .card2 {
+      background-image: url(../../assets/manga/page1/Awkward_Senpai.PNG);
+      &::after {
+        content: "Awkward Senpai";
+      }
+    }
+    .card3 {
+      background-image: url(../../assets/manga/page1/2.5_Dimensional_Seduction.PNG);
+      &::after {
+        content: "2.5 Dimensional Seduction";
+      }
+    }
+    .card4 {
+      background-image: url(../../assets/manga/page1/7_troublesome_days__Vol.1_Ch.5-26.png);
+      &::after {
+        content: "Sometimes Even Reality Is a Lie!";
+      }
+    }
+    .card5 {
+      background-image: url(../../assets/manga/page1/Berserk_of_Gluttony.PNG);
+      &::after {
+        content: "Berserk of Gluttony";
+      }
+    }
+    .card7 {
+      background-image: url(../../assets/manga/page1/Boy-s\ Abyss.PNG);
+      &::after {
+        content: "Boy's Abyss";
+      }
+    }
+    .card6 {
+      background-image: url(../../assets/manga/page1/FBEfBXwVgAQRSE1.jpg);
+      &::after {
+        content: "Name of manga and somedfghdfghfd other info";
+      }
+    }
+    .card8 {
+      background-image: url(../../assets/manga/page1/Boy-s\ Abyss\ -\ Vol.\ 4\,\ Ch.\ 32_\ Decision\ -\ 2.jpg);
+      &::after {
+        content: "Name of mangdfghdfhfda and some other info";
+      }
+    }
+    .card9 {
+      background-image: url(../../assets/manga/page1/Boy-s\ Abyss\ -\ Vol.\ 6\,\ Ch.\ 49_\ Waiting\ for\ Spring\ -\ 2.jpg);
+      &::after {
+        content: "Name of mangjgfdhfghjfdgha and some other info";
+      }
+    }
+    .card10 {
+      background-image: url(../../assets/manga/page1/Boy-s\ Abyss\ -\ Vol.\ 8\,\ Ch.\ 78\ -\ 2.jpg);
+      &::after {
+        content: "Boy's Abyss  [Vol. 8]  [Ch. 78]";
+      }
+    }
+    .card11 {
+      background-image: url(../../assets/manga/page1/ID_INVADED_BRAKE_BROKEN.PNG);
+      &::after {
+        content: "ID INVADED #BRAKE BROKEN";
+      }
+    }
+    .card12 {
+      background-image: url(../../assets/manga/page1/Im_Not_That_Kind_of_Talent.PNG);
+      &::after {
+        content: "I'm Not That Kind of Talent";
+      }
+    }
     //*==========  Cards [END here]  ==========*//
-
-    //todo manga__main__contanier [END]
+    //todo manga1 [END]
+  }
+  ///////////////////////////////////////////////////////
+  .manga2 {
+    //*==========  Cards [START here]  ==========*//
+    .card1 {
+      background-image: url(../../assets/manga/page2/Boarding\ School.jpg);
+      &::after {
+        content: "Boarding School";
+      }
+    }
+    .card2 {
+      background-image: url(../../assets/manga/page2/I\ Have\ a\ Second\ Chance\ at\ Life\,\ so\ I’ll\ Pamper\ My\ Yandere\ Boyfriend\ for\ a\ Happy\ Ending!!.PNG);
+      &::after {
+        content: "I Have a Second Chance at Life, so I’ll Pamper My Yandere Boyfriend for a Happy Ending!!";
+      }
+    }
+    .card3 {
+      background-image: url(../../assets/manga/page2/Kage\ no\ Jitsuryokusha\ ni\ Naritakute.PNG);
+      &::after {
+        content: "Kage no Jitsuryokusha ni Naritakute";
+      }
+    }
+    .card4 {
+      background-image: url(../../assets/manga/page2/Beautiful\ Girl\ and\ Dangerous\ Bodyguard.PNG);
+      &::after {
+        content: "Beautiful Girl and Dangerous Bodyguard";
+      }
+    }
+    .card5 {
+      background-image: url(../../assets/manga/page2/Watashitachi\ wa\ Koi\ wo\ Shiranai.PNG);
+      &::after {
+        content: "Watashitachi wa Koi wo Shiranai";
+      }
+    }
+    .card6 {
+      background-image: url(../../assets/manga/page2/Kaguya-sama\ wa\ Kokurasetai_.PNG);
+      &::after {
+        content: "Kaguya-sama wa Kokurasetai";
+      }
+    }
+    .card7 {
+      background-image: url(../../assets/manga/page2/Brothers\ and\ Sisters.PNG);
+      &::after {
+        content: "Brothers and Sisters";
+      }
+    }
+    .card8 {
+      background-image: url(../../assets/manga/page2/Uzaki-chan\ wa\ Asobitai!.PNG);
+      &::after {
+        content: "Uzaki-chan wa Asobitai!";
+      }
+    }
+    .card9 {
+      background-image: url(../../assets/manga/page2/Sometimes\ Even\ Reality\ Is\ a\ Lie!\ -\ Chapter\ 38.5_\ Extra\ chapter\ -\ 1.jpg);
+      &::after {
+        content: "Sometimes Even Reality Is a Lie!";
+      }
+    }
+    .card10 {
+      background-image: url(../../assets/manga/page2/Suki\ x\ Suki.PNG);
+      &::after {
+        content: "Suki x Suki";
+      }
+    }
+    .card11 {
+      background-image: url(../../assets/manga/page2/Koushin\ Koinu\ ni\ Koibumi\ wo\ -\ Vol.1\ Ch.1\ -\ 1st\ Letter\ -\ 1.jpg);
+      &::after {
+        content: "Koushin Koinu ni Koibumi wo - Vol.1 Ch.1 - 1st Letter - 1";
+      }
+    }
+    .card12 {
+      background-image: url(../../assets/manga/page2/Uzaki-chan\ wa\ Asobitai.PNG);
+      &::after {
+        content: "Uzaki-chan wa Asobitai!";
+      }
+    }
+    //*==========  Cards [END here]  ==========*//
+    //todo manga2 [END]
   }
 
+  ///////////////////////////////////////////////////////
+  .manga3 {
+    //*==========  Cards [START here]  ==========*//
+    .card1 {
+      background-image: url(../../assets/manga/page3/Re_Vol_16_English.png);
+      &::after {
+        content: "Tokyo Ghoul";
+      }
+    }
+    .card2 {
+      background-image: url(../../assets/manga/page3/Volume_1.jpg);
+      &::after {
+        content: "0000000";
+      }
+    }
+    .card3 {
+      background-image: url(../../assets/manga/page3/81QDxVfY65L.jpg);
+      &::after {
+        content: "TOMIE";
+      }
+    }
+    .card4 {
+      background-image: url(../../assets/manga/page3/Fushi\ no\ Sougishi.PNG);
+      &::after {
+        content: "Fushi no Sougishi";
+      }
+    }
+    .card5 {
+      background-image: url(../../assets/manga/page3/Kings-Viking.PNG);
+      &::after {
+        content: "Kings' Viking";
+      }
+    }
+    .card6 {
+      background-image: url(../../assets/manga/page3/Pumpkin\ Night.PNG);
+      &::after {
+        content: "Pumpkin Night";
+      }
+    }
+    .card7 {
+      background-image: url(../../assets/manga/page3/Reincarnation\ of\ the\ Suicidal\ Battle\ God.PNG);
+      &::after {
+        content: "Reincarnation of the Suicidal Battle God";
+      }
+    }
+    .card8 {
+      background-image: url(../../assets/manga/page3/Kaiju\ No.\ 8.PNG);
+
+      &::after {
+        content: "Kaiju No. 8";
+      }
+    }
+    .card9 {
+      background-image: url(../../assets/manga/page3/Jumyou\ wo\ Kaitotte\ Moratta.\ Ichinen\ ni\ Tsuki\,\ Ichimanen\ de..PNG);
+      &::after {
+        content: "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.";
+      }
+    }
+    .card10 {
+      background-image: url(../../assets/manga/page3/The\ Beginning-After-the-End.PNG);
+      &::after {
+        content: "The Beginning After the End";
+      }
+    }
+    .card11 {
+      background-image: url(../../assets/manga/page3/Jujika\ no\ Rokunin.PNG);
+      &::after {
+        content: "Jujika no Rokunin";
+      }
+    }
+    .card12 {
+      background-image: url(../../assets/manga/page3/Kakegurui\ -\ Compulsive\ Gambler\ -\ Chapter\ 1\ -\ 1.jpg);
+      &::after {
+        content: "Kakegurui - Compulsive Gambler - Chapter 1 - 1";
+      }
+    }
+    //*==========  Cards [END here]  ==========*//
+    //todo manga3 [END]
+  }
+
+  ///////////////////////////////////////////////////////
+  .manga4 {
+    //*==========  Cards [START here]  ==========*//
+    .card1 {
+      background-image: url(../../assets/manga/page4/Yume\ Miru\ Prima\ Girl!.PNG);
+      &::after {
+        content: "Yume Miru Prima Girl!";
+      }
+    }
+    .card2 {
+      background-image: url(../../assets/manga/page4/Horimiya.PNG);
+      &::after {
+        content: "Horimiya";
+      }
+    }
+    .card3 {
+      background-image: url(../../assets/manga/page4/Kiss\ de\ Fusaide\,\ Bare\ naide..PNG);
+      &::after {
+        content: "Kiss de Fusaide, Bare naide";
+      }
+    }
+    ////////////
+    .card4 {
+      background-image: url(../../assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru\ -\ Vol.8\ Ch.63.5\ -\ Extras\ -\ 2.jpg);
+      &::after {
+        content: "Sono Bisque Doll wa Koi wo Suru Vol.8";
+      }
+    }
+    .card5 {
+      background-image: url(../../assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru-10.PNG);
+      &::after {
+        content: "Sono Bisque Doll wa Koi wo Suru Vol.10";
+      }
+    }
+    .card6 {
+      background-image: url(../../assets/manga/page4/Sakura-chan\ to\ Amane-kun.PNG);
+      &::after {
+        content: "Sakura-chan to Amane-kun";
+      }
+    }
+    ////////////
+    .card7 {
+      background-image: url(../../assets/manga/page4/Another\ World\ Where\ I\ Cant\ Even\ Collapse\ and\ Die\ Vol.1.jpg);
+      &::after {
+        content: "Another World Where I Can't Even Collapse and Die - Vol.1 Ch.1 - 1";
+      }
+    }
+    .card8 {
+      background-image: url(../../assets/manga/page4/Yankee-kun\ to\ Hakujou\ Gaaru.PNG);
+
+      &::after {
+        content: "Yankee-kun to Hakujou Gaaru";
+      }
+    }
+    .card9 {
+      background-image: url(../../assets/manga/page4/You\ into\ Me.PNG);
+      &::after {
+        content: "You into Me";
+      }
+    }
+    ////////////
+    .card10 {
+      background-image: url(../../assets/manga/page4/Classroom\ of\ the\ Elite.PNG);
+      &::after {
+        content: "Classroom of the Elite";
+      }
+    }
+    .card11 {
+      background-image: url(../../assets/manga/page4/Oku-sama\ wa\ Niizuma-chan.PNG);
+      &::after {
+        content: "Oku-sama wa Niizuma-chan";
+      }
+    }
+    .card12 {
+      background-image: url(../../assets/manga/page4/Danchigai\ -\ Chapter\ 126_\ Final\ Chapter\ -\ 1.jpg);
+      &::after {
+        content: "Danchigai - Chapter 126";
+      }
+    }
+    //*==========  Cards [END here]  ==========*//
+    //todo manga4 [END]
+  }
+  /////////////////////////////////////////////////////////////
   //todo main__container__manga__page [END]
 }
 
@@ -253,12 +587,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.292),
-        rgb(0, 0, 0)
-      ),
-      url(../../assets/manga/Awkward_Senpai.PNG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -266,35 +594,6 @@
     z-index: -999;
   }
   /////////////////////////
-  .back__next__button {
-    position: absolute;
-    right: 15px;
-    bottom: 0;
-    width: 84px;
-
-    .go__back,
-    .go__next {
-      width: 40px;
-      height: 40px;
-      right: 50px;
-      bottom: 0;
-      display: inline-block;
-      background-image: url(../../assets/arrow.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      z-index: 99;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .go__back {
-      transform: rotate(0deg);
-    }
-    .go__next {
-      transform: rotate(180deg);
-    }
-  }
 
   /////////////////////////
   .inside__conainer {
@@ -318,11 +617,12 @@
       height: 100%;
       display: grid;
       place-content: center;
-      object-fit: cover;
 
       img {
+        object-fit: cover;
         margin: 0 50px;
         width: 230px;
+        max-height: 330px;
       }
     }
     //todo inside__conainer [END]
@@ -343,5 +643,46 @@
     //todo manga__info [END]
   }
   //todo banner__manga__page [END]
+}
+// banner for each page
+.manga1 {
+  &::before {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.292),
+        rgb(0, 0, 0)
+      ),
+      url(../../assets/manga/page1/Awkward_Senpai.PNG);
+  }
+}
+.manga2 {
+  &::before {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.292),
+        rgb(0, 0, 0)
+      ),
+      url(../../assets/manga/page2/Beautiful\ Girl\ and\ Dangerous\ Bodyguard.PNG);
+  }
+}
+.manga3 {
+  &::before {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.292),
+        rgb(0, 0, 0)
+      ),
+      url(../../assets/manga/page3/The\ Beginning-After-the-End.PNG);
+  }
+}
+.manga4 {
+  &::before {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.292),
+        rgb(0, 0, 0)
+      ),
+      url(../../assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru-10.PNG);
+  }
 }
 //*==========  Banner Manga [END here]  ==========*//

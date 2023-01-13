@@ -18,6 +18,7 @@ function gotoYoutubePage(link) {
 function gotoMarkdown(link) {
   location.href = "./pages/markdown.html";
 }
+
 function gotoHTMLpage(link) {
   location.href = "./pages/html.html";
 }
@@ -31,33 +32,17 @@ function gotoManga(link) {
   location.href = "./pages/manga.html";
 }
 
-// // funcation to add smooth behavior to side bar links
-// function smooth() {
-//   // Scroll to a certain element
-//   document.getElementById("kicking-the-tire").scrollIntoView({
-//     behavior: "smooth",
-//   });
-// }
+// manga pages
 
-// let anchorlinks = document.querySelectorAll('a[href^="#"]');
-// for (let item of anchorlinks) {
-//   // relitere
-//   item.addEventListener("click", (e) => {
-//     let hashval = item.getAttribute("href");
-//     let target = document.querySelector(hashval);
-//     target.scrollIntoView({
-//       behavior: "smooth",
-//       block: "start",
-//     });
-//     history.pushState(null, null, hashval);
-//     e.preventDefault();
-//   });
-// }
-
-// let testone = document.getElementById("what-is-markdown");
-// function test() {
-//   testone.scrollIntoView({
-//     behavior: "smooth",
-//     block: "center",
-//   });
-// }
+function manga1(link) {
+  location.href = "/pages/manga.html";
+}
+function manga2(link) {
+  location.href = "/pages/manga-sub-pages/manga2.html";
+}
+function manga3(link) {
+  location.href = "/pages/manga-sub-pages/manga3.html";
+}
+function manga4(link) {
+  location.href = "/pages/manga-sub-pages/manga4.html";
+}
