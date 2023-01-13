@@ -2,12 +2,9 @@
 //==================================================
 //-----  Line | Section Name | Last Update  ------
 /*
-[15]   //  Footer  & All Pages         //  2023-1-7
-[79]   //  markdown__page__footer      //  2023-1-7
-[89]   //  html__page__foot            //  2023-1-7
-[98]   //  home__page__footer          //  2023-1-7
-[98]   //  books__page__footer         //  2023-1-7
-[00]   //  manga__page__footer         //  2022-12-0
+[12]   //  Footer  & All Pages         //  2023-1-13
+
+
 */
 //==================================================
 //==================================================
@@ -18,6 +15,7 @@ footer {
   height: 200px;
   font-family: "Roboto", sans-serif;
   width: 100%;
+
   background-image: linear-gradient(
     to top,
     hsl(0, 0%, 2%) 50%,
@@ -90,11 +88,11 @@ footer {
   }
 
   .line {
+    background-color: hsl(0, 0%, 2%);
     position: relative;
     width: 100%;
     height: 100px;
     overflow: hidden;
-    background-color: hsl(0, 0%, 2%);
 
     &::before {
       content: "";
@@ -103,46 +101,14 @@ footer {
       position: absolute;
       bottom: -2px;
       left: 0;
-      box-shadow: 0 0 50px 20px hsl(218, 100%, 59%);
+      box-shadow: 0 0 40px 15px hsl(218, 100%, 59%);
     }
   }
 }
 
 //*==========  footer  & All Pages  [END here]  ==========*//
-//*==========  markdown__page__footer  [START here]  ==========*//
-
-.markdown__page__footer {
-  width: calc(100% - 250px);
-  position: absolute;
-  bottom: 0;
-  left: 250px;
-}
-
-//*==========  markdown__page__footer  [END here]  ==========*//
-//*==========  html__page__footer  [START here]  ==========*//
 
 .html__page__footer {
-  // outline: solid 1px red; //////
   width: calc(100% - 250px);
   margin-left: 250px;
 }
-//*==========  html__page__footer  [END here]  ==========*//
-//*==========  home__page__footer  [START here]  ==========*//
-
-.home__page__footer {
-  // outline: solid 1px red; ///////
-  width: 100%;
-}
-//*==========  home__page__footer  [END here]  ==========*//
-//*==========  books__page__footer  [START here]  ==========*//
-.books__page__footer {
-  // outline: solid 1px red; ///////
-  width: 100%;
-}
-//*==========  books__page__footer  [END here]  ==========*//
-//*==========  manga__page__footer  [START here]  ==========*//
-.manga__page__footer {
-  // outline: solid 1px red; ///////
-  width: 100%;
-}
-//*==========  manga__page__footer  [END here]  ==========*//

@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="../../dist/all.min.css" />
 
     <!--!============  Google Fonts [START here] ============*-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <!--!============  Google Fonts [END here] ============*-->
   </head>
 
@@ -34,6 +34,13 @@
         </div>
       </nav>
       <!--*============  Navigation Bar [END here] ============*-->
+      <!--*============  Banner Manga [START here] ============*-->
+      <div class="banner__html1__page">
+        <div class="img__contanier">
+          <img src="../../assets/HTML page/HTML5-Banner.png" alt="HTML5" />
+        </div>
+      </div>
+      <!--*============  Banner Manga [END here] ============*-->
     </header>
     <!--!============  header [END here] ============*-->
     <!-- ////////////////////////////////////////////////// -->
@@ -42,12 +49,12 @@
       <div class="sidebar__contanier">
         <div class="scroolbox">
           <img class="mdn" src="../../assets/HTML page/MDN.png" alt="MDN" />
-          <h2>Structuring the web with HTML</h2>
+          <div><a href="#">Structuring the web with HTML</a></div>
           <br />
           <h3>Introduction to HTML</h3>
           <br />
           <div>
-            <a href="#">Overview</a>
+            <a href="./html-sub-pages/html1.html">Overview</a>
           </div>
           <div><a href="#why-use-markdown">Getting started with HTML</a></div>
           <div>
@@ -130,10 +137,46 @@
     <!-- ////////////////////////////////////////////////// -->
     <!--!============  MAIN [START here] ============*-->
     <main class="main__container__html__page">
-      <!--*============  Banner Container HTML Page [START here] ============*-->
-      <div class="banner__container__html__page">
-        <img src="../../assets/HTML page/HTML5-Banner.png" alt="HTML5-Banner" />
+      <!--*============  Magic controller  [START here] ============*-->
+      <div class="controller__container">
+        <div id="cards" class="cards">
+          <!-- ///////////////////////////// -->
+          <div class="card" onclick="manga1(this)">
+            <div class="card-content active"><span>Placeholder 1</span></div>
+          </div>
+          <div class="card" onclick="manga2(this)">
+            <div class="card-content"><span>Placeholder 2</span></div>
+          </div>
+          <div class="card" onclick="manga3(this)">
+            <div class="card-content"><span>Placeholder 3</span></div>
+          </div>
+          <div class="card" onclick="manga4(this)">
+            <div class="card-content"><span>Placeholder 4</span></div>
+          </div>
+          <div class="card" onclick="manga4(this)">
+            <div class="card-content"><span>Placeholder 4</span></div>
+          </div>
+          <div class="card" onclick="manga4(this)">
+            <div class="card-content"><span>Placeholder 4</span></div>
+          </div>
+          <div class="card" onclick="manga4(this)">
+            <div class="card-content"><span>Placeholder 4</span></div>
+          </div>
+          <div class="card" onclick="manga4(this)">
+            <div class="card-content"><span>Placeholder 4</span></div>
+          </div>
+          <div class="card" onclick="manga4(this)">
+            <div class="card-content"><span>Placeholder 4</span></div>
+          </div>
+          <!-- ///////////////////////////// -->
+
+          <!-- todo #cards END-->
+        </div>
+        <!-- todo controller__container END-->
       </div>
+      <!--*============  Magic controller  [END here] ============*-->
+      <!--*============  Banner Container HTML Page [START here] ============*-->
+
       <!--*============  Banner Container HTML Page [END here] ============*-->
     </main>
     <!--!============  MAIN [END here] ============*-->
@@ -170,5 +213,6 @@
       </div>
     </footer>
     <!--!============  FOOTER [END here] ============* -->
+    <script src="../../script.js"></script>
   </body>
 </html>

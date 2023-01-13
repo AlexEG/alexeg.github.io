@@ -25,21 +25,23 @@ ____________________________________________________
   line-height: 1.5;
   position: relative;
   padding: 100px;
+  display: grid;
+  place-items: center;
 
   ////////////////////////////////////////////////
+  //////////////////////////////////////
+  //*==========  Magic controller [START here]  ==========*//
   .controller__container {
     display: inline-block;
     font-family: "Roboto", sans-serif;
-    position: absolute;
-    right: 5px;
-    top: 5px;
 
     .cards {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+
       gap: 2px;
-      width: 260px;
-      height: 60px;
+      width: 200px;
+      min-height: 400px;
       border-radius: 0;
     }
 
@@ -48,10 +50,9 @@ ____________________________________________________
     }
 
     .card {
-      // background-color: rgba(255, 255, 255, 0.1);
       cursor: pointer;
       height: 50px;
-      width: 60px;
+      width: 200px;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -93,10 +94,8 @@ ____________________________________________________
 
     .card > .card-content {
       background-color: var(--card-color);
-      border-radius: inherit;
       display: flex;
-      flex-direction: column;
-      flex-grow: 1;
+
       inset: 1px;
       padding: 10px;
       position: absolute;
@@ -109,7 +108,11 @@ ____________________________________________________
         margin: auto;
       }
     }
+    .card > .active {
+      background-color: hsla(283, 82%, 20%, 0.545);
+    }
   }
+  //*==========  Magic controller [END here]  ==========*//
 }
 
 //*==========  Main Container testing Page [END here]  ==========*//
