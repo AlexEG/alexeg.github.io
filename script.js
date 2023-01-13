@@ -46,3 +46,36 @@ function manga3(link) {
 function manga4(link) {
   location.href = "/pages/manga-sub-pages/manga4.html";
 }
+
+//HTML pages
+
+function section1(link) {
+  location.href = "#section1";
+}
+function section2(link) {
+  location.href = "#section2";
+}
+function section3(link) {
+  location.href = "#section3";
+}
+function section4(link) {
+  location.href = "#section3";
+}
+function section5(link) {
+  location.href = "#section3";
+}
+function section6(link) {
+  location.href = "#section3";
+}
+function section7(link) {
+  location.href = "#section3";
+}
+function section8(link) {
+  location.href = "#section3";
+}
+function section9(link) {
+  location.href = "#section3";
+}
+function section10(link) {
+  location.href = "#section3";
+}

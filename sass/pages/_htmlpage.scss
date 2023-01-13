@@ -22,7 +22,7 @@ ____________________________________________________
   background-color: hsl(0, 0%, 2%);
   width: calc(100% - 250px);
   min-height: 100vh;
-  padding: 220px;
+  padding: 70px 250px 100px 70px;
   margin-left: 250px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -115,8 +115,84 @@ ____________________________________________________
     }
   }
   //*==========  Magic controller [END here]  ==========*//
-}
+  //////////////////////////////////////
+  //////////////////////////////////////
+  //*==========   Content HTML [START here]  ==========*//
+  //so all [content] well have the same styling without repeting the code
+  // content__html = section
+  .content__html {
+    margin-bottom: 200px;
+    max-width: 1000px;
+    margin-inline: auto;
+    //for all section's title
+    h1 {
+      color: #f1f1f1;
+      pointer-events: none;
+    }
 
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: #f5f5f5;
+      padding: 5px;
+      pointer-events: none;
+    }
+
+    ul,
+    ol {
+      margin-left: 50px;
+    }
+
+    picture {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      img {
+        margin-inline: auto;
+        width: 650px;
+        box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 1.05px;
+      word-spacing: 1.5px;
+      font-weight: 400;
+      margin-bottom: 45px;
+      color: #f3f3f3;
+      // pointer-events: none;
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #00a2e3;
+      }
+
+      &.notes {
+        background-color: hsl(269, 50%, 10%);
+        position: relative;
+        padding-left: 15px;
+        padding-block: 5px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 5px;
+          height: 100%;
+          background-color: hsl(269, 100%, 50%);
+        }
+      }
+    }
+  }
+
+  //*==========   Content HTML [END here]  ==========*//
+}
 //*==========  Main Container HTML Page [END here]  ==========*//
 
 //*==========  Banner Container HTML Page [START here]  ==========*//
@@ -143,74 +219,3 @@ ____________________________________________________
   }
 }
 //*==========  Banner Container HTML Page [END here]  ==========*//
-
-//*==========  Main Content Container HTML [START here]  ==========*//
-.main__contant__container__html {
-  width: 955px;
-  background-color: hsl(0, 0%, 3%);
-  color: hsl(0, 0%, 100%);
-  display: flex;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-
-  h2 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-  }
-
-  section {
-    margin-bottom: 200px;
-
-    ul,
-    ol {
-      margin-left: 50px;
-    }
-  }
-
-  picture {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-
-    img {
-      margin-inline: auto;
-      width: 650px;
-      box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
-    }
-  }
-
-  p {
-    font-size: 1.1rem;
-    letter-spacing: 1.05px;
-    word-spacing: 1.5px;
-    font-weight: 400;
-    margin-bottom: 45px;
-
-    a {
-      text-decoration: none;
-      font-weight: 500;
-      color: #00a2e3;
-    }
-
-    &.notes {
-      background-color: hsl(269, 50%, 10%);
-      position: relative;
-      padding-left: 15px;
-      padding-block: 5px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 5px;
-        height: 100%;
-        background-color: hsl(269, 100%, 50%);
-      }
-    }
-  }
-}
-
-//*==========  Main Content Container HTML [END here]  ==========*//
