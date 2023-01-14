@@ -9,6 +9,8 @@ document.getElementById("cards").onmousemove = (e) => {
   }
 };
 
+// HOME
+
 function gotoCssBattle(link) {
   location.href = "./pages/cssbattle.html";
 }
@@ -31,8 +33,11 @@ function gotoBooks(link) {
 function gotoManga(link) {
   location.href = "./pages/manga.html";
 }
+function gotoAniyomi(link) {
+  location.href = "./pages/aniyomi.html";
+}
 
-// manga pages
+// manga sub pages
 
 function manga1(link) {
   location.href = "/pages/manga.html";
@@ -47,7 +52,7 @@ function manga4(link) {
   location.href = "/pages/manga-sub-pages/manga4.html";
 }
 
-//HTML pages
+//HTML sub pages
 
 function section1(link) {
   location.href = "#section1";
