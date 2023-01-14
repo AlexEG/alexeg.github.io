@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/icons8-html-5-48.svg"
+    />
+    <link rel="stylesheet" href="../../dist/main.css" />
+    <link rel="stylesheet" href="../../dist/all.min.css" />
+
+    <!--!============  Google Fonts [START here] ============*-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!--!============  Google Fonts [END here] ============*-->
+  </head>
+
+  <body>
+    <!--!============  header [START here] ============*-->
+    <header class="html__page__header">
+      <!--*============  Navigation Bar [START here] ============*-->
+      <nav class="navigation__bar__html">
+        <div id="navbarList" class="links-container">
+          <a class="back" href="../../index.html">BACK</a>
+        </div>
+      </nav>
+      <!--*============  Navigation Bar [END here] ============*-->
+      <!--*============  Banner Manga [START here] ============*-->
+      <div class="banner__html1__page">
+        <div class="img__contanier">
+          <img src="../../assets/HTML page/HTML5-Banner.png" alt="HTML5" />
+        </div>
+      </div>
+      <!--*============  Banner Manga [END here] ============*-->
+    </header>
+    <!--!============  header [END here] ============*-->
+    <!-- ////////////////////////////////////////////////// -->
+    <!--!============  SideBar [START here] ============*-->
+    <aside class="sidebar__html">
+      <div class="sidebar__contanier">
+        <div class="scroolbox">
+          <img class="mdn" src="../../assets/HTML page/MDN.png" alt="MDN" />
+          <div><a href="#">Structuring the web with HTML</a></div>
+          <br />
+          <h3>Introduction to HTML</h3>
+          <br />
+          <div>
+            <a href="./html-sub-pages/html1.html">Overview</a>
+          </div>
+          <div><a href="#why-use-markdown">Getting started with HTML</a></div>
+          <div>
+            <a href="#kicking-the-tire">Metadata in HTML</a>
+          </div>
+          <div>
+            <a href="#how-does-it-work">HTML text fundamentals</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Creating hyperlinks</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Advanced text formatting</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Document and website structure</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Debugging HTML</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for"
+              >Assessment: Marking up a letter</a
+            >
+          </div>
+          <div>
+            <a href="#what-markdown-good-for"
+              >Assessment: Structuring a page of content</a
+            >
+          </div>
+          <br />
+          <h3>Multimedia and embedding</h3>
+          <br />
+          <div>
+            <a href="#what-markdown-good-for">Multimedia and embedding</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Images in HTML</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Video and audio content</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">From object to iframe </a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for"
+              >Adding vector graphics to the web</a
+            >
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Responsive images</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Mozilla splash page</a>
+          </div>
+          <br />
+          <h3>HTML tables</h3>
+          <br />
+          <div>
+            <a href="#what-markdown-good-for">HTML tables overview</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">HTML table basics</a>
+          </div>
+          <div>
+            <a href="#what-markdown-good-for"
+              >HTML table advanced features and accessibility</a
+            >
+          </div>
+          <div>
+            <a href="#what-markdown-good-for">Structuring planet data</a>
+          </div>
+          <br /><br />
+          <!-- /////////////////////////// -->
+        </div>
+      </div>
+    </aside>
+    <!--!============  SideBar [END here] ============*-->
+    <!-- ////////////////////////////////////////////////// -->
+    <!--!============  MAIN [START here] ============*-->
+    <main class="main__container__html__page">
+      <!--*============  Magic controller  [START here] ============*-->
+      <div class="controller__container">
+        <div id="cards" class="cards">
+          <!-- ///////////////////////////// -->
+          <div class="card">
+            <div class="card-content active"><span>IN this article</span></div>
+          </div>
+          <div class="card" onclick="section1(this)">
+            <div class="card-content"><span>Prerequisites</span></div>
+          </div>
+          <div class="card" onclick="section2(this)">
+            <div class="card-content"><span>Guides</span></div>
+          </div>
+          <div class="card" onclick="section3(this)">
+            <div class="card-content"><span>Assessments</span></div>
+          </div>
+
+          <!-- ///////////////////////////// -->
+
+          <!-- todo #cards END-->
+        </div>
+        <!-- todo controller__container END-->
+      </div>
+      <!--*============  Magic controller  [END here] ============*-->
+      <!-- ///////////////////////////// -->
+      <!-- ///////////////////////////// -->
+      <!--*============  content [START here] ============*-->
+      <section id="section0" class="content__html">
+        <h1>Structuring the web with HTML</h1>
+        <p>
+          At its heart, HJ_ML is a language made up of elements, which can be
+          applied to pieces of text to give them different meaning in a document
+          (Is it a paragraph? Is it a bulleted list? Is it part of a table?),
+          structure a document into logical sections (Does it have a header?
+          Three columns of content? A navigation menu?), and embed content such
+          as images and videos into a page. This module will introduce the first
+          two of these and introduce fundamental concepts and syntax you need to
+          know to understand HTML
+        </p>
+        <p class="notes">
+          Looking to become a front-end web developer? We have put together a
+          course that includes all the essential information you need to work
+          towards your goal. Get started
+        </p>
+      </section>
+      <!--todo section [ 0 ] end -->
+
+      <section id="section1" class="content__html">
+        <h1>Prerequisites</h1>
+        <p>
+          Before starting this topic, you should have at least basic familiarity
+          with using computers and using the web passively (i.e., just looking
+          at it, consuming the content). You should have a basic work
+          environment set up as detailed in Installing basic software, and
+          understand how to create and manage files, as detailed in Dealing with
+          files — both are parts of our Getting started with the web complete
+          beginner's module.
+        </p>
+        <p class="notes">
+          Note: If you are working on a computer/tablet/other device where you
+          don't have the ability to create your own files, you could try out
+          (most of) the code examples in an online coding program such as JSBin
+          or Glitch e.
+        </p>
+      </section>
+      <!--todo section [ 1 ] end -->
+
+      <section id="section2" class="content__html">
+        <h2>Guides</h2>
+        <p>
+          This module contains the following articles, which will take you
+          through all the basic theory of HTML and provide ample opportunity for
+          you to test out some skills.
+        </p>
+        <p>
+          Covers the absolute basics of HTML, to get you started — we define
+          elements, attributes, and other important terms, and show where they
+          fit in the language. We also show how a typical HTML page is
+          structured and how an HTML element is structured, and explain other
+          important basic language features. Along the way, we'll play with some
+          HTML to get you interested!
+        </p>
+        <p>
+          What's in the head? Metadata in HTML The head of an HTML document is
+          the part that is not displayed in the web browser when the page is
+          loaded. It contains information such as the page links to CSS (if you
+          want to style your HTML content with CSS), links to custom favicons,
+          and metadata (data about the HTML, such as who wrote it, and important
+          keywords that describe the document).
+        </p>
+
+        <p>
+          HTML text fundamentals One of HTML's main jobs is to give text meaning
+          (also known as semantics), so that the browser knows how to display it
+          correctly. This article looks at how to use HTML to break up a block
+          of text into a structure of headings and paragraphs, add
+          emphasis/importance to words, create lists, and more.
+        </p>
+        <p>
+          Creating-hyperlinks Hyperlinks are really important — they are what
+          makes the web a web. This article shows the syntax required to make a
+          link and discusses best practices for links.
+        </p>
+        <p>
+          Advanced text formatting There are many other elements in HTML for
+          formatting text that we didn't get to in the El.I_MLtext fundamentals
+          article. The elements here are less well-known, but still useful to
+          know about. In this article, you'll learn about marking up quotations,
+          description lists, computer code and other related text, subscript and
+          superscript, contact information, and more.
+        </p>
+
+        <p>
+          Document and website structure As well as defining individual parts of
+          your page (such as "a paragraph" or "an image"), HTML is also used to
+          define areas of your website (such as "the header", "the navigation
+          menu", or "the main content column"). This article looks into how to
+          plan a basic website structure and how to write the HTML to represent
+          this structure.
+        </p>
+        <p>
+          Writing HTML is fine, but what if something goes wrong, and you can't
+          work out where the error in the code is? This article will introduce
+          you to some tools that can help.
+        </p>
+      </section>
+      <!--todo section [ 2 ] end -->
+
+      <section id="section3" class="content__html">
+        <h1>Assessments</h1>
+        <p>
+          The following assessments will test your understanding of the HTML
+          basics covered in the guides above.
+        </p>
+        <p>
+          We all learn to write a letter sooner or later; it is also a useful
+          example to test out text formatting skills. In this assessment, you'll
+          be given a letter to mark up.
+        </p>
+        <p>
+          Structuring_a_page of content This assessment tests your ability to
+          use HTML to structure a simple page of content, containing a header, a
+          footer, a navigation menu, main content, and a sidebar.
+        </p>
+      </section>
+      <!--todo section [ 3 ] end -->
+
+      <!--*============  content [END here] ============*-->
+    </main>
+    <!--!============  MAIN [END here] ============*-->
+
+    <!-- ////////////////////////////////////////////////// -->
+
+    <!-- !============  FOOTER [START here] ============*-->
+    <!-- special class for each page  -->
+    <footer class="html__page__footer">
+      <div class="line"></div>
+      <div class="footer__container">
+        <div class="alexeg">
+          Made With <img src="../../assets/markdown/heart.png" alt="" /> By
+          AlexEG © 2023
+        </div>
+        <div class="accounts">
+          <a href="https://github.com/AlexEG" target="_blank">
+            <i class="fa-brands fa-github fa-fw fa-2x github"></i
+          ></a>
+          <a href="https://codepen.io/Alexander_EG" target="_blank">
+            <i class="fa-brands fa-codepen fa-fw fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mohamed-adel-69a452249/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-fw fa-2x"></i
+          ></a>
+          <a
+            href="https://www.freecodecamp.org/fcc4dcee3ab-a388-4f70-9ad9-0ac52ed81dc7"
+            target="_blank"
+            ><i class="fa-brands fa-free-code-camp"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!--!============  FOOTER [END here] ============* -->
+    <script src="../../script.js"></script>
+  </body>
+</html>

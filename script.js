@@ -9,6 +9,8 @@ document.getElementById("cards").onmousemove = (e) => {
   }
 };
 
+// HOME
+
 function gotoCssBattle(link) {
   location.href = "./pages/cssbattle.html";
 }
@@ -18,6 +20,67 @@ function gotoYoutubePage(link) {
 function gotoMarkdown(link) {
   location.href = "./pages/markdown.html";
 }
+
 function gotoHTMLpage(link) {
   location.href = "./pages/html.html";
+}
+function gotoTesting(link) {
+  location.href = "./pages/testing.html";
+}
+function gotoBooks(link) {
+  location.href = "./pages/books.html";
+}
+function gotoManga(link) {
+  location.href = "./pages/manga.html";
+}
+function gotoAniyomi(link) {
+  location.href = "./pages/aniyomi.html";
+}
+
+// manga sub pages
+
+function manga1(link) {
+  location.href = "/pages/manga.html";
+}
+function manga2(link) {
+  location.href = "/pages/manga-sub-pages/manga2.html";
+}
+function manga3(link) {
+  location.href = "/pages/manga-sub-pages/manga3.html";
+}
+function manga4(link) {
+  location.href = "/pages/manga-sub-pages/manga4.html";
+}
+
+//HTML sub pages
+
+function section1(link) {
+  location.href = "#section1";
+}
+function section2(link) {
+  location.href = "#section2";
+}
+function section3(link) {
+  location.href = "#section3";
+}
+function section4(link) {
+  location.href = "#section3";
+}
+function section5(link) {
+  location.href = "#section3";
+}
+function section6(link) {
+  location.href = "#section3";
+}
+function section7(link) {
+  location.href = "#section3";
+}
+function section8(link) {
+  location.href = "#section3";
+}
+function section9(link) {
+  location.href = "#section3";
+}
+function section10(link) {
+  location.href = "#section3";
 }

@@ -9,6 +9,9 @@
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
 [00]   //  -------------------------   //  2022-12-0
+____________________________________________________
+[127]  header => _navigation.scss
+[26]   sidebar => _navigation.scss
 */
 //==================================================
 //==================================================
@@ -19,72 +22,24 @@
   background-color: hsl(0, 0%, 3%);
   width: 100%;
   min-height: 100vh;
-  padding: 85px 200px 0px 250px;
+  padding: 85px 200px 0 250px;
   margin: 0;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-
   position: relative;
-  footer {
-    width: calc(100% - 250px);
-    height: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 250px;
-    color: #fff;
 
-    .line {
-      position: relative;
-      width: 100%;
-      height: 100px;
-      overflow: hidden;
-      &::before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        box-shadow: 0 0 50px 5px hsl(218, 100%, 59%);
-      }
-    }
+  .right__side__nav {
+    width: 100px;
+    min-height: 200px;
+    background-color: hsla(281, 100%, 50%, 0.242);
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 2;
 
-    .footer__container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width: 100%;
-      height: 50%;
-
-      .alexeg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        img {
-          width: 25px;
-          margin-top: 3px;
-          margin-inline: 3px;
-        }
-      }
-      .accounts {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        a {
-          color: #fff;
-        }
-        i {
-          transition: color 400ms;
-          cursor: pointer;
-          font-size: 2.5rem;
-          margin-inline: 3px;
-        }
-        i:hover {
-          color: #00a2e3;
-        }
-      }
+    :target {
+      border: solid 1px red;
+      color: #00a2e3;
     }
   }
 }
@@ -97,12 +52,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -45px -200px 100px 0px;
+  margin: -45px -200px 100px 0;
   overflow: hidden;
   // outline: solid 1px red; //////
+  z-index: 6;
 
   img {
     height: 100%;
+    z-index: 6;
   }
 }
 //*==========  Banner Container markdown Page [END here]  ==========*//
@@ -140,8 +97,6 @@
       width: 650px;
 
       box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
-      -webkit-box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
-      -moz-box-shadow: 0 0 10px 0 hsla(290, 100%, 50%, 0.808);
     }
   }
 

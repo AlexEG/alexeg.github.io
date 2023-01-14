@@ -1,0 +1,256 @@
+/* 
+______________
+how  I write comments 
+- // ↓↓ so it well dose that...
+- // ↓↓ or this line for ....
+margin-inline: auto;
+______________
+outline: 2px red solid; //////---
+this means: for testing and debuging code  //////---
+______________
+when nesting:
+add comment=> // ↓↓ aniyomi__body => main__app => header
+______________
+when you separating between nested class
+add comment=> //--------------------------
+then the comment 
+
+
+*/
+
+.aniyomi__body {
+  background-color: rgb(20, 20, 22);
+
+  background-image: -moz-linear-gradient(
+    75deg,
+    hsla(236, 100%, 23%, 0.2),
+    hsla(303, 100%, 30%, 0.2)
+  );
+
+  width: 100%;
+  height: 100vh;
+
+  //--------------------------
+  // ↓↓ aniyomi__body => main__app
+  // ↓↓ the main contanier well be 440px with
+  .main__app {
+    // outline: 2px red solid; //////---
+    background-color: rgb(20, 20, 22);
+    width: 440px;
+    height: 100%;
+
+    // ↓↓ to center the main app horizontaly when displayed on wide screen
+    margin-inline: auto;
+    position: relative;
+
+    //--------------------------
+    // ↓↓ aniyomi__body => main__app => header
+    .header {
+      // outline: 2px red solid; //////---
+      // background-color: hsla(246, 100%, 50%, 0.384); //////---
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 20px;
+
+      //--------------------------
+      // ↓↓ aniyomi__body =>main__app =>header =>h1
+      h1 {
+        margin: 0;
+        color: #b4b4b6;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+
+      //--------------------------
+      // ↓↓ aniyomi__body =>main__app =>header =>header__icons
+      .header__icons {
+        // outline: 2px red solid; //////---
+        padding: 5px;
+
+        //--------------------------
+        // ↓↓ aniyomi__body =>main__app =>header =>header__icons =>img
+        img {
+          width: 20px;
+          margin-inline: 10px;
+        }
+      }
+      // todo↓ header [END]
+    }
+    // _____________________________________
+    // ↓↓ aniyomi__body =>main__app =>anime__contanier
+    .anime__contanier {
+      // ↓↓ the height of header 80px + control panel 90px = 170px
+      height: calc(100% - 170px);
+      // background-color: hsl(281, 58%, 27%);
+      // ↓↓ so when you can scroll! but header is fixed as well
+      // ?? that means we need to nest header inside anime__contanier
+      overflow: auto;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+
+      //--------------------------
+      // ↓↓ aniyomi__body =>main__app =>anime__contanier =>anime__card
+      // ?? each card has two class one is global and the second is for img and name
+      .anime__card {
+        // outline: 2px blue solid; //////
+        height: 300px;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 5px;
+        //--------------------------
+
+        // ↓↓ aniyomi__body =>main__app =>anime__contanier =>anime__card =>img
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+        //--------------------------
+
+        // ↓↓ aniyomi__body =>main__app =>anime__contanier =>anime__card =>&::after
+        &::after {
+          outline: solid 2px red; ///////
+
+          position: absolute;
+          color: hsla(0, 0%, 100%, 0.863);
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 500;
+          text-align: left;
+          box-sizing: border-box;
+          padding: 15px;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          background-image: -moz-linear-gradient(
+            to top,
+            hsla(0, 0%, 0%, 0.767),
+            transparent
+          );
+          background-image: -webkit-linear-gradient(
+            to top,
+            hsla(0, 0%, 0%, 0.767),
+            transparent
+          );
+          background-image: linear-gradient(
+            to top,
+            hsla(0, 0%, 0%, 0.767),
+            transparent
+          );
+          opacity: 1;
+          transition: opacity 300ms;
+        }
+
+        //--------------------------
+        // ↓↓ aniyomi__body =>main__app =>anime__contanier =>anime__card =>&::before
+        &::before {
+          content: "";
+        }
+        &:hover:before {
+          background-color: hsla(0, 0%, 0%, 0.35);
+        }
+        // todo↓ anime__card [END]
+      }
+      ///////////////////////////////
+      // ↓↓ aniyomi__body =>main__app =>anime__contanier =>card1
+      .card1 {
+        background-image: url(../../assets/manga/page1/Chainsaw_Man.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card2 {
+        background-image: url(../../assets/manga/page2/Kaguya-sama\ wa\ Kokurasetai_.PNG);
+        &::after {
+          content: "Chainsaw Man 00 Man ";
+        }
+      }
+      .card3 {
+        background-image: url(../../assets/manga/page2/Uzaki-chan\ wa\ Asobitai!.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card4 {
+        background-image: url(../../assets/manga/page3/Re_Vol_16_English.png);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card5 {
+        background-image: url(../../assets/manga/page3/Volume_1.jpg);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card6 {
+        background-image: url(../../assets/manga/page4/Horimiya.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card7 {
+        background-image: url(../../assets/manga/page4/Yankee-kun\ to\ Hakujou\ Gaaru.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card8 {
+        background-image: url(../../assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru-10.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card9 {
+        background-image: url(../../assets/manga/page3/Fushi\ no\ Sougishi.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card10 {
+        background-image: url(../../assets/manga/page1/7_troublesome_days__Vol.1_Ch.5-26.png);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card11 {
+        background-image: url(../../assets/manga/page3/81QDxVfY65L.jpg);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      .card12 {
+        background-image: url(../../assets/manga/page4/Oku-sama\ wa\ Niizuma-chan.PNG);
+        &::after {
+          content: "Chainsaw Man";
+        }
+      }
+      ///////////////////////////////
+      // todo↓ anime__contanier [END]
+    }
+
+    // ↓↓ aniyomi__body =>main__app =>control__panel
+    .control__panel {
+      // outline: 2px red solid; //////---
+      height: 90px;
+      width: 440px;
+      background-color: hsl(230, 9%, 13%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      // todo↓ control__panel [END]
+    }
+    // _____________________________________
+    // todo↓ main__app [END]
+  }
+  // _____________________________________
+
+  // todo↓ aniyomi__body [END]
+}
+// _____________________________________
