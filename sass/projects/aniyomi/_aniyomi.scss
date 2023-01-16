@@ -17,14 +17,19 @@ then the comment
 
 
 */
-
+@use "./colors";
 .aniyomi__body {
-  background-color: rgb(20, 20, 22);
+  background-color: var(--bg-body);
 
   background-image: -moz-linear-gradient(
     75deg,
-    hsla(236, 100%, 23%, 0.2),
-    hsla(303, 100%, 30%, 0.2)
+    var(--bg-body-img1),
+    var(--bg-body-img2)
+  );
+  background-image: linear-gradient(
+    75deg,
+    var(--bg-body-img1),
+    var(--bg-body-img2)
   );
 
   width: 100%;
@@ -35,7 +40,7 @@ then the comment
   // ↓↓ the main contanier well be 440px with
   .main__app {
     // outline: 2px red solid; //////---
-    background-color: rgb(20, 20, 22);
+    background-color: var(--bg-body);
     width: 440px;
     height: 100%;
 
@@ -55,13 +60,8 @@ then the comment
       padding-inline: 20px;
 
       //--------------------------
-      // ↓↓ aniyomi__body =>main__app =>header =>h1
-      h1 {
-        margin: 0;
-        color: #b4b4b6;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
-      }
+
+  
 
       //--------------------------
       // ↓↓ aniyomi__body =>main__app =>header =>header__icons

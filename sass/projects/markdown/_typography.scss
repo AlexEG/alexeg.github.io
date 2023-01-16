@@ -1,0 +1,40 @@
+.main__contant__container__markdown {
+  color: #fff;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    letter-spacing: 1.05px;
+    word-spacing: 1.5px;
+    font-weight: 400;
+    margin-bottom: 45px;
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #00a2e3;
+    }
+
+    &.notes {
+      background-color: hsl(269, 50%, 10%);
+      position: relative;
+      padding-left: 15px;
+      padding-block: 5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background-color: hsl(269, 100%, 50%);
+      }
+    }
+  }
+}
