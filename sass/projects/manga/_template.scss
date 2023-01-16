@@ -1,0 +1,253 @@
+//==================================================
+//==================================================
+//-----  Line | Section Name | Last Update  ------
+/*
+[14]   //  main__container__manga__page//  2023-1-7
+[36]   //  manga__main__contanier      //  2023-1-7
+[89]   //  manga__card                 //  2023-1-7
+[89]   //  Cards                       //  2023-1-7
+[98]   //  banner__manga__page         //  2023-1-7
+
+*/
+//==================================================
+//==================================================
+//*==========  main__container__manga__page [START here]  ==========*//
+.main__container__manga__page {
+  background-color: hsl(0, 0%, 2%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 100px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding: 150px 75px;
+  }
+  @media (max-width: 910px) {
+    padding: 150px 50px;
+  }
+  @media (min-width: 300px) {
+    padding: 100px 5px;
+  }
+  //////////////////////////////////////
+  //*==========  Magic controller [START here]  ==========*//
+  .controller__container {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      width: 250px;
+      height: 60px;
+      border-radius: 0;
+    }
+
+    .cards:hover > .card::after {
+      opacity: 1;
+    }
+
+    .card {
+      // background-color: rgba(255, 255, 255, 0.849);
+      cursor: pointer;
+      height: 50px;
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card::before,
+    .card::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: opacity 500ms;
+    }
+
+    .card::before {
+      background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+      );
+      z-index: 3;
+    }
+
+    .card::after {
+      background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y),
+        hsla(0, 0%, 100%, 0.425),
+        transparent 30%
+      );
+      z-index: 1;
+    }
+
+    .card > .card-content {
+      background-color: var(--card-color);
+
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      inset: 1px;
+      padding: 10px;
+      position: absolute;
+      z-index: 2;
+
+      span {
+        color: hsl(0, 0%, 60%);
+        font-weight: 600;
+        font-size: 1rem;
+        margin: auto;
+      }
+    }
+    .card > .active {
+      background-color: hsla(283, 82%, 20%, 0.545);
+    }
+  }
+  //*==========  Magic controller [END here]  ==========*//
+  //////////////////////////////////////
+
+  //*==========  main__container__manga__page [END here]  ==========*//
+  //*==========  manga__main__contanier [START here]  ==========*//
+  .manga__contaner {
+    // outline: solid 2px red; ///////
+    min-width: 390px;
+    max-width: 1000px;
+    min-height: 500px;
+    z-index: 11;
+    margin-inline: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // justify-content: space-between;
+    row-gap: 30px;
+    ///////////
+    //*==========  manga__main__contanier [END here]  ==========*//
+
+    //*==========  manga__card [START here]  ==========*//
+    .manga__card {
+      // outline: 2px blue solid; //////
+      width: 300px;
+      height: 430px;
+      text-align: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      @media (max-width: 1200px) {
+        width: 280px;
+        height: 410px;
+        row-gap: 30px;
+      }
+      @media (max-width: 1100px) {
+        width: 255px;
+        height: 385px;
+        row-gap: 25px;
+      }
+      @media (max-width: 1000px) {
+        width: 225px;
+        height: 365px;
+        row-gap: 20px;
+      }
+      @media (max-width: 900px) {
+        width: 200px;
+        height: 340px;
+        row-gap: 15px;
+      }
+      @media (max-width: 800px) {
+        width: 150px;
+        height: 290px;
+        row-gap: 10px;
+      }
+      @media (max-width: 600px) {
+        width: 120px;
+        height: 220px;
+        row-gap: 10px;
+      }
+      @media (max-width: 500px) {
+        width: 110px;
+        height: 210px;
+        row-gap: 5px;
+      }
+      @media (max-width: 400px) {
+        width: 100px;
+        height: 240px;
+        row-gap: 5px;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      h2 {
+        color: #ffffff;
+        font-size: 1rem;
+      }
+      ////////////////////////////////////////////
+
+      &::after {
+        // outline: solid 2px red; ///////
+
+        position: absolute;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 60px;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+        background-image: -moz-linear-gradient(to top, #000000, transparent);
+        background-image: -webkit-linear-gradient(to top, #000000, transparent);
+        background-image: linear-gradient(to top, #000000, transparent);
+        z-index: 10;
+        opacity: 0;
+        transition: opacity 300ms;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+      ////////////////////////////////////////////
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background-color 350ms;
+      }
+      &:hover:before {
+        background-color: hsla(0, 0%, 0%, 0.35);
+      }
+      /////////////////////////////////
+      ///
+    }
+
+    //todo manga__card [END]
+
+    //*==========  manga__card [END here]  ==========*//
+    //todo manga__contaner [END]
+  }
+
+  //todo main__container__manga__page [END]
+}
+
+
