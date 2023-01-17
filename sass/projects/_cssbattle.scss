@@ -101,15 +101,16 @@
   background-color: hsla(264, 100%, 50%, 0.233);
   font-size: 0.9rem;
   color: black;
-  padding: 1px 0px 1px 3px;
+  padding: 1px 0 1px 3px;
   z-index: 1;
-  background-color: #ffffff;
   border: 2px solid transparent;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   width: 6em;
   height: 1.5em;
   display: inline-block;
+  -webkit-border-image: linear-gradient(to right, #ff005d, transparent);
+  -o-border-image: linear-gradient(to right, #ff005d, transparent);
+  -moz-border-image: linear-gradient(to right, #ff005d, transparent);
   border-image: linear-gradient(to right, #ff005d, transparent);
   border-image-slice: 1;
   outline: none;
@@ -131,15 +132,6 @@
 }
 
 //*==========  Cards Color [START here]  ==========*//
-:root {
-  --color1: #6592cf;
-  --color2: #62306d;
-  --color3: #0b2429;
-  --color4: #f5d6b4;
-  --color5: #f3ac3c;
-  --color6: #1a4341;
-  --color7: #293462;
-}
 
 //*****color1*****
 .card-3,

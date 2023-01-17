@@ -1,83 +1,85 @@
-.main__container__manga__page {
-  .manga4 {
-    //*==========  Cards [START here]  ==========*//
-    .card1 {
-      background-image: url(/assets/manga/page4/Yume\ Miru\ Prima\ Girl!.PNG);
-      &::after {
-        content: "Yume Miru Prima Girl!";
+.manga__body {
+  main {
+    .manga4 {
+      //*==========  Cards [START here]  ==========*//
+      .card1 {
+        background-image: url(/assets/manga/page4/Yume\ Miru\ Prima\ Girl!.PNG);
+        &::after {
+          content: "Yume Miru Prima Girl!";
+        }
       }
-    }
-    .card2 {
-      background-image: url(/assets/manga/page4/Horimiya.PNG);
-      &::after {
-        content: "Horimiya";
+      .card2 {
+        background-image: url(/assets/manga/page4/Horimiya.PNG);
+        &::after {
+          content: "Horimiya";
+        }
       }
-    }
-    .card3 {
-      background-image: url(/assets/manga/page4/Kiss\ de\ Fusaide\,\ Bare\ naide..PNG);
-      &::after {
-        content: "Kiss de Fusaide, Bare naide";
+      .card3 {
+        background-image: url(/assets/manga/page4/Kiss\ de\ Fusaide\,\ Bare\ naide..PNG);
+        &::after {
+          content: "Kiss de Fusaide, Bare naide";
+        }
       }
-    }
-    ////////////
-    .card4 {
-      background-image: url(/assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru\ -\ Vol.8\ Ch.63.5\ -\ Extras\ -\ 2.jpg);
-      &::after {
-        content: "Sono Bisque Doll wa Koi wo Suru Vol.8";
+      ////////////
+      .card4 {
+        background-image: url(/assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru\ -\ Vol.8\ Ch.63.5\ -\ Extras\ -\ 2.jpg);
+        &::after {
+          content: "Sono Bisque Doll wa Koi wo Suru Vol.8";
+        }
       }
-    }
-    .card5 {
-      background-image: url(/assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru-10.PNG);
-      &::after {
-        content: "Sono Bisque Doll wa Koi wo Suru Vol.10";
+      .card5 {
+        background-image: url(/assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru-10.PNG);
+        &::after {
+          content: "Sono Bisque Doll wa Koi wo Suru Vol.10";
+        }
       }
-    }
-    .card6 {
-      background-image: url(/assets/manga/page4/Sakura-chan\ to\ Amane-kun.PNG);
-      &::after {
-        content: "Sakura-chan to Amane-kun";
+      .card6 {
+        background-image: url(/assets/manga/page4/Sakura-chan\ to\ Amane-kun.PNG);
+        &::after {
+          content: "Sakura-chan to Amane-kun";
+        }
       }
-    }
-    ////////////
-    .card7 {
-      background-image: url(/assets/manga/page4/Another\ World\ Where\ I\ Cant\ Even\ Collapse\ and\ Die\ Vol.1.jpg);
-      &::after {
-        content: "Another World Where I Can't Even Collapse and Die - Vol.1 Ch.1 - 1";
+      ////////////
+      .card7 {
+        background-image: url(/assets/manga/page4/Another\ World\ Where\ I\ Cant\ Even\ Collapse\ and\ Die\ Vol.1.jpg);
+        &::after {
+          content: "Another World Where I Can't Even Collapse and Die - Vol.1 Ch.1 - 1";
+        }
       }
-    }
-    .card8 {
-      background-image: url(/assets/manga/page4/Yankee-kun\ to\ Hakujou\ Gaaru.PNG);
+      .card8 {
+        background-image: url(/assets/manga/page4/Yankee-kun\ to\ Hakujou\ Gaaru.PNG);
 
-      &::after {
-        content: "Yankee-kun to Hakujou Gaaru";
+        &::after {
+          content: "Yankee-kun to Hakujou Gaaru";
+        }
       }
-    }
-    .card9 {
-      background-image: url(/assets/manga/page4/You\ into\ Me.PNG);
-      &::after {
-        content: "You into Me";
+      .card9 {
+        background-image: url(/assets/manga/page4/You\ into\ Me.PNG);
+        &::after {
+          content: "You into Me";
+        }
       }
-    }
-    ////////////
-    .card10 {
-      background-image: url(/assets/manga/page4/Classroom\ of\ the\ Elite.PNG);
-      &::after {
-        content: "Classroom of the Elite";
+      ////////////
+      .card10 {
+        background-image: url(/assets/manga/page4/Classroom\ of\ the\ Elite.PNG);
+        &::after {
+          content: "Classroom of the Elite";
+        }
       }
-    }
-    .card11 {
-      background-image: url(/assets/manga/page4/Oku-sama\ wa\ Niizuma-chan.PNG);
-      &::after {
-        content: "Oku-sama wa Niizuma-chan";
+      .card11 {
+        background-image: url(/assets/manga/page4/Oku-sama\ wa\ Niizuma-chan.PNG);
+        &::after {
+          content: "Oku-sama wa Niizuma-chan";
+        }
       }
-    }
-    .card12 {
-      background-image: url(/assets/manga/page4/Danchigai\ -\ Chapter\ 126_\ Final\ Chapter\ -\ 1.jpg);
-      &::after {
-        content: "Danchigai - Chapter 126";
+      .card12 {
+        background-image: url(/assets/manga/page4/Danchigai\ -\ Chapter\ 126_\ Final\ Chapter\ -\ 1.jpg);
+        &::after {
+          content: "Danchigai - Chapter 126";
+        }
       }
+      //*==========  Cards [END here]  ==========*//
+      //todo manga4 [END]
     }
-    //*==========  Cards [END here]  ==========*//
-    //todo manga4 [END]
   }
 }

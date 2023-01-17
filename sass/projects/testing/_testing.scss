@@ -115,6 +115,14 @@ ____________________________________________________
     }
   }
   //*==========  Magic controller [END here]  ==========*//
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.521);
+    // position: relative;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 //*==========  Main Container testing Page [END here]  ==========*//

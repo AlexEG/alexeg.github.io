@@ -1,4 +1,26 @@
 .manga__body {
-  --bg-body:hsl(0, 0%, 2%);
+
+  --bg-body: hsl(0, 0%, 2%);
+
+  //??   _magic-controller [.controller__container]
+  //↓↓ controller__container =>card =>active
+  --boxActive:hsla(283, 82%, 20%, 0.545);
+  //↓↓ controller__container =>card::after
+  --boxBorder: hsla(0, 0%, 100%, 0.425);
+  //↓↓ controller__container =>card::before
+  --boxHover: hsla(0, 0%, 100%, 0.06);
+  //↓↓ controller__container =>card =>card-content
+  --box-bg: hsl(0, 0%, 8%);
+  //↓↓ controller__container =>card =>card-content =>span
+  --box-t: hsl(0, 0%, 60%);
+  //↓↓ controller__container =>card =>card-content =>span
   
+  //??   _cards-styles [.manga__contaner]
+  //↓↓ manga__contaner =>&::after 
+  --card-title:hsl(0, 0%, 100%);
+  //↓↓ manga__contaner =>&::after 
+  --card-title-bg-lg:hsl(0, 0%, 0%);
+  //↓↓ manga__contaner =>&:hover:before
+  --card-bg-lg:hsla(0, 0%, 0%, 0.35);
+
 }

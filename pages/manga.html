@@ -9,22 +9,26 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../assets/images/icons8-html-5-48.svg"
+      href="/assets/images/anime.ico"
     />
     <link rel="stylesheet" href="../dist/main.css" />
     <link rel="stylesheet" href="../dist/all.min.css" />
 
     <!--!============  Google Fonts [START here] ============*-->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <!--!============  Google Fonts [END here] ============*-->
   </head>
 
-  <body class="manga__body">
+  <body id="mangaBody" class="manga__body">
+    <div id="reader" class="reader hide">
+      <div id="readerBg" class="bg-hide"></div>
+      <div id="quickview" class="manga-page"></div>
+    </div>
     <!--!============  header [START here] ============*-->
     <header class="manga__page__header">
       <!--*============  Navigation Bar [START here] ============*-->
@@ -79,52 +83,81 @@
       <!--*============  Banner Manga [END here] ============*-->
     </header>
     <!--!============  header [END here] ============*-->
-    <!-- ////////////////////////////////////////////////// -->
-    <!--!============  MAIN [START here] ============*-->
-    <main class="main__container__manga__page">
-      <!-- ////////////////////////////////////////////////// -->
+
       <!--*============  Magic controller  [START here] ============*-->
       <div class="controller__container">
+        <div class="light-dark-mode"></div>
         <div id="cards" class="cards">
-          <!-- ///////////////////////////// -->
-          <div id="btnpage1" class="card">
-            <div class="card-content active"><span>1</span></div>
-          </div>
-          <div id="btnpage2" class="card">
-            <div class="card-content"><span>2</span></div>
-          </div>
-          <div id="btnpage3" class="card">
-            <div class="card-content"><span>3</span></div>
-          </div>
-          <div id="btnpage4" class="card">
-            <div class="card-content"><span>4</span></div>
-          </div>
-          <!-- ///////////////////////////// -->
 
-          <!-- todo #cards END-->
+          <div id="btnpage1" class="card">
+            <div id="btnactive1" class="card-content active">
+              <span>1</span>
+            </div>
+          </div>
+          
+          <div id="btnpage2" class="card">
+            <div id="btnactive2" class="card-content btnactive2">
+              <span>2</span>
+            </div>
+          </div>
+          
+          <div id="btnpage3" class="card">
+            <div id="btnactive3" class="card-content btnactive3">
+              <span>3</span>
+            </div>
+          </div>
+
+          <div id="btnpage4" class="card">
+            <div id="btnactive4" class="card-content btnactive4">
+              <span>4</span>
+            </div>
+          </div>
+
+
+
         </div>
-        <!-- todo controller__container END-->
+        
       </div>
       <!--*============  Magic controller  [END here] ============*-->
-
-      <!-- ////////////////////////////////////////////////// -->
-      <div class="manga__contaner manga1">
-        <!-- ////////////// -->
-        <div class="manga__card card1"></div>
-        <div class="manga__card card2"></div>
-        <div class="manga__card card3"></div>
-        <div class="manga__card card4"></div>
-        <div class="manga__card card5"></div>
-        <div class="manga__card card6"></div>
-        <div class="manga__card card7"></div>
-        <div class="manga__card card8"></div>
-        <div class="manga__card card9"></div>
-        <div class="manga__card card10"></div>
-        <div class="manga__card card11"></div>
-        <div class="manga__card card12"></div>
-        <!-- ////////////// -->
-
-        <!-- todo books__contanier [END] -->
+      <!--!============  MAIN [START here] ============*-->
+      <main>
+      <div id="mangaContaner" class="manga__contaner manga1">
+        <div class="manga__card card1">
+          <div id="readerBtn1" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card2">
+          <div id="readerBtn2" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card3">
+          <div id="readerBtn3" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card4">
+          <div id="readerBtn4" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card5">
+          <div id="readerBtn5" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card6">
+          <div id="readerBtn6" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card7">
+          <div id="readerBtn7" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card8">
+          <div id="readerBtn8" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card9">
+          <div id="readerBtn9" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card10">
+          <div id="readerBtn10" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card11">
+          <div id="readerBtn11" class="btn">quick view</div>
+        </div>
+        <div class="manga__card card12">
+          <div id="readerBtn12" class="btn">quick view</div>
+        </div>
       </div>
     </main>
     <!--!============  MAIN [END here] ============*-->
