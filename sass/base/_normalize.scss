@@ -10,9 +10,15 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /* Sections
    ========================================================================== */
 
@@ -22,6 +28,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -37,9 +44,11 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1,
+h1,
+h3 {
+  line-height: 1.1;
+  margin-top: 0;
 }
 
 /* Grouping content
@@ -73,8 +82,11 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
-a {
+a,
+a:visited,
+a:active {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -85,8 +97,6 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -267,7 +277,6 @@ textarea {
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }

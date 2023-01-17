@@ -1,0 +1,82 @@
+.manga__body {
+  main {
+    .manga3 {
+      //*==========  Cards [START here]  ==========*//
+      .card1 {
+        background-image: url(/assets/manga/page3/Re_Vol_16_English.png);
+        &::after {
+          content: "Tokyo Ghoul";
+        }
+      }
+      .card2 {
+        background-image: url(/assets/manga/page3/Volume_1.jpg);
+        &::after {
+          content: "0000000";
+        }
+      }
+      .card3 {
+        background-image: url(/assets/manga/page3/81QDxVfY65L.jpg);
+        &::after {
+          content: "TOMIE";
+        }
+      }
+      .card4 {
+        background-image: url(/assets/manga/page3/Fushi\ no\ Sougishi.PNG);
+        &::after {
+          content: "Fushi no Sougishi";
+        }
+      }
+      .card5 {
+        background-image: url(/assets/manga/page3/Kings-Viking.PNG);
+        &::after {
+          content: "Kings' Viking";
+        }
+      }
+      .card6 {
+        background-image: url(/assets/manga/page3/Pumpkin\ Night.PNG);
+        &::after {
+          content: "Pumpkin Night";
+        }
+      }
+      .card7 {
+        background-image: url(/assets/manga/page3/Reincarnation\ of\ the\ Suicidal\ Battle\ God.PNG);
+        &::after {
+          content: "Reincarnation of the Suicidal Battle God";
+        }
+      }
+      .card8 {
+        background-image: url(/assets/manga/page3/Kaiju\ No.\ 8.PNG);
+
+        &::after {
+          content: "Kaiju No. 8";
+        }
+      }
+      .card9 {
+        background-image: url(/assets/manga/page3/Jumyou\ wo\ Kaitotte\ Moratta.\ Ichinen\ ni\ Tsuki\,\ Ichimanen\ de..PNG);
+        &::after {
+          content: "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.";
+        }
+      }
+      .card10 {
+        background-image: url(/assets/manga/page3/The\ Beginning-After-the-End.PNG);
+        &::after {
+          content: "The Beginning After the End";
+        }
+      }
+      .card11 {
+        background-image: url(/assets/manga/page3/Jujika\ no\ Rokunin.PNG);
+        &::after {
+          content: "Jujika no Rokunin";
+        }
+      }
+      .card12 {
+        background-image: url(/assets/manga/page3/Kakegurui\ -\ Compulsive\ Gambler\ -\ Chapter\ 1\ -\ 1.jpg);
+        &::after {
+          content: "Kakegurui - Compulsive Gambler - Chapter 1 - 1";
+        }
+      }
+      //*==========  Cards [END here]  ==========*//
+      //todo manga3 [END]
+    }
+  }
+}

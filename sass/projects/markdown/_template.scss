@@ -1,0 +1,47 @@
+//==================================================
+//==================================================
+//-----  Line | Section Name | Last Update  ------
+/*
+[17]   //  Main container              //  2022-12-14
+[29]   //  ----                        //  2022-12-14
+[85]   //  ----                        //  2022-12-14
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+[00]   //  -------------------------   //  2022-12-0
+____________________________________________________
+[127]  header => _navigation.scss
+[26]   sidebar => _navigation.scss
+*/
+//==================================================
+//==================================================
+
+//*==========  main Container markdown Page [START here]  ==========*//
+
+.main__container__markdown__page {
+  background-color: hsl(0, 0%, 3%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 85px 200px 0 250px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  position: relative;
+
+  .right__side__nav {
+    width: 100px;
+    min-height: 200px;
+    background-color: hsla(281, 100%, 50%, 0.242);
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 2;
+
+    :target {
+      border: solid 1px red;
+      color: #00a2e3;
+    }
+  }
+}
+
+//*==========  Main Container markdown Page [END here]  ==========*//

@@ -16,9 +16,11 @@ ____________________________________________________
 //==================================================
 //==================================================
 
+.testing__body {
+  background-color: var(--testing-body-bg);
+}
 //*==========  main Container testing Page [START here]  ==========*//
 .main__container__testing__page {
-  background-color: hsl(0, 0%, 2%);
   width: 100%;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -113,6 +115,14 @@ ____________________________________________________
     }
   }
   //*==========  Magic controller [END here]  ==========*//
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.521);
+    // position: relative;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 //*==========  Main Container testing Page [END here]  ==========*//
