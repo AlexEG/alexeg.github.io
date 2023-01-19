@@ -43,6 +43,8 @@ function gotoAniyomi(link) {
 // manga sub pages
 // manga single page app  [Page Controller]
 const mangaContaner = document.querySelector("#mangaContaner");
+const bannerImg = document.querySelector("#bannerImg");
+const bannerMangaImg = document.querySelector("#bannerMangaImg");
 
 const btnpPage1 = document.querySelector("#btnpage1");
 const btnpPage2 = document.querySelector("#btnpage2");
@@ -61,10 +63,23 @@ btnpPage1.addEventListener("click", function () {
   mangaContaner.classList.remove("manga4");
   mangaContaner.classList.add("manga1");
 
+  bannerImg.classList.remove("banner-img2");
+  bannerImg.classList.remove("banner-img3");
+  bannerImg.classList.remove("banner-img4");
+  bannerImg.classList.add("banner-img1");
+
+
+
   btnactive2.classList.remove("active");
   btnactive3.classList.remove("active");
   btnactive4.classList.remove("active");
   btnactive1.classList.add("active");
+
+  bannerMangaImg.innerHTML=`<img
+  src="/assets/manga/page1/Awkward_Senpai.webp"
+  alt="page banner"
+/>`;
+
   mangaContaner.innerHTML=`
 <div class="manga__card card1">
   <div id="readerBtn1" class="btn">quick view</div>
@@ -112,10 +127,22 @@ btnpPage2.addEventListener("click", function () {
   mangaContaner.classList.remove("manga4");
   mangaContaner.classList.add("manga2");
 
+  bannerImg.classList.remove("banner-img1");
+  bannerImg.classList.remove("banner-img3");
+  bannerImg.classList.remove("banner-img4");
+  bannerImg.classList.add("banner-img2");
+
+
   btnactive1.classList.remove("active");
   btnactive3.classList.remove("active");
   btnactive4.classList.remove("active");
   btnactive2.classList.add("active");
+
+  bannerMangaImg.innerHTML=`<img
+  src="/assets/manga/page2/Beautiful Girl and Dangerous Bodyguard.webp"
+  alt="page banner"
+/>`;
+
   mangaContaner.innerHTML=`
 <div class="manga__card card1">
   <div id="readerBtn13" class="btn">quick view</div>
@@ -163,6 +190,16 @@ btnpPage3.addEventListener("click", function () {
   mangaContaner.classList.remove("manga4");
   mangaContaner.classList.add("manga3");
 
+  bannerImg.classList.remove("banner-img1");
+  bannerImg.classList.remove("banner-img2");
+  bannerImg.classList.remove("banner-img4");
+  bannerImg.classList.add("banner-img3");
+
+  bannerMangaImg.innerHTML=`<img
+  src="/assets/manga/page3/The Beginning-After-the-End.webp"
+  alt="page banner"
+/>`;
+
   btnactive1.classList.remove("active");
   btnactive2.classList.remove("active");
   btnactive4.classList.remove("active");
@@ -175,6 +212,16 @@ btnpPage4.addEventListener("click", function () {
   mangaContaner.classList.remove("manga2");
   mangaContaner.classList.remove("manga3");
   mangaContaner.classList.add("manga4");
+
+  bannerImg.classList.remove("banner-img1");
+  bannerImg.classList.remove("banner-img2");
+  bannerImg.classList.remove("banner-img3");
+  bannerImg.classList.add("banner-img4");
+
+  bannerMangaImg.innerHTML=`<img
+  src="/assets/manga/page4/Sono Bisque Doll wa Koi wo Suru-10.webp"
+  alt="page banner"
+/>`;
 
   btnactive1.classList.remove("active");
   btnactive2.classList.remove("active");
@@ -298,3 +345,42 @@ function section9(link) {
 function section10(link) {
   location.href = "#section3";
 }
+
+
+
+//light Dark Mode
+
+const lightDarkMode =document.querySelector('#lightDarkMode');
+const mangaBody =document.querySelector('#mangaBody');
+
+lightDarkMode.addEventListener("click", function () {
+  // mangaBody.toggleClass("light-theme")
+
+  if (mangaBody.classList.contains("light-theme")) {
+    mangaBody.classList.remove("light-theme");
+  } else {
+    mangaBody.classList.add("light-theme");
+  }
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

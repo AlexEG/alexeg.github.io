@@ -39,12 +39,12 @@
       </nav>
       <!--*============  Navigation Bar [END here] ============*-->
       <!--*============  Banner Manga [START here] ============*-->
-      <div class="banner__manga__page manga1">
+      <div id="bannerImg" class="banner__manga__page banner-img1">
         <!-- ///////////////////////////////////////// -->
-        <div class="inside__conainer">
-          <div class="manga__image">
+        <div class="inside__conainer ">
+          <div id="bannerMangaImg" class="manga__image">
             <img
-              src="../assets/manga/page1/Awkward_Senpai.webp"
+              src="/assets/manga/page1/Awkward_Senpai.webp"
               alt="page banner"
             />
           </div>
@@ -84,43 +84,41 @@
     </header>
     <!--!============  header [END here] ============*-->
 
-      <!--*============  Magic controller  [START here] ============*-->
-      <div class="controller__container">
-        <div class="light-dark-mode"></div>
-        <div id="cards" class="cards">
-
-          <div id="btnpage1" class="card">
-            <div id="btnactive1" class="card-content active">
-              <span>1</span>
-            </div>
-          </div>
-          
-          <div id="btnpage2" class="card">
-            <div id="btnactive2" class="card-content btnactive2">
-              <span>2</span>
-            </div>
-          </div>
-          
-          <div id="btnpage3" class="card">
-            <div id="btnactive3" class="card-content btnactive3">
-              <span>3</span>
-            </div>
-          </div>
-
-          <div id="btnpage4" class="card">
-            <div id="btnactive4" class="card-content btnactive4">
-              <span>4</span>
-            </div>
-          </div>
-
-
-
-        </div>
-        
+    <!--*============  Magic controller  [START here] ============*-->
+    <div class="controller__container">
+      <div id="lightDarkMode" class="light-dark-btn">
+        <div class="circle"></div>
       </div>
-      <!--*============  Magic controller  [END here] ============*-->
-      <!--!============  MAIN [START here] ============*-->
-      <main>
+
+      <div id="cards" class="cards">
+        <div id="btnpage1" class="card">
+          <div id="btnactive1" class="card-content active">
+            <span>1</span>
+          </div>
+        </div>
+
+        <div id="btnpage2" class="card">
+          <div id="btnactive2" class="card-content btnactive2">
+            <span>2</span>
+          </div>
+        </div>
+
+        <div id="btnpage3" class="card">
+          <div id="btnactive3" class="card-content btnactive3">
+            <span>3</span>
+          </div>
+        </div>
+
+        <div id="btnpage4" class="card">
+          <div id="btnactive4" class="card-content btnactive4">
+            <span>4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--*============  Magic controller  [END here] ============*-->
+    <!--!============  MAIN [START here] ============*-->
+    <main>
       <div id="mangaContaner" class="manga__contaner manga1">
         <div class="manga__card card1">
           <div id="readerBtn1" class="btn">quick view</div>
@@ -193,6 +191,6 @@
       </div>
     </footer>
     <!--!============  FOOTER [END here] ============* -->
-    <script src="../script.js"></script>
+    <script src="/app/script.js"></script>
   </body>
 </html>

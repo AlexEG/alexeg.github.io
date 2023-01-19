@@ -1,4 +1,16 @@
 .manga__body {
+
+  header .banner-img3 {
+    &::before {
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.292),
+          rgb(0, 0, 0)
+        ),
+        url(/assets/manga/page3/The\ Beginning-After-the-End.webp);
+    }
+  }
+
   main {
     .manga3 {
       //*==========  Cards [START here]  ==========*//

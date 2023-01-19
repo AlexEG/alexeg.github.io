@@ -1,4 +1,16 @@
 .manga__body {
+
+  header .banner-img4 {
+    &::before {
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.292),
+          rgb(0, 0, 0)
+        ),
+        url(/assets/manga/page4/Sono\ Bisque\ Doll\ wa\ Koi\ wo\ Suru-10.webp);
+    }
+  }
+
   main {
     .manga4 {
       //*==========  Cards [START here]  ==========*//
