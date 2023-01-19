@@ -2,6 +2,7 @@
   background-color: var(--bg-body);
   min-height: 100vh;
   padding-top: 40px;
+  transition: 900ms background-color ease-in-out;
 
   main {
     // border: solid 2px rgb(0, 255, 234); ///////
@@ -26,8 +27,6 @@
 
     //todo main__container__manga__page [END]
 
-    
-
     .btn {
       width: 100px;
       height: 25px;
@@ -38,11 +37,6 @@
     }
   }
 }
-
-
-
-
-
 
 .reader {
   position: fixed;
@@ -57,13 +51,9 @@
     width: 100%;
     background: hsla(0, 0%, 0%, 0.877);
   }
-
-  
 }
 
-
 .manga-page {
-
   width: 450px;
   height: 100%;
   margin-inline: auto;
