@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss","index.css"],"names":[],"mappings":"AAAA,KACE,qBCCF","file":"index.css","sourcesContent":["body {\r\n  background-color: hsl(0, 0%, 0%);\r\n}\r\n","body {\n  background-color: hsl(0, 0%, 0%);\n}"]}

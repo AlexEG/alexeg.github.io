@@ -5,237 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlexEG</title>
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/ALEXEG.png"
     />
-    <link rel="stylesheet" href="/dist/main.css" />
-    <link rel="stylesheet" href="../dist/all.min.css" />
-
+    <link rel="stylesheet" href="/dist/index.css" />
     <!--!============  Google Fonts [START here] ============*-->
-     <!-- Oleo -->
+    <!-- Oleo -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
       rel="stylesheet"
-    /> 
-
+    />
     <!-- Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    /> 
+    />
     <!--!============  Google Fonts [END here] ============*-->
   </head>
-
   <body>
-
-    <!--!============  header [START here] ============*-->
-    <header class="home__page__header">
-      <!--*============  Navigation Bar [START here] ============*-->
-      <nav class="navigation__bar__home">
-        <div id="navbarList" class="links-container">
-          <a class="back" href="#">HOME</a>
-        </div>
-      </nav>
-      <!--*============  Navigation Bar [END here] ============*-->
-    </header>
-    <!--!============  header [END here] ============*-->
-    <!-- ////////////////////////////////////////////////// -->
-    <!--!============  MAIN [START here] ============*-->
-    <main class="main-container-home-page">
-      <!--*============  Magic Cards  [START here] ============*-->
-      <div id="cards">
-        <div class="card" onclick="gotoCssBattle(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img src="/assets/images/cssbattle.png" alt="" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>CSS Battle</h3>
-                  <h4>
-                    Find here my solutions and some note plus tips & tricks
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" onclick="gotoMarkdown(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img
-                src="/assets/markdown/markdown-banner-getting-started.jpg"
-                alt=""
-              />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Markdown Guide</h3>
-                  <h4>
-                    A reference to the Markdown syntax plus Hacks for github
-                    profiles and more....
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" onclick="gotoYoutubePage(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img
-                class="youtube__image"
-                src="/assets/images/youtube_logo_dark-920x460.webp"
-                alt=""
-              />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>My Subscriptions</h3>
-                  <h4>Find here my favorite YoutTube channels of all time</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" onclick="gotoHTMLpage(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img src="/assets/images/html-card-bg.png" alt="" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>HTML</h3>
-                  <h4>HTML5</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" onclick="gotoTesting(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img src="/assets/Testing-Page/testingpage.jpg" alt="" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>TESTING</h3>
-                  <h4>Just Testing a new things here</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" onclick="gotoManga(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img
-                src="/assets/manga/page4/Sono Bisque Doll wa Koi wo Suru-10.webp"
-                alt="my favorite manga"
-              />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Manga</h3>
-                  <h4>
-                    Here is all the manag that I've ever read it plus my
-                    favorite ones
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" onclick="gotoBooks(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img
-                src="/assets/books/JavaScript for Dummies 4Th Ed.png"
-                alt="My Books"
-              />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>BOOKS</h3>
-                  <h4>Here my favorite books about web & CS and more...</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" onclick="gotoAniyomi(this)">
-          <div class="card-content">
-            <div class="card-image">
-              <img src="/assets/aniyomi/aniyomi logo.jpg" alt="My Books" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>BOOKS</h3>
-                  <h4>Here my favorite books about web & CS and more...</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ///////////// -->
-      </div>
-      <!--*============  Magic Cards  [END here] ============*-->
-    </main>
-    <!--!============  MAIN [END here] ============*-->
-    <!-- ////////////////////////////////////////////////// -->
-
-    <!-- !============  FOOTER [START here] ============*-->
-    <!-- special class for each page  -->
-    <footer class="home__page__footer">
-      <div class="line"></div>
-      <div class="footer__container">
-        <div class="alexeg">
-          Made With <img src="./assets/markdown/heart.png" alt="" /> By AlexEG ©
-          2023
-        </div>
-        <div class="accounts">
-          <a href="https://github.com/AlexEG" target="_blank">
-            <i class="fa-brands fa-github fa-fw fa-2x github"></i
-          ></a>
-          <a href="https://codepen.io/Alexander_EG" target="_blank">
-            <i class="fa-brands fa-codepen fa-fw fa-2x"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/mohamed-adel-69a452249/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-fw fa-2x"></i
-          ></a>
-          <a
-            href="https://www.freecodecamp.org/fcc4dcee3ab-a388-4f70-9ad9-0ac52ed81dc7"
-            target="_blank"
-            ><i class="fa-brands fa-free-code-camp"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
-    <!--!============  FOOTER [END here] ============* -->
     <script src="/app/script.js"></script>
   </body>
 </html>
