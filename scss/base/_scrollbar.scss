@@ -1,0 +1,14 @@
+body {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: hsla(0, 0%, 0%, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 0%, 0);
+  }
+
+  // scrollbar for firefox
+  scrollbar-width: none;
+}
