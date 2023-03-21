@@ -5,31 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlexEG</title>
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/ALEXEG.png"
+      href="./assets/AlexEG.png"
     />
-    <link rel="stylesheet" href="/dist/index.css" />
-    <!--!============  Google Fonts [START here] ============*-->
-    <!-- Oleo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!--!============  Google Fonts [END here] ============*-->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="./dist/all.min.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+      body {
+        background-color: hsl(0, 0%, 2%);
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        /* border: 2px solid red; */
+        font-family: Lobster;
+        text-shadow: 0 0 1px;
+        filter: drop-shadow(0 0 80px hsl(273, 100%, 50%));
+        transition: filter 200ms ease-in-out;
+      }
+      a:hover {
+        filter: drop-shadow(0 0 80px hsl(315, 100%, 50%));
+      }
+    </style>
   </head>
+
   <body>
-    <script src="/app/script.js"></script>
+    <a href="../PROJECTS/" title="All My Projects in One Place"> PROJECTS</a>
   </body>
 </html>
