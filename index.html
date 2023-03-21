@@ -5,207 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlexEG</title>
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/AlexEG.png"
     />
-    <link rel="stylesheet" href="./dist/normalize.css" />
-    <link rel="stylesheet" href="./dist/style.css" />
-    <!--!============  Google Fonts [START here] ============*-->
-    <!-- Oleo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!--!============  Google Fonts [END here] ============*-->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="./dist/all.min.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+      body {
+        background-color: hsl(0, 0%, 2%);
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        /* border: 2px solid red; */
+        font-family: Lobster;
+        text-shadow: 0 0 1px;
+        filter: drop-shadow(0 0 80px hsl(273, 100%, 50%));
+        transition: filter 200ms ease-in-out;
+      }
+      a:hover {
+        filter: drop-shadow(0 0 80px hsl(315, 100%, 50%));
+      }
+    </style>
   </head>
+
   <body>
-    <section class="hero">
-      <div>
-        <p>
-          “ You simply don't know what you believe, before that. You are too
-          complex to understand yourself ” <span>-Jordan B. Peterson</span>
-        </p>
-      </div>
-    </section>
-    <main>
-      <section class="projects">
-        <div class="wrapper projects__wrapper">
-          <div class="projects__grid">
-            <h2 class="projects__headline header-xl">Projects</h2>
-            <a href="#contact" class="projects__contact underline"
-              >Contact me</a
-            >
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="./assets/images/thumbnail-project-1-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="./assets/images/thumbnail-project-1-small.webp"
-                  alt="screenshot of design portfolio website"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Design Portfolio</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="./assets/images/thumbnail-project-2-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="./assets/images/thumbnail-project-2-small.webp"
-                  alt="screenshot of learning platform website with different courses"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">E-Learning Landing Page</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="./assets/images/thumbnail-project-3-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="./assets/images/thumbnail-project-3-small.webp"
-                  alt="screenshot of To Do App showing a list of active and complete tasks"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Todo Web App</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="./assets/images/thumbnail-project-4-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="./assets/images/thumbnail-project-4-small.webp"
-                  alt="screenshot of video player app with grid of thumbnails of movies and TV shows"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Entertainment Web App</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="./assets/images/thumbnail-project-5-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="./assets/images/thumbnail-project-5-small.webp"
-                  alt="screenshot of 4-player memory game with circular tiles that have symbols"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Memory Game</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <picture class="projects__picture">
-                <source
-                  media="(min-width: 62.5em)"
-                  srcset="./assets/images/thumbnail-project-6-large.webp"
-                />
-                <img
-                  class="projects__image"
-                  src="./assets/images/thumbnail-project-6-small.webp"
-                  alt="grid of thumbnails of famous works of art"
-                  width-="343"
-                  height="253"
-                />
-              </picture>
-              <h3 class="projects__name">Art Gallery Showcase</h3>
-              <p class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </p>
-              <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="./dist/index.js"></script>
+    <a href="../PROJECTS/" title="All My Projects in One Place"> PROJECTS</a>
   </body>
 </html>
