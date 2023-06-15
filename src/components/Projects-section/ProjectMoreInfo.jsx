@@ -5,5 +5,4 @@ function ProjectMoreInfo() {
     </div>
   );
 }
-
 export default ProjectMoreInfo;

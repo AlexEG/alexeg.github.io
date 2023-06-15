@@ -1,4 +1,4 @@
-import ProjectContainer from "./projectContainer";
+import ProjectContainer from "./ProjectContainer";
 // images
 import YourMangaImg from "../../assets/Screenshot 2023-06-13 at 16-27-08 YourManga.png";
 import statsPreviewCardComponentImg from "../../assets/localhost_5173_.png";
@@ -23,7 +23,10 @@ function ProjectSection() {
         projectName="YourManga"
         direction="left"
         img={YourMangaImg}
-        langsToolsArr={[CSS, REACT, NODEJS, NEXTJS]}
+        langsToolsArr={[CSS, REACT, NODEJS, NEXTJS, TS]}
+        githubLink="https://github.com/AlexEG/YourManga"
+        liveDemoLink="https://alexeg.github.io/YourManga/"
+        projectHistoryLink="https://alexeg.github.io/PROJECTS/"
       />
 
       <ProjectContainer
@@ -31,6 +34,9 @@ function ProjectSection() {
         direction="right"
         img={statsPreviewCardComponentImg}
         langsToolsArr={[NODEJS, NEXTJS, FIREBASE, VITE, TIALWINDCSS, HTML]}
+        githubLink="https://github.com/AlexEG/stats-preview-card-component"
+        liveDemoLink="https://guileless-fairy-6adaab.netlify.app/"
+        projectHistoryLink="https://alexeg.github.io/PROJECTS/"
       />
 
       <ProjectContainer
@@ -38,6 +44,9 @@ function ProjectSection() {
         direction="left"
         img={Every_Day_Calendar}
         langsToolsArr={[HTML, TIALWINDCSS, JS]}
+        githubLink="https://github.com/AlexEG/Every_Day_Calendar"
+        liveDemoLink="https://alexeg.github.io/Every_Day_Calendar/"
+        projectHistoryLink="https://alexeg.github.io/PROJECTS/"
       />
     </section>
   );

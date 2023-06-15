@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-key */
+// eslint-disable-next-line react/prop-types
+
 function ProjectLanguagesTools({ langsToolsArr }) {
-  function icon(lang) {
-    return <img src={lang} width="30" />;
-  }
-  let LanguagesAndTools = langsToolsArr.map((lang) => icon(lang));
+  let LanguagesAndTools = langsToolsArr.map((lang) => (
+    <img src={lang} width="30" />
+  ));
 
   return (
     <div className=" w-full py-1 px-1 flex justify-end gap-1">
