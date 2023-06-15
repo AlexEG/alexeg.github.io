@@ -2,46 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AlexEG</title>
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/AlexEG.png"
-    />
-    <link rel="stylesheet" href="./dist/main.css" />
-    <link rel="stylesheet" href="./dist/all.min.css" />
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
-      body {
-        background-color: hsl(0, 0%, 2%);
-        display: grid;
-        place-items: center;
-        height: 100vh;
-        overflow: hidden;
-      }
-      a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 2rem;
-        /* border: 2px solid red; */
-        font-family: Lobster;
-        text-shadow: 0 0 1px;
-        filter: drop-shadow(0 0 80px hsl(273, 100%, 50%));
-        transition: filter 200ms ease-in-out;
-      }
-      a:hover {
-        filter: drop-shadow(0 0 80px hsl(315, 100%, 50%));
-      }
-    </style>
+    <title>Vite + React</title>
   </head>
-
   <body>
-    <a href="../PROJECTS/" title="All My Projects in One Place"> PROJECTS</a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
