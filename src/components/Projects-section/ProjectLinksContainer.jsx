@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ProjectLinks from "./ProjectLinks";
 
 function ProjectLinksContainer({

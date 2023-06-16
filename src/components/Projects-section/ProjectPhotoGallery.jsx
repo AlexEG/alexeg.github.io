@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function ProjectPhotoGallery({ img }) {
   return (
     <div className=" bg-gray-900 h-64  flex justify-center relative">
