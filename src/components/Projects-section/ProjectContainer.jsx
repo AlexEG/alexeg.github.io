@@ -2,18 +2,10 @@
 import ProjectBox from "./ProjectBox";
 // import ProjectMoreInfo from "./ProjectMoreInfo";
 
-function ProjectContainer({
-  direction = "right",
-  projectName = "Project Name !?",
-  img,
-  langsToolsArr,
-  githubLink,
-  liveDemoLink,
-  projectHistoryLink,
-}) {
+function ProjectContainer({ projectData }) {
   let justify = "";
 
-  direction === "left"
+  projectData.direction === "left"
     ? (justify = "justify-end")
     : (justify = "justify-start");
 
@@ -22,14 +14,14 @@ function ProjectContainer({
       className={`w-full h-96 flex ${justify} p-2  from-red-800 to-blue-800`}
     >
       <ProjectBox
-        projectName={projectName}
-        img={img}
-        langsToolsArr={langsToolsArr}
-        githubLink={githubLink}
-        liveDemoLink={liveDemoLink}
-        projectHistoryLink={projectHistoryLink}
+        projectName={projectData.projectName}
+        img={projectData.img}
+        langsToolsArr={projectData.langsToolsArr}
+        githubLink={projectData.githubLink}
+        liveDemoLink={projectData.liveDemoLink}
+        projectHistoryLink={projectData.projectHistoryLink}
       />
-
+      {console.log(projectData)}
       {/* <ProjectMoreInfo /> */}
     </div>
   );

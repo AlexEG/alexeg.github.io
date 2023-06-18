@@ -12,6 +12,10 @@ import NEXTJSicon from "../../assets/icons/NextJS-Dark.svg";
 import NODEJSicon from "../../assets/icons/NodeJS-Dark.svg";
 import ELECTRONicon from "../../assets/icons/Electron.svg";
 import GOLANGicon from "../../assets/icons/GoLang.svg";
+import SASSicon from "../../assets/icons/Sass.svg";
+import NETLIFYicon from "../../assets/icons/Netlify-Dark.svg";
+import MARKDOWNicon from "../../assets/icons/Markdown-Dark.svg";
+import ASTROicon from "../../assets/icons/Astro.svg";
 
 export default {
   HTML: HTMLicon,
@@ -26,4 +30,8 @@ export default {
   NODEJS: NODEJSicon,
   ELECTRON: ELECTRONicon,
   GOLANG: GOLANGicon,
+  SASS: SASSicon,
+  NETLIFY: NETLIFYicon,
+  MARKDOWN: MARKDOWNicon,
+  ASTRO: ASTROicon,
 };
