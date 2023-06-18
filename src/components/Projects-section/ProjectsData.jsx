@@ -9,15 +9,14 @@ class Project {
   static projectsCount = 0;
   constructor(
     projectName,
-    direction,
     img,
     langsToolsArr,
     githubLink,
     liveDemoLink,
     projectHistoryLink
   ) {
+    this.projectID = `Project ${Project.projectsCount}`;
     this.projectName = projectName;
-    this.direction = direction;
     this.img = img;
     this.langsToolsArr = langsToolsArr;
     this.githubLink = githubLink;
@@ -33,7 +32,6 @@ class Project {
 export default [
   new Project(
     "YourManga",
-    "left",
     YourMangaImg,
     [
       Icons.HTML,
@@ -49,7 +47,6 @@ export default [
   ),
   new Project(
     "Frontend Mentor | Stats preview card component",
-    "right",
     statsPreviewCardComponentImg,
     [
       Icons.TIALWINDCSS,
@@ -66,7 +63,6 @@ export default [
 
   new Project(
     "Every_Day_Calendar",
-    "left",
     Every_Day_Calendar,
     [
       Icons.GOLANG,
@@ -83,7 +79,6 @@ export default [
   ),
   new Project(
     "Every_Day_Calendar",
-    "right",
     Every_Day_Calendar,
     [
       Icons.GOLANG,

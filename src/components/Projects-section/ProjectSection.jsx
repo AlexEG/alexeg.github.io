@@ -5,7 +5,7 @@ import { allProjectCount } from "./ProjectsData";
 
 function ProjectSection() {
   const allProjects = ProjectsData.map((project) => {
-    return <ProjectContainer key={project.projectName} projectData={project} />;
+    return <ProjectContainer key={project.projectID} projectData={project} />;
   });
 
   return (

@@ -5,10 +5,11 @@ import ProjectBox from "./ProjectBox";
 function ProjectContainer({ projectData }) {
   let justify = "";
 
-  projectData.direction === "left"
+  +projectData.projectID.slice(8) % 2 === 0
     ? (justify = "justify-end")
     : (justify = "justify-start");
 
+  // console.log(+projectData.projectID.slice(8) % 2 === 0 ? "left" : "right");
   return (
     <div
       className={`w-full h-96 flex ${justify} p-2  from-red-800 to-blue-800`}
@@ -21,7 +22,7 @@ function ProjectContainer({ projectData }) {
         liveDemoLink={projectData.liveDemoLink}
         projectHistoryLink={projectData.projectHistoryLink}
       />
-      {console.log(projectData)}
+
       {/* <ProjectMoreInfo /> */}
     </div>
   );
