@@ -19,5 +19,3 @@ function ProjectSection() {
 }
 
 export default ProjectSection;
-
-// console.log(allProjectCount);

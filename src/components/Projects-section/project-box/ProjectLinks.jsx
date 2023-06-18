@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import GITHUB from "../../assets/icons/Github-Dark.svg";
+import GITHUB from "../../../assets/icons/Github-Dark.svg";
 
 function ProjectLinks({
   name = "Link",

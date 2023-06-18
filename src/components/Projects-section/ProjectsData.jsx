@@ -3,7 +3,7 @@ import YourMangaImg from "../../assets/YourManga.png";
 import statsPreviewCardComponentImg from "../../assets/localhost_5173_.png";
 import Every_Day_Calendar from "../../assets/Every Day Calendar.png";
 
-import Icons from "./Icons";
+import Icons from "./project-box/Icons";
 
 class Project {
   static projectsCount = 0;
@@ -13,7 +13,8 @@ class Project {
     langsToolsArr,
     githubLink,
     liveDemoLink,
-    projectHistoryLink
+    projectHistoryLink,
+    wakatimeProjectID
   ) {
     this.projectID = `Project ${Project.projectsCount}`;
     this.projectName = projectName;
@@ -22,6 +23,7 @@ class Project {
     this.githubLink = githubLink;
     this.liveDemoLink = liveDemoLink;
     this.projectHistoryLink = projectHistoryLink;
+    this.wakatimeProjectID = wakatimeProjectID;
     Project.projectsCount++;
   }
   static allProjectCount() {
@@ -43,7 +45,8 @@ export default [
     ],
     "https://github.com/AlexEG/YourManga",
     "https://alexeg.github.io/YourManga/",
-    "https://alexeg.github.io/PROJECTS/"
+    "https://alexeg.github.io/PROJECTS/",
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
   ),
   new Project(
     "Frontend Mentor | Stats preview card component",
@@ -58,7 +61,8 @@ export default [
     ],
     "https://github.com/AlexEG/stats-preview-card-component",
     "https://guileless-fairy-6adaab.netlify.app/",
-    "https://alexeg.github.io/PROJECTS/"
+    "https://alexeg.github.io/PROJECTS/",
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
   ),
 
   new Project(
@@ -75,7 +79,8 @@ export default [
     ],
     "https://github.com/AlexEG/Every_Day_Calendar",
     "https://alexeg.github.io/Every_Day_Calendar/",
-    "https://alexeg.github.io/PROJECTS/"
+    "https://alexeg.github.io/PROJECTS/",
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
   ),
   new Project(
     "Every_Day_Calendar",
@@ -91,7 +96,8 @@ export default [
     ],
     "https://github.com/AlexEG/Every_Day_Calendar",
     "https://alexeg.github.io/Every_Day_Calendar/",
-    "https://alexeg.github.io/PROJECTS/"
+    "https://alexeg.github.io/PROJECTS/",
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
   ),
 ];
 
