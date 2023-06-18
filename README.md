@@ -3,4 +3,4 @@
 
 <br>
 
-[click for Live Demo](https://alexeg.github.io/)
+[click for Live Demo](https://alexeg.netlify.app/)
