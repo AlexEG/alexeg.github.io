@@ -18,10 +18,10 @@ function ProjectContainer({ projectData }) {
     setisDisplay((prevState) => !prevState);
   }
   return (
-    <div className={`w-full h-96 flex ${justify} relative`}>
+    <div className={`w-full h-96 flex ${justify} relative overflow-hidden`}>
       <button
         onClick={changeBgState}
-        className=" absolute top-2 mx-2  bg-gray-500 px-2 text-xs rounded-full text-gray-950 hover:text-gray-500 hover:bg-gray-900 transition font-medium z-10"
+        className=" absolute top-2 mx-2 z-20 bg-gray-500 px-2 text-xs rounded-full text-gray-950 hover:text-gray-500 hover:bg-gray-900 transition font-medium "
       >
         More Info
       </button>
@@ -36,7 +36,7 @@ function ProjectContainer({ projectData }) {
       />
       <ProjectMoreInfo
         justify={justify}
-        isDisplay={isDisplay ? false : true}
+        isDisplay={isDisplay ? true : false}
         githubRepoName={projectData.githubLink.slice(26)}
         wakatimeProjectID={projectData.wakatimeProjectID}
       />

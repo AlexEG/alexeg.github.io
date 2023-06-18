@@ -13,7 +13,7 @@ function ProjectBox({
   projectHistoryLink,
 }) {
   return (
-    <div className=" text-gray-50 font-semibold  aspect-video h-full  bg-gray-950 group ">
+    <div className=" text-gray-50 font-semibold  aspect-video h-full  bg-gray-950 group z-10">
       <ProjectTitle projectName={projectName} />
       <ProjectPhotoGallery img={img} />
       <ProjectLanguagesTools langsToolsArr={langsToolsArr} />
