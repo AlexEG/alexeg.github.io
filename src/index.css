@@ -6,7 +6,7 @@
 
 
 
-/* Manga Quick Review Reader */
+/* project-photo-gallery-bar */
 .project-photo-gallery-bar::-webkit-scrollbar {
   width: 0px;
   height: 10px;
@@ -25,5 +25,25 @@
 }
 
 .project-photo-gallery-bar::-webkit-scrollbar-thumb:hover {
+  background: hsla(261, 100%, 50%, 0.69);
+}
+
+
+/* Body */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(261, 100%, 20%, 0.384);
+  border: 0.05em solid hsla(261, 100%, 50%, 0.479);
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
   background: hsla(261, 100%, 50%, 0.69);
 }
