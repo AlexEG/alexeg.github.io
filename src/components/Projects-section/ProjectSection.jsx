@@ -9,7 +9,7 @@ function ProjectSection() {
   });
 
   return (
-    <section className=" w-full min-h-screen flex-col gap-2 flex items-center max-w-screen-2xl mx-auto">
+    <section className=" w-full min-h-screen flex-col gap-3 flex items-center max-w-screen-2xl mx-auto">
       <span className=" text-gray-50 font-semibold ">
         {allProjectCount} Projects
       </span>
