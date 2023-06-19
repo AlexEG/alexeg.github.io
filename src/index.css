@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+/* Manga Quick Review Reader */
+.project-photo-gallery-bar::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}
+
+.project-photo-gallery-bar::-webkit-scrollbar-track {
+  background: linear-gradient(0deg, hsla(261, 100%, 20%, 0.69), transparent);
+  border-radius: 100vw;
+  margin-inline: 3rem;
+}
+
+.project-photo-gallery-bar::-webkit-scrollbar-thumb {
+  background: hsla(261, 100%, 20%, 0.384);
+  border: 0.05em solid hsla(261, 100%, 50%, 0.479);
+  border-radius: 100vw;
+}
+
+.project-photo-gallery-bar::-webkit-scrollbar-thumb:hover {
+  background: hsla(261, 100%, 50%, 0.69);
+}
