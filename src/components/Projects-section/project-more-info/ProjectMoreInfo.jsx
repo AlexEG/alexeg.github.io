@@ -16,10 +16,10 @@ function ProjectMoreInfo({
           : "left-0 animate-[projectinforight_1s_ease-in-out]"
       } ${isDisplay ? "block" : "hidden"}`}
     >
-      {/* <ProjectShields
+      <ProjectShields
         githubRepoName={githubRepoName}
         wakatimeProjectID={wakatimeProjectID}
-      /> */}
+      />
       <ProjectGithubAPI />
 
       <div className="{/*border border-pink-600*/ } w-full h-40">

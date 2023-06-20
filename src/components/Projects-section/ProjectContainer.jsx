@@ -20,7 +20,7 @@ function ProjectContainer({ projectData }) {
   // ------------- //
   // ProjectBox ProjectPhotoGallery
 
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   function expandedPhotoGallery() {
     setIsExpanded((prevState) => !prevState);
   }
