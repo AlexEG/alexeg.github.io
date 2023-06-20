@@ -1,11 +1,17 @@
 function StatisticsSection() {
   return (
-    <div id="StatisticsSection" className=" min-h-screen py-7">
+    <div id="statistics-section" className=" min-h-screen py-7">
       <div className="flex gap-2 justify-center">
-        <img
-          src="https://wakatime.com/badge/user/fbdfdc0f-d449-43dc-8090-ced03a22fe8c.svg"
-          alt="Total time coded since Dec 22 2022"
-        />
+        <a
+          href="https://wakatime.com/@fbdfdc0f-d449-43dc-8090-ced03a22fe8c"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            src="https://wakatime.com/badge/user/fbdfdc0f-d449-43dc-8090-ced03a22fe8c.svg"
+            alt="Total time coded since Dec 22 2022"
+          />
+        </a>
         <img
           alt="freeCodeCamp points"
           src="https://img.shields.io/freecodecamp/points/fcc4dcee3ab-a388-4f70-9ad9-0ac52ed81dc7?logo=freecodecamp&logoColor=%2349f3f2&color=%230a0a49&style=plastic"

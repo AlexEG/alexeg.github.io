@@ -1,9 +1,10 @@
-// images
-import YourMangaImg from "../../assets/YourManga.png";
-import statsPreviewCardComponentImg from "../../assets/localhost_5173_.png";
-import Every_Day_Calendar from "../../assets/Every Day Calendar.png";
+import statsPreviewCardComponentImg from "../../../assets/localhost_5173_.png";
+import Every_Day_Calendar from "../../../assets/Every Day Calendar.png";
 
-import Icons from "./project-box/Icons";
+// images
+import ProjectsImages from "./ProjectsImages";
+
+import Icons from "./Icons";
 
 class Project {
   static projectsCount = 0;
@@ -14,7 +15,8 @@ class Project {
     githubLink,
     liveDemoLink,
     projectHistoryLink,
-    wakatimeProjectID
+    wakatimeProjectID,
+    galleryImgsArr
   ) {
     this.projectID = `Project ${Project.projectsCount}`;
     this.projectName = projectName;
@@ -24,6 +26,7 @@ class Project {
     this.liveDemoLink = liveDemoLink;
     this.projectHistoryLink = projectHistoryLink;
     this.wakatimeProjectID = wakatimeProjectID;
+    this.galleryImgsArr = galleryImgsArr;
     Project.projectsCount++;
   }
   static allProjectCount() {
@@ -34,7 +37,7 @@ class Project {
 export default [
   new Project(
     "YourManga",
-    YourMangaImg,
+    ProjectsImages.YourManga[0],
     [
       Icons.HTML,
       Icons.FIREBASE,
@@ -46,7 +49,8 @@ export default [
     "https://github.com/AlexEG/YourManga",
     "https://alexeg.github.io/YourManga/",
     "https://alexeg.github.io/PROJECTS/",
-    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
+    ProjectsImages.YourManga
   ),
   new Project(
     "Frontend Mentor | Stats preview card component",
@@ -62,7 +66,8 @@ export default [
     "https://github.com/AlexEG/stats-preview-card-component",
     "https://guileless-fairy-6adaab.netlify.app/",
     "https://alexeg.github.io/PROJECTS/",
-    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
+    ProjectsImages.YourManga
   ),
 
   new Project(
@@ -80,24 +85,8 @@ export default [
     "https://github.com/AlexEG/Every_Day_Calendar",
     "https://alexeg.github.io/Every_Day_Calendar/",
     "https://alexeg.github.io/PROJECTS/",
-    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
-  ),
-  new Project(
-    "Every_Day_Calendar",
-    Every_Day_Calendar,
-    [
-      Icons.GOLANG,
-      Icons.ELECTRON,
-      Icons.FIREBASE,
-      Icons.NODEJS,
-      Icons.TS,
-      Icons.HTML,
-      Icons.CSS,
-    ],
-    "https://github.com/AlexEG/Every_Day_Calendar",
-    "https://alexeg.github.io/Every_Day_Calendar/",
-    "https://alexeg.github.io/PROJECTS/",
-    "19f61fe3-78ec-469f-8f4d-6158b7eb862e"
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
+    ProjectsImages.YourManga
   ),
 ];
 

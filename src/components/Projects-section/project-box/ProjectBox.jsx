@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import ProjectTitle from "./ProjectTitle";
-import ProjectPhotoGallery from "./ProjectPhotoGallery";
 import ProjectLanguagesTools from "./ProjectLanguagesTools";
 import ProjectLinksContainer from "./ProjectLinksContainer";
-import ProjectPhotoGalleryBar from "./ProjectPhotoGalleryBar";
-// import { useState } from "react";
+import ProjectPhotoGallery from "./project-photo-gallery/ProjectPhotoGallery";
+import ProjectPhotoGalleryBar from "./project-photo-gallery/ProjectPhotoGalleryBar";
+import { useState } from "react";
 
 function ProjectBox({
   projectName,
@@ -15,16 +15,47 @@ function ProjectBox({
   projectHistoryLink,
   expandedPhotoGallery,
   isExpanded,
+  galleryImgsArr,
 }) {
+  // ---------------------
+  const [imageInView, setImageInView] = useState(img);
+
+  function nextImg() {
+    setImageInView((prevImg) => {
+      return galleryImgsArr.indexOf(prevImg) < galleryImgsArr.length - 1
+        ? galleryImgsArr[galleryImgsArr.indexOf(prevImg) + 1]
+        : prevImg;
+    });
+  }
+  function prevImg() {
+    setImageInView((prevImg) => {
+      return galleryImgsArr.indexOf(prevImg) > 0
+        ? galleryImgsArr[galleryImgsArr.indexOf(prevImg) - 1]
+        : prevImg;
+    });
+  }
+
   return (
     <div className=" text-gray-50 font-semibold  aspect-video h-full  bg-gray-950 group z-10 relative">
       <ProjectTitle projectName={projectName} />
       <ProjectPhotoGallery
-        img={img}
         expandedPhotoGallery={expandedPhotoGallery}
         isExpanded={isExpanded}
+        imageInView={imageInView}
+        nextImg={nextImg}
+        prevImg={prevImg}
       />
-      {isExpanded && <ProjectPhotoGalleryBar />}
+
+      {isExpanded && (
+        <ProjectPhotoGalleryBar
+          galleryImgsArr={galleryImgsArr}
+          imageInView={imageInView}
+          nextImg={nextImg}
+          prevImg={prevImg}
+          setImageInView={setImageInView}
+        />
+      )}
+
       <ProjectLanguagesTools
         langsToolsArr={langsToolsArr}
         isExpanded={isExpanded}

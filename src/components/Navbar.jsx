@@ -13,7 +13,7 @@ function Navbar() {
         </a>
 
         <a
-          href="#StatisticsSection"
+          href="#statistics-section"
           className="bg-gray-900 text-gray-100 px-3 py-1 h-8 "
         >
           Statistics

@@ -2,10 +2,7 @@
 /* eslint-disable react/jsx-key */
 // eslint-disable-next-line react/prop-types
 
-function ProjectLanguagesTools({
-  langsToolsArr = ["../../assets/icons/HTML.svg"],
-  isExpanded,
-}) {
+function ProjectLanguagesTools({ langsToolsArr, isExpanded }) {
   let LanguagesAndTools = langsToolsArr.map((lang) => (
     <img src={lang} width="30" />
   ));

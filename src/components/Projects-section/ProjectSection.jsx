@@ -1,7 +1,6 @@
 import ProjectContainer from "./ProjectContainer";
-import ProjectsData from "./ProjectsData";
-
-import { allProjectCount } from "./ProjectsData";
+import ProjectsData from "./projects-data/ProjectsData";
+import { allProjectCount } from "./projects-data/ProjectsData";
 
 function ProjectSection() {
   const allProjects = ProjectsData.map((project) => {

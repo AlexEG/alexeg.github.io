@@ -20,10 +20,9 @@ function ProjectContainer({ projectData }) {
   // ------------- //
   // ProjectBox ProjectPhotoGallery
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   function expandedPhotoGallery() {
     setIsExpanded((prevState) => !prevState);
-    console.log("???????");
   }
 
   return (
@@ -50,6 +49,7 @@ function ProjectContainer({ projectData }) {
         projectHistoryLink={projectData.projectHistoryLink}
         expandedPhotoGallery={expandedPhotoGallery}
         isExpanded={isExpanded}
+        galleryImgsArr={projectData.galleryImgsArr}
       />
       {!isExpanded && (
         <ProjectMoreInfo
@@ -64,37 +64,3 @@ function ProjectContainer({ projectData }) {
 }
 
 export default ProjectContainer;
-
-// TODO
-// document.getElementById("cards").onmousemove = e => {
-//   for(const card of document.getElementsByClassName("card")) {
-//     const rect = card.getBoundingClientRect(),
-//           x = e.clientX - rect.left,
-//           y = e.clientY - rect.top;
-
-//     card.style.setProperty("--mouse-x", `${x}px`);
-//     card.style.setProperty("--mouse-y", `${y}px`);
-//   };
-// }
-
-// function gotoCssBattle(link){
-//   location.href = "./assets/cssbattle/cssbattle.html";
-// }
-
-// <div id="cards">
-// <div class="card" onclick="gotoCssBattle(this)">
-//   <div class="card-content">
-//     <div class="card-image">
-//     <img src="/assets/images/banner.png" alt="">
-//     </div>
-//     <div class="card-info-wrapper">
-//       <div class="card-info">
-//         <div class="card-info-title">
-//           <h3>CSS Battle</h3>
-//           <h4>Find here my solutions and some note plus tips & tricks </h4>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </div>
