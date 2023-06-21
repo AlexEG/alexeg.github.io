@@ -34,6 +34,14 @@ function ProjectShields({ githubRepoName, wakatimeProjectID }) {
         src={`https://img.shields.io/github/languages/code-size/AlexEG/${githubRepoName}?color=5500bb&style=plastic`}
         alt="GitHub code size in bytes"
       />
+      <img
+        src={`https://img.shields.io/github/stars/AlexEG/${githubRepoName}?color=FFD700&style=plastic`}
+        alt="GitHub Repo stars"
+      />
+      <img
+        src={`https://img.shields.io/github/watchers/AlexEG/${githubRepoName}?color=008a52&style=plastic`}
+        alt="GitHub watchers"
+      />
     </div>
   );
 }

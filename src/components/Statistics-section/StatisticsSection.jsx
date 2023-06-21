@@ -1,4 +1,13 @@
+import { useState } from "react";
 function StatisticsSection() {
+  const [publicReposNum, setPublicReposNum] = useState("????");
+
+  fetch(`https://api.github.com/users/AlexEG/repos?page=1&per_page=100`)
+    .then((response) => response.json())
+    .then((data) => {
+      setPublicReposNum(data.length);
+    });
+
   return (
     <div id="statistics-section" className=" min-h-screen py-7">
       <div className="flex gap-2 justify-center">
@@ -24,10 +33,19 @@ function StatisticsSection() {
           alt="GitHub followers"
           src="https://img.shields.io/github/followers/AlexEG?logo=github&style=plastic"
         />
+        <div className="h-5 rounded-sm flex overflow-hidden cursor-default">
+          <span className=" bg-slate-700 font-semibold text-slate-200 text-sm px-2">
+            GitHub public Repos{" "}
+          </span>
+          <span className="bg-slate-900 px-2 text-sm text-slate-50 font-bold text-center">
+            {publicReposNum}
+          </span>
+        </div>
       </div>
 
       {/* ------------------------------------- */}
-      {/* GitHub  */}
+
+      {/* GitHub start */}
       <div className=" mx-auto mt-7 w-fit ">
         <div className="flex mb-1 gap-1">
           <img
@@ -58,6 +76,7 @@ function StatisticsSection() {
           className="mt-1 rounded-lg"
           width="960"
           height="349"
+          scrolling="no"
           seamless
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnFjpOWd2mEd28vLmu0WGcLlO3HtFQL-30mUEt3qSOPdKu2T7jJvf0jRSnzZPKAe6Epv8hcH8uZ4aZ/pubchart?oid=1414259734&amp;format=interactive"
         ></iframe>
@@ -76,7 +95,8 @@ function StatisticsSection() {
           ></embed>
         </figure>
       </div>
-      {/* GitHub  */}
+
+      {/* GitHub end */}
     </div>
   );
 }
