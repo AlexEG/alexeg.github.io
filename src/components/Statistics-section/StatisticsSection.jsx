@@ -1,4 +1,6 @@
 import { useState } from "react";
+import StudyTracker from "./StudyTracker";
+
 function StatisticsSection() {
   const [publicReposNum, setPublicReposNum] = useState("????");
 
@@ -35,7 +37,7 @@ function StatisticsSection() {
         />
         <div className="h-5 rounded-sm flex overflow-hidden cursor-default">
           <span className=" bg-slate-700 font-semibold text-slate-200 text-sm px-2">
-            GitHub public Repos{" "}
+            GitHub public Repos
           </span>
           <span className="bg-slate-900 px-2 text-sm text-slate-50 font-bold text-center">
             {publicReposNum}
@@ -49,37 +51,30 @@ function StatisticsSection() {
       <div className=" mx-auto mt-7 w-fit ">
         <div className="flex mb-1 gap-1">
           <img
+            className=" h-[150px] rounded-lg"
             src="https://github-readme-streak-stats.herokuapp.com/?user=AlexEG&hide_border=true&card_width=420&theme=radical"
             alt="AlexEG"
-            className=" h-[150px]"
           />
 
           <img
+            className=" h-[150px]  rounded-lg"
             src="https://github-readme-stats.vercel.app/api?username=AlexEG&show_icons=true&count_private=true&hide_border=true&theme=radical"
             alt="AlexEG's Github stats"
-            className=" h-[150px]"
           />
           <img
-            className=" h-[150px]"
+            className=" h-[150px]  rounded-lg"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlexEG&layout=compact&hide_border=true&theme=radical"
             alt="AlexEG"
           />
         </div>
 
         <img
-          alt="AlexEG's Activity Graph"
-          src="https://github-readme-activity-graph.vercel.app/graph?username=AlexEG&theme=redical&height=400&hide_border=true"
           className=" h-[320px] rounded-lg"
+          src="https://github-readme-activity-graph.vercel.app/graph?username=AlexEG&theme=redical&height=400&hide_border=true"
+          alt="AlexEG's Activity Graph"
         />
 
-        <iframe
-          className="mt-1 rounded-lg"
-          width="960"
-          height="349"
-          scrolling="no"
-          seamless
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnFjpOWd2mEd28vLmu0WGcLlO3HtFQL-30mUEt3qSOPdKu2T7jJvf0jRSnzZPKAe6Epv8hcH8uZ4aZ/pubchart?oid=1414259734&amp;format=interactive"
-        ></iframe>
+        <StudyTracker />
 
         <figure>
           <embed

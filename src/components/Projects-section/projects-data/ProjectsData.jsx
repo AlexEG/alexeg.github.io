@@ -38,14 +38,7 @@ export default [
   new Project(
     "YourManga",
     ProjectsImages.YourManga[0],
-    [
-      Icons.HTML,
-      Icons.FIREBASE,
-      Icons.TIALWINDCSS,
-      Icons.VITE,
-      Icons.MARKDOWN,
-      Icons.ASTRO,
-    ],
+    [Icons.HTML, Icons.JS, Icons.TIALWINDCSS],
     "https://github.com/AlexEG/YourManga",
     "https://alexeg.github.io/YourManga/",
     "https://alexeg.github.io/PROJECTS/",
@@ -55,14 +48,7 @@ export default [
   new Project(
     "Frontend Mentor | Stats preview card component",
     statsPreviewCardComponentImg,
-    [
-      Icons.TIALWINDCSS,
-      Icons.REACT,
-      Icons.NEXTJS,
-      Icons.JS,
-      Icons.SASS,
-      Icons.NETLIFY,
-    ],
+    [Icons.REACT, Icons.JS, Icons.TIALWINDCSS, Icons.NETLIFY],
     "https://github.com/AlexEG/stats-preview-card-component",
     "https://guileless-fairy-6adaab.netlify.app/",
     "https://alexeg.github.io/PROJECTS/",
@@ -73,15 +59,7 @@ export default [
   new Project(
     "Every_Day_Calendar",
     Every_Day_Calendar,
-    [
-      Icons.GOLANG,
-      Icons.ELECTRON,
-      Icons.FIREBASE,
-      Icons.NODEJS,
-      Icons.TS,
-      Icons.HTML,
-      Icons.CSS,
-    ],
+    [Icons.HTML, Icons.JS, Icons.TIALWINDCSS],
     "https://github.com/AlexEG/Every_Day_Calendar",
     "https://alexeg.github.io/Every_Day_Calendar/",
     "https://alexeg.github.io/PROJECTS/",
