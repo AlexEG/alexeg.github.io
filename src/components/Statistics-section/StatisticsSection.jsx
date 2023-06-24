@@ -1,6 +1,7 @@
 import { useState } from "react";
 import StudyTracker from "./StudyTracker";
 import WakatimeLanguages from "./WakatimeLanguages";
+import WakatimeCodingActivity from "./WakatimeCodingActivity";
 
 function StatisticsSection() {
   const [publicReposNum, setPublicReposNum] = useState("????");
@@ -76,15 +77,8 @@ function StatisticsSection() {
         />
 
         <StudyTracker />
-
         <WakatimeLanguages />
-
-        <figure>
-          <embed
-            className="mt-1 rounded-lg"
-            src="https://wakatime.com/share/@AlexEG/8e131d38-7da9-495a-84f5-53c8dec88f93.svg"
-          ></embed>
-        </figure>
+        <WakatimeCodingActivity />
       </div>
 
       {/* GitHub end */}

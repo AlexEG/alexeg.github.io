@@ -4,7 +4,7 @@
 
 function ProjectLanguagesTools({ langsToolsArr, isExpanded }) {
   let LanguagesAndTools = langsToolsArr.map((lang) => (
-    <img src={lang} width="30" />
+    <img key={lang} src={lang} width="30" />
   ));
 
   return (
