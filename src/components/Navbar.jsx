@@ -18,7 +18,10 @@ function Navbar() {
         >
           Statistics
         </a>
-        <a href="#" className="bg-gray-900 text-gray-100 px-3 py-1  h-8">
+        <a
+          href="#project-section"
+          className="bg-gray-900 text-gray-100 px-3 py-1  h-8"
+        >
           Projects
         </a>
       </div>

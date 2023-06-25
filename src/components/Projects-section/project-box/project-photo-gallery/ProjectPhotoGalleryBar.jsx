@@ -12,6 +12,7 @@ function ProjectPhotoGalleryBar({
 }) {
   let images = galleryImgsArr.map((image) => (
     <GalleryImg
+      key={image}
       projectImg={image}
       imageInView={imageInView}
       setImageInView={setImageInView}

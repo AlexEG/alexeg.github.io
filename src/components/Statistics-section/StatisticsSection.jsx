@@ -1,4 +1,17 @@
+import { useState } from "react";
+import StudyTracker from "./StudyTracker";
+import WakatimeLanguages from "./WakatimeLanguages";
+import WakatimeCodingActivity from "./WakatimeCodingActivity";
+
 function StatisticsSection() {
+  const [publicReposNum, setPublicReposNum] = useState("????");
+
+  fetch(`https://api.github.com/users/AlexEG/repos?page=1&per_page=100`)
+    .then((response) => response.json())
+    .then((data) => {
+      setPublicReposNum(data.length);
+    });
+
   return (
     <div id="statistics-section" className=" min-h-screen py-7">
       <div className="flex gap-2 justify-center">
@@ -24,59 +37,51 @@ function StatisticsSection() {
           alt="GitHub followers"
           src="https://img.shields.io/github/followers/AlexEG?logo=github&style=plastic"
         />
+        <div className="h-5 rounded-sm flex overflow-hidden cursor-default">
+          <span className=" bg-slate-700 font-semibold text-slate-200 text-sm px-2">
+            GitHub public Repos
+          </span>
+          <span className="bg-slate-900 px-2 text-sm text-slate-50 font-bold text-center">
+            {publicReposNum}
+          </span>
+        </div>
       </div>
 
       {/* ------------------------------------- */}
-      {/* GitHub  */}
+
+      {/* GitHub start */}
       <div className=" mx-auto mt-7 w-fit ">
         <div className="flex mb-1 gap-1">
           <img
+            className=" h-[150px] rounded-lg"
             src="https://github-readme-streak-stats.herokuapp.com/?user=AlexEG&hide_border=true&card_width=420&theme=radical"
             alt="AlexEG"
-            className=" h-[150px]"
           />
 
           <img
+            className=" h-[150px]  rounded-lg"
             src="https://github-readme-stats.vercel.app/api?username=AlexEG&show_icons=true&count_private=true&hide_border=true&theme=radical"
             alt="AlexEG's Github stats"
-            className=" h-[150px]"
           />
           <img
-            className=" h-[150px]"
+            className=" h-[150px]  rounded-lg"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlexEG&layout=compact&hide_border=true&theme=radical"
             alt="AlexEG"
           />
         </div>
 
         <img
-          alt="AlexEG's Activity Graph"
-          src="https://github-readme-activity-graph.vercel.app/graph?username=AlexEG&theme=redical&height=400&hide_border=true"
           className=" h-[320px] rounded-lg"
+          src="https://github-readme-activity-graph.vercel.app/graph?username=AlexEG&theme=redical&height=400&hide_border=true"
+          alt="AlexEG's Activity Graph"
         />
 
-        <iframe
-          className="mt-1 rounded-lg"
-          width="960"
-          height="349"
-          seamless
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnFjpOWd2mEd28vLmu0WGcLlO3HtFQL-30mUEt3qSOPdKu2T7jJvf0jRSnzZPKAe6Epv8hcH8uZ4aZ/pubchart?oid=1414259734&amp;format=interactive"
-        ></iframe>
-
-        <figure>
-          <embed
-            className="mt-1 rounded-lg"
-            src="https://wakatime.com/share/@AlexEG/e5c768c1-1627-4f4e-9c31-8b9d6e07b9d0.svg"
-          ></embed>
-        </figure>
-
-        <figure>
-          <embed
-            className="mt-1 rounded-lg"
-            src="https://wakatime.com/share/@AlexEG/8e131d38-7da9-495a-84f5-53c8dec88f93.svg"
-          ></embed>
-        </figure>
+        <StudyTracker />
+        <WakatimeLanguages />
+        <WakatimeCodingActivity />
       </div>
-      {/* GitHub  */}
+
+      {/* GitHub end */}
     </div>
   );
 }
