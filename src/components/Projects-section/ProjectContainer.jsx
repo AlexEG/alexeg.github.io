@@ -28,8 +28,8 @@ function ProjectContainer({ projectData }) {
   return (
     <div
       className={`w-full ${
-        isExpanded ? "h-[570px] bg-zinc-900 justify-center" : "h-96"
-      } flex ${justify} relative overflow-hidden`}
+        isExpanded ? "h-[620px] bg-zinc-900 justify-center" : "h-96"
+      } flex ${justify} relative overflow-hidden py-2`}
     >
       <button
         onClick={displayMoreInfo}
@@ -50,6 +50,7 @@ function ProjectContainer({ projectData }) {
         expandedPhotoGallery={expandedPhotoGallery}
         isExpanded={isExpanded}
         galleryImgsArr={projectData.galleryImgsArr}
+        YouTubeEmbedURL={projectData.YouTubeEmbedURL}
       />
       {!isExpanded && (
         <ProjectMoreInfo

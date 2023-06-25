@@ -16,7 +16,8 @@ class Project {
     liveDemoLink,
     projectHistoryLink,
     wakatimeProjectID,
-    galleryImgsArr
+    galleryImgsArr,
+    YouTubeEmbedURL = "fYlzdqPH-LI" // Default
   ) {
     this.projectID = `Project ${Project.projectsCount}`;
     this.projectName = projectName;
@@ -27,6 +28,8 @@ class Project {
     this.projectHistoryLink = projectHistoryLink;
     this.wakatimeProjectID = wakatimeProjectID;
     this.galleryImgsArr = galleryImgsArr;
+    this.YouTubeEmbedURL = YouTubeEmbedURL;
+
     Project.projectsCount++;
   }
   static allProjectCount() {
@@ -43,7 +46,8 @@ export default [
     "https://alexeg.github.io/YourManga/",
     "https://alexeg.github.io/PROJECTS/",
     "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
-    ProjectsImages.YourManga
+    ProjectsImages.YourManga,
+    "JEzTcmgGEhc"
   ),
   new Project(
     "Frontend Mentor | Stats preview card component",

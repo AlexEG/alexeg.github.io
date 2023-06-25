@@ -16,6 +16,7 @@ function ProjectBox({
   expandedPhotoGallery,
   isExpanded,
   galleryImgsArr,
+  YouTubeEmbedURL,
 }) {
   // ---------------------
   const [imageInView, setImageInView] = useState(img);
@@ -38,12 +39,15 @@ function ProjectBox({
   return (
     <div className=" text-gray-50 font-semibold  aspect-video h-full  bg-gray-950 group z-10 relative">
       <ProjectTitle projectName={projectName} />
+
       <ProjectPhotoGallery
         expandedPhotoGallery={expandedPhotoGallery}
         isExpanded={isExpanded}
         imageInView={imageInView}
         nextImg={nextImg}
         prevImg={prevImg}
+        galleryImgsArr={galleryImgsArr}
+        YouTubeEmbedURL={YouTubeEmbedURL}
       />
 
       {isExpanded && (
@@ -60,6 +64,7 @@ function ProjectBox({
         langsToolsArr={langsToolsArr}
         isExpanded={isExpanded}
       />
+
       <ProjectLinksContainer
         githubLink={githubLink}
         liveDemoLink={liveDemoLink}

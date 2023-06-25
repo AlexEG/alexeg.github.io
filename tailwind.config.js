@@ -66,6 +66,7 @@ export default {
             opacity: "1",
           },
         },
+        //todo isExpanded <ProjectBox />
       },
     },
   },
