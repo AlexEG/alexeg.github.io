@@ -17,13 +17,22 @@ function ProjectMoreInfo({
       setDescription(data.description);
     });
 
+  let rightLeftOpenCloseAnimation =
+    justify === "justify-start"
+      ? `${
+          isDisplay
+            ? "animate-[project-info-l-open_1s_ease-in-out_1_forwards]"
+            : "animate-[project-info-l-close_1s_ease-in-out_1_forwards]"
+        } right-0`
+      : `${
+          isDisplay
+            ? "animate-[project-info-r-open_1s_ease-in-out_1_forwards]"
+            : "animate-[project-info-r-close_1s_ease-in-out_1_forwards]"
+        } left-0`;
+
   return (
     <div
-      className={` bg-gray-900 w-[calc(100%-690px)] h-full  z-0 absolute top-0 p-3  ${
-        justify === "justify-start"
-          ? "right-0 animate-[projectinfoleft_1s_ease-in-out]"
-          : "left-0 animate-[projectinforight_1s_ease-in-out]"
-      } ${isDisplay ? "block" : "hidden"}`}
+      className={` bg-gray-900 w-[calc(100%-690px)] h-full  z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
     >
       <ProjectShields
         githubRepoName={githubRepoName}
