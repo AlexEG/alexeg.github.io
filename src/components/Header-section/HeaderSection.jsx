@@ -5,7 +5,7 @@ function HeaderSection() {
   // const imgStyles = `w-11 ${"brightness-50"}`;
 
   return (
-    <div className=" h-96 border-2 border-pink-500">
+    <div className=" h-96  border-pink-500">
       {/* logo & name [start] */}
       <div className="flex justify-center items-center flex-col mb-5">
         <img className="w-20" src={logo} alt="" />
