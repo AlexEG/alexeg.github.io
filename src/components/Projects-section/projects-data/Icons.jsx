@@ -1,20 +1,18 @@
-/* eslint-disable no-undef */
-// Languages & Tools
-import HTMLicon from "../../../assets/icons/HTML.svg";
-import CSSicon from "../../../assets/icons/CSS.svg";
-import JSicon from "../../../assets/icons/JavaScript.svg";
-import TSicon from "../../../assets/icons/TypeScript.svg";
-import TIALWINDCSSicon from "../../../assets/icons/TailwindCSS-Dark.svg";
-import VITEicon from "../../../assets/icons/Vite-Dark.svg";
-import REACTicon from "../../../assets/icons/React-Dark.svg";
-import FIREBASEicon from "../../../assets/icons/Firebase-Dark.svg";
-import NEXTJSicon from "../../../assets/icons/NextJS-Dark.svg";
-import NODEJSicon from "../../../assets/icons/NodeJS-Dark.svg";
-import ELECTRONicon from "../../../assets/icons/Electron.svg";
-import GOLANGicon from "../../../assets/icons/GoLang.svg";
-import SASSicon from "../../../assets/icons/Sass.svg";
-import NETLIFYicon from "../../../assets/icons/Netlify-Dark.svg";
-import MARKDOWNicon from "../../../assets/icons/Markdown-Dark.svg";
+import HTML_Icon from "../../../assets/icons/HTML.svg";
+import CSS_Icon from "../../../assets/icons/CSS.svg";
+import JS_Icon from "../../../assets/icons/JavaScript.svg";
+import TS_Icon from "../../../assets/icons/TypeScript.svg";
+import TailwindCSS_Icon from "../../../assets/icons/TailwindCSS-Dark.svg";
+import Vite_Icon from "../../../assets/icons/Vite-Dark.svg";
+import React_Icon from "../../../assets/icons/React-Dark.svg";
+import Firebase_Icon from "../../../assets/icons/Firebase-Dark.svg";
+import NextJS_Icon from "../../../assets/icons/NextJS-Dark.svg";
+import NodeJS_Icon from "../../../assets/icons/NodeJS-Dark.svg";
+import Electron_Icon from "../../../assets/icons/Electron.svg";
+import GoLang_Icon from "../../../assets/icons/GoLang.svg";
+import Sass_Icon from "../../../assets/icons/Sass.svg";
+import Netlify_Icon from "../../../assets/icons/Netlify-Dark.svg";
+import Markdown_Icon from "../../../assets/icons/Markdown-Dark.svg";
 import Astro_Icon from "../../../assets/icons/Astro.svg";
 import Remix_Icon from "../../../assets/icons/Remix-Dark.svg";
 import Ruby_Icon from "../../../assets/icons/Ruby.svg";
@@ -42,23 +40,53 @@ import AWS_Icon from "../../../assets/icons/AWS-Dark.svg";
 import DENO_Icon from "../../../assets/icons/DENO-Dark.svg";
 import Elixir_Icon from "../../../assets/icons/Elixir-Dark.svg";
 import Zig_Icon from "../../../assets/icons/Zig-Dark.svg";
+import Angular_Icon from "../../../assets/icons/Angular-Dark.svg";
+import CS_Icon from "../../../assets/icons/CS.svg";
+import CodePen_Icon from "../../../assets/icons/CodePen-Dark.svg";
+import D3_Icon from "../../../assets/icons/D3-Dark.svg";
+import Docker_Icon from "../../../assets/icons/Docker.svg";
+import DevTo_Icon from "../../../assets/icons/DevTo-Dark.svg";
+import Figma_Icon from "../../../assets/icons/Figma-Dark.svg";
+import Git_Icon from "../../../assets/icons/Git.svg";
+import Github_Icon from "../../../assets/icons/Github-Dark.svg";
+import GithubActions_Icon from "../../../assets/icons/GithubActions-Dark.svg";
+import Heroku_Icon from "../../../assets/icons/Heroku.svg";
+import Gulp_Icon from "../../../assets/icons/Gulp.svg";
+import GitLab_Icon from "../../../assets/icons/GitLab-Dark.svg";
+import Python_Icon from "../../../assets/icons/Python-Dark.svg";
+import StackOverflow_Icon from "../../../assets/icons/StackOverflow-Dark.svg";
+import PyTorch_Icon from "../../../assets/icons/PyTorch-Dark.svg";
+import NestJS_Icon from "../../../assets/icons/NestJS-Dark.svg";
+import NuxtJS_Icon from "../../../assets/icons/NuxtJS-Dark.svg";
+import Prisma_Icon from "../../../assets/icons/Prisma.svg";
+import PHP_Icon from "../../../assets/icons/PHP-Dark.svg";
+import Plan9_Icon from "../../../assets/icons/Plan9-Dark.svg";
+import PostgreSQL_Icon from "../../../assets/icons/PostgreSQL-Dark.svg";
+import MySQL_Icon from "../../../assets/icons/MySQL-Dark.svg";
+import PlanetScale_Icon from "../../../assets/icons/PlanetScale-Dark.svg";
+import Solidity_Icon from "../../../assets/icons/Solidity.svg";
+import Supabase_Icon from "../../../assets/icons/Supabase-Dark.svg";
+import MaterialUI_Icon from "../../../assets/icons/MaterialUI-Dark.svg";
+import Swift_Icon from "../../../assets/icons/Swift.svg";
+import WebAssembly_Icon from "../../../assets/icons/WebAssembly.svg";
+import Webflow_Icon from "../../../assets/icons/Webflow.svg";
 
 export default {
-  HTML: HTMLicon,
-  CSS: CSSicon,
-  JS: JSicon,
-  TS: TSicon,
-  TIALWINDCSS: TIALWINDCSSicon,
-  VITE: VITEicon,
-  REACT: REACTicon,
-  FIREBASE: FIREBASEicon,
-  NEXTJS: NEXTJSicon,
-  NODEJS: NODEJSicon,
-  ELECTRON: ELECTRONicon,
-  GOLANG: GOLANGicon,
-  SASS: SASSicon,
-  NETLIFY: NETLIFYicon,
-  MARKDOWN: MARKDOWNicon,
+  HTML: HTML_Icon,
+  CSS: CSS_Icon,
+  JS: JS_Icon,
+  TS: TS_Icon,
+  TailwindCSS: TailwindCSS_Icon,
+  Vite: Vite_Icon,
+  React: React_Icon,
+  Firebase: Firebase_Icon,
+  NextJS: NextJS_Icon,
+  NodeJS: NodeJS_Icon,
+  Electron: Electron_Icon,
+  GoLang: GoLang_Icon,
+  Sass: Sass_Icon,
+  Netlify: Netlify_Icon,
+  Markdown: Markdown_Icon,
   Astro: Astro_Icon,
   Remix: Remix_Icon,
   Ruby: Ruby_Icon,
@@ -86,4 +114,34 @@ export default {
   DENO: DENO_Icon,
   Elixir: Elixir_Icon,
   Zig: Zig_Icon,
+  Angular: Angular_Icon,
+  CS: CS_Icon,
+  CodePen: CodePen_Icon,
+  D3: D3_Icon,
+  Docker: Docker_Icon,
+  DevTo: DevTo_Icon,
+  Figma: Figma_Icon,
+  Git: Git_Icon,
+  Github: Github_Icon,
+  GithubActions: GithubActions_Icon,
+  Heroku: Heroku_Icon,
+  Gulp: Gulp_Icon,
+  GitLab: GitLab_Icon,
+  Python: Python_Icon,
+  StackOverflow: StackOverflow_Icon,
+  PyTorch: PyTorch_Icon,
+  NestJS: NestJS_Icon,
+  NuxtJS: NuxtJS_Icon,
+  Prisma: Prisma_Icon,
+  PHP: PHP_Icon,
+  Plan9: Plan9_Icon,
+  PostgreSQL: PostgreSQL_Icon,
+  MySQL: MySQL_Icon,
+  PlanetScale: PlanetScale_Icon,
+  Solidity: Solidity_Icon,
+  Supabase: Supabase_Icon,
+  MaterialUI: MaterialUI_Icon,
+  Swift: Swift_Icon,
+  WebAssembly: WebAssembly_Icon,
+  Webflow: Webflow_Icon,
 };
