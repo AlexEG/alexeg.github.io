@@ -70,6 +70,16 @@ export default [
     "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
     ProjectsImages.YourManga
   ),
+  new Project(
+    "Every_Day_Calendar",
+    Every_Day_Calendar,
+    [Icons.HTML, Icons.JS, Icons.TIALWINDCSS],
+    "https://github.com/AlexEG/Every_Day_Calendar",
+    "https://alexeg.github.io/Every_Day_Calendar/",
+    "https://alexeg.github.io/PROJECTS/",
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
+    ProjectsImages.YourManga
+  ),
 ];
 
 export const allProjectCount = Project.allProjectCount();

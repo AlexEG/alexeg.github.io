@@ -13,7 +13,7 @@ function StatisticsSection() {
     });
 
   return (
-    <div id="statistics-section" className=" min-h-screen py-7">
+    <div id="statistics-section" className=" min-h-screen py-7 ">
       <div className="flex gap-2 justify-center">
         <a
           href="https://wakatime.com/@fbdfdc0f-d449-43dc-8090-ced03a22fe8c"

@@ -42,6 +42,10 @@ function ProjectShields({ githubRepoName, wakatimeProjectID }) {
         src={`https://img.shields.io/github/watchers/AlexEG/${githubRepoName}?color=008a52&style=plastic`}
         alt="GitHub watchers"
       />
+      {/* <img
+        src={`https://www.codefactor.io/repository/github/alexeg/projects/badge`}
+        alt="CodeFactor"
+      /> */}
     </div>
   );
 }

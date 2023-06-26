@@ -12,8 +12,10 @@ function ProjectPhotoGallery({
   YouTubeEmbedURL,
 }) {
   // console.log(galleryImgsArr);
-
   // console.log(imageInView);
+
+  // let youtubevideo = isExpanded && <YoutubeDemo YouTubeEmbedURL={YouTubeEmbedURL} />
+
   return (
     <div
       className={` bg-gray-900 ${
@@ -21,7 +23,7 @@ function ProjectPhotoGallery({
       }  flex justify-center relative `}
     >
       {imageInView === galleryImgsArr[galleryImgsArr.length - 1] ? (
-        <YoutubeDemo YouTubeEmbedURL={YouTubeEmbedURL} />
+        isExpanded && <YoutubeDemo YouTubeEmbedURL={YouTubeEmbedURL} />
       ) : (
         <img src={imageInView} alt="" className="h-full " />
       )}
