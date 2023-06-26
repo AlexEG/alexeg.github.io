@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import YoutubeDemo from "./YoutubeDemo";
+// import youtubeLogo from "../../../../assets/YouTube_Logo.svg";
 
 function ProjectPhotoGallery({
   expandedPhotoGallery,
@@ -6,20 +8,28 @@ function ProjectPhotoGallery({
   prevImg,
   nextImg,
   imageInView,
+  galleryImgsArr,
+  YouTubeEmbedURL,
 }) {
   // console.log(galleryImgsArr);
-
   // console.log(imageInView);
+
+  // let youtubevideo = isExpanded && <YoutubeDemo YouTubeEmbedURL={YouTubeEmbedURL} />
+
   return (
     <div
       className={` bg-gray-900 ${
-        isExpanded ? " h-96" : "h-64 "
-      }  flex justify-center relative`}
+        isExpanded ? " h-[26rem]" : "h-64 "
+      }  flex justify-center relative `}
     >
-      <img src={imageInView} alt="" className="h-full" />
+      {imageInView === galleryImgsArr[galleryImgsArr.length - 1] ? (
+        isExpanded && <YoutubeDemo YouTubeEmbedURL={YouTubeEmbedURL} />
+      ) : (
+        <img src={imageInView} alt="" className="h-full " />
+      )}
 
-      <div className=" absolute w-full h-full  ">
-        <div className=" w-full h-full  relative ">
+      <div className=" absolute w-full h-full ">
+        <div className=" w-full h-full relative ">
           {/* NEXT btn  */}
           {!isExpanded && (
             <button

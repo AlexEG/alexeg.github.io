@@ -66,6 +66,14 @@ export default {
             opacity: "1",
           },
         },
+        //todo isExpanded <ProjectBox />
+
+        // Animation '<AlexEG />'
+        // 'header-alexeg': {
+        //   from {
+        //     'background-position': 0% center
+        //   }
+        // }
       },
     },
   },

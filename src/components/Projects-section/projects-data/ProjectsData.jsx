@@ -16,7 +16,8 @@ class Project {
     liveDemoLink,
     projectHistoryLink,
     wakatimeProjectID,
-    galleryImgsArr
+    galleryImgsArr,
+    YouTubeEmbedURL = "fYlzdqPH-LI" // Default
   ) {
     this.projectID = `Project ${Project.projectsCount}`;
     this.projectName = projectName;
@@ -27,6 +28,8 @@ class Project {
     this.projectHistoryLink = projectHistoryLink;
     this.wakatimeProjectID = wakatimeProjectID;
     this.galleryImgsArr = galleryImgsArr;
+    this.YouTubeEmbedURL = YouTubeEmbedURL;
+
     Project.projectsCount++;
   }
   static allProjectCount() {
@@ -38,17 +41,18 @@ export default [
   new Project(
     "YourManga",
     ProjectsImages.YourManga[0],
-    [Icons.HTML, Icons.JS, Icons.TIALWINDCSS],
+    [Icons.HTML, Icons.JS, Icons.TailwindCSS],
     "https://github.com/AlexEG/YourManga",
     "https://alexeg.github.io/YourManga/",
     "https://alexeg.github.io/PROJECTS/",
     "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
-    ProjectsImages.YourManga
+    ProjectsImages.YourManga,
+    "JEzTcmgGEhc"
   ),
   new Project(
     "Frontend Mentor | Stats preview card component",
     statsPreviewCardComponentImg,
-    [Icons.REACT, Icons.JS, Icons.TIALWINDCSS, Icons.NETLIFY],
+    [Icons.React, Icons.JS, Icons.TailwindCSS, Icons.Netlify],
     "https://github.com/AlexEG/stats-preview-card-component",
     "https://guileless-fairy-6adaab.netlify.app/",
     "https://alexeg.github.io/PROJECTS/",
@@ -59,7 +63,17 @@ export default [
   new Project(
     "Every_Day_Calendar",
     Every_Day_Calendar,
-    [Icons.HTML, Icons.JS, Icons.TIALWINDCSS],
+    [Icons.HTML, Icons.JS, Icons.TailwindCSS],
+    "https://github.com/AlexEG/Every_Day_Calendar",
+    "https://alexeg.github.io/Every_Day_Calendar/",
+    "https://alexeg.github.io/PROJECTS/",
+    "19f61fe3-78ec-469f-8f4d-6158b7eb862e",
+    ProjectsImages.YourManga
+  ),
+  new Project(
+    "Every_Day_Calendar",
+    Every_Day_Calendar,
+    [Icons.HTML, Icons.JS, Icons.TailwindCSS],
     "https://github.com/AlexEG/Every_Day_Calendar",
     "https://alexeg.github.io/Every_Day_Calendar/",
     "https://alexeg.github.io/PROJECTS/",

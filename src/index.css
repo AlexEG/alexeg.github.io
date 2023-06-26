@@ -34,6 +34,8 @@ body::-webkit-scrollbar {
   width: 5px;
 }
 
+
+
 body::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
@@ -46,4 +48,31 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background: hsla(261, 100%, 50%, 0.69);
+}
+
+
+.magic-text {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  background: linear-gradient(to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple));
+  animation: background-pan 3s linear infinite;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
 }
