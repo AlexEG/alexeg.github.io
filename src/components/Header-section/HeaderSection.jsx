@@ -1,11 +1,13 @@
 import logo from "../../assets/favicon.png";
 import Icons from "../Projects-section/projects-data/Icons";
-import DataLanguagesTools from "../User-data/DataLanguagesTools";
+// import UserData from "../UserData";
+import { languagesToolsGoodAt } from "../UserData";
+import { languagesToolsStudyingNow } from "../UserData";
 
 function HeaderSection() {
-  const unknown_LangOrTool = `brightness-[0.35]`;
-  // const studyingNow_LangOrTool = `animate-pulse brightness-75`;
-  const goodAt_LangOrTool = `brightness-110`;
+  const unknownLangTool = `brightness-[0.35]`;
+  const studyingNowLangTool = `animate-pulse brightness-75`;
+  const goodAtLangTool = `brightness-110`;
 
   const allLanguagesToolsIconsArr = Object.values(Icons);
   const allLanguagesToolsIconsArrTitle = Object.keys(Icons);
@@ -19,9 +21,13 @@ function HeaderSection() {
       <img
         key={icon}
         className={`w-11 ${
-          DataLanguagesTools.includes(allLanguagesToolsIconsArrTitle[i])
-            ? goodAt_LangOrTool
-            : unknown_LangOrTool
+          languagesToolsGoodAt.includes(allLanguagesToolsIconsArrTitle[i])
+            ? goodAtLangTool
+            : languagesToolsStudyingNow.includes(
+                allLanguagesToolsIconsArrTitle[i]
+              )
+            ? studyingNowLangTool
+            : unknownLangTool
         }`}
         src={icon}
         alt={allLanguagesToolsIconsArrTitle[i]}

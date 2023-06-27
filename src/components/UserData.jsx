@@ -1,4 +1,4 @@
-export default [
+export const languagesToolsGoodAt = [
   "HTML",
   "CSS",
   "Sass",
@@ -19,4 +19,14 @@ export default [
   "Elixir",
   "Ruby",
   "Replit",
+  "Remix",
+  "MySQL",
+  "Heroku",
+  "Zig",
+];
+export const languagesToolsStudyingNow = [
+  "Rust",
+  "Gulp",
+  "Supabase",
+  "Markdown",
 ];
