@@ -52,14 +52,14 @@ function ProjectContainer({ projectData }) {
         galleryImgsArr={projectData.galleryImgsArr}
         YouTubeEmbedURL={projectData.YouTubeEmbedURL}
       />
-      {!isExpanded && (
-        <ProjectMoreInfo
-          justify={justify}
-          isDisplay={isDisplay ? true : false}
-          githubRepoName={projectData.githubLink.slice(26)}
-          wakatimeProjectID={projectData.wakatimeProjectID}
-        />
-      )}
+
+      <ProjectMoreInfo
+        justify={justify}
+        isExpanded={isExpanded}
+        isDisplay={isDisplay ? true : false}
+        githubRepoName={projectData.githubLink.slice(26)}
+        wakatimeProjectID={projectData.wakatimeProjectID}
+      />
     </div>
   );
 }

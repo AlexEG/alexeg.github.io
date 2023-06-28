@@ -8,6 +8,7 @@ function ProjectMoreInfo({
   isDisplay,
   githubRepoName,
   wakatimeProjectID,
+  isExpanded,
 }) {
   const [description, setDescription] = useState("???????? ???? ??????? ????");
 
@@ -32,7 +33,9 @@ function ProjectMoreInfo({
 
   return (
     <div
-      className={` bg-gray-900 w-[calc(100%-690px)] h-full z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
+      className={` bg-gray-900 w-[calc(100%-690px)] ${
+        isExpanded && "invisible"
+      } h-full z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
     >
       <ProjectShields
         githubRepoName={githubRepoName}
@@ -40,7 +43,7 @@ function ProjectMoreInfo({
       />
       <ProjectGithubAPI githubRepoName={githubRepoName} />
 
-      <div className="{/*border border-pink-600*/ } w-full h-40">
+      <div className="border border-pink-600  w-full h-40">
         <h3 className="text-gray-200 font-bold text-lg ">Description</h3>
         <p className=" text-gray-300">{description}</p>
       </div>

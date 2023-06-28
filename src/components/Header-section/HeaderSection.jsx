@@ -1,8 +1,8 @@
 import logo from "../../assets/favicon.png";
-import Icons from "../Projects-section/projects-data/Icons";
+import Icons from "../Projects-section/Icons";
 // import UserData from "../UserData";
-import { languagesToolsGoodAt } from "../UserData";
-import { languagesToolsStudyingNow } from "../UserData";
+import { languagesToolsGoodAt } from "../User-data/UserData";
+import { languagesToolsStudyingNow } from "../User-data/UserData";
 
 function HeaderSection() {
   const unknownLangTool = `brightness-[0.35]`;
