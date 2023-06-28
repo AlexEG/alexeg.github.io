@@ -19,7 +19,7 @@ function ProjectPhotoGallery({
   return (
     <div
       className={` bg-gray-900 ${
-        isExpanded ? " h-[26rem]" : "h-64 "
+        isExpanded ? " h-[26rem]" : "h-[17rem] "
       }  flex justify-center relative `}
     >
       {imageInView === galleryImgsArr[galleryImgsArr.length - 1] ? (

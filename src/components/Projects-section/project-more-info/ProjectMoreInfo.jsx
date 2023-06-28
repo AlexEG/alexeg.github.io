@@ -32,7 +32,7 @@ function ProjectMoreInfo({
 
   return (
     <div
-      className={` bg-gray-900 w-[calc(100%-690px)] h-full  z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
+      className={` bg-gray-900 w-[calc(100%-690px)] h-full z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
     >
       <ProjectShields
         githubRepoName={githubRepoName}

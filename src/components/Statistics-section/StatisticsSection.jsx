@@ -57,7 +57,6 @@ function StatisticsSection() {
             src="https://github-readme-streak-stats.herokuapp.com/?user=AlexEG&hide_border=true&card_width=420&theme=radical"
             alt="AlexEG"
           />
-
           <img
             className=" h-[150px]  rounded-lg"
             src="https://github-readme-stats.vercel.app/api?username=AlexEG&show_icons=true&count_private=true&hide_border=true&theme=radical"
@@ -69,7 +68,6 @@ function StatisticsSection() {
             alt="AlexEG"
           />
         </div>
-
         <img
           className=" h-[320px] rounded-lg"
           src="https://github-readme-activity-graph.vercel.app/graph?username=AlexEG&theme=redical&height=400&hide_border=true"

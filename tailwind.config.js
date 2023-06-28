@@ -74,6 +74,32 @@ export default {
         //     'background-position': 0% center
         //   }
         // }
+
+        "languages-tools-rows-animation-rl": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0",
+          },
+          "50%": {
+            opacity: "1",
+          },
+
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        "languages-tools-rows-animation-lr": {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0",
+          },
+          "50%": {
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
       },
     },
   },
