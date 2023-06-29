@@ -35,9 +35,15 @@ function ProjectBox({
         : prevImg;
     });
   }
-
+  // transition-all -translate-x-[418px] duration-1000 delay-1000
   return (
-    <div className=" text-gray-50 font-semibold  aspect-video h-full  bg-gray-950 group z-10 relative">
+    <div
+      className={` ${
+        isExpanded
+          ? "justify-center animate-[project-box-expand-open_3s_ease-in-out_1_forwards]  "
+          : "bg-gray-950"
+      } text-gray-50 font-semibold aspect-video h-96  bg-gray-950 group z-10 relative overflow-hidden`}
+    >
       <ProjectTitle projectName={projectName} />
 
       <ProjectPhotoGallery

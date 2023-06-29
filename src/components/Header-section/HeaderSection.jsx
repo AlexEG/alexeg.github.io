@@ -50,7 +50,7 @@ function HeaderSection() {
   // console.log(row4);
 
   return (
-    <div className=" h-96 border-2 overflow-hidden border-pink-500">
+    <div className=" h-96  overflow-hidden ">
       {/* logo & name [start] */}
       <div className="flex justify-center items-center flex-col mb-5">
         <img className="w-20" src={logo} alt="" />

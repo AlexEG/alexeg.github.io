@@ -28,8 +28,10 @@ function ProjectContainer({ projectData }) {
   return (
     <div
       className={`w-full ${
-        isExpanded ? "h-[620px] py-2 bg-zinc-900 justify-center" : "h-96"
-      } flex ${justify} relative overflow-hidden `}
+        isExpanded
+          ? "p-2 bg-zinc-900   rounded-lg  items-end animate-[ProjectContainer-expand-open_1s_ease-in-out_1_forwards]"
+          : `h-96 `
+      } flex  relative ${justify} overflow-hidden  -pink-700 `}
     >
       <button
         onClick={displayMoreInfo}

@@ -66,15 +66,45 @@ export default {
             opacity: "1",
           },
         },
-        //todo isExpanded <ProjectBox />
 
-        // Animation '<AlexEG />'
-        // 'header-alexeg': {
-        //   from {
-        //     'background-position': 0% center
-        //   }
-        // }
+        //* <ProjectSection />  isExpanded
 
+        //? <ProjectContainer />
+        "ProjectContainer-expand-open": {
+          "0%": {
+            height: "384px",
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+            height: "620px",
+          },
+        },
+
+        //? <ProjectBox />
+        "project-box-expand-open": {
+          "0%": {
+            transform: "translate(0,0)",
+          },
+          "20%": {
+            transform: "translate(0,0)",
+          },
+
+          "45%": {
+            transform: "translate(-418px,0)",
+          },
+          "70%": {
+            transform: "translate(-418px,-111px)",
+            height: "24rem",
+          },
+
+          "100%": {
+            transform: "translate(-223px,0)",
+            height: "100%",
+          },
+        },
+
+        //* <Header />
         "languages-tools-rows-animation-rl": {
           "0%": {
             transform: "translateX(100%)",
