@@ -53,6 +53,7 @@ function ProjectContainer({ projectData }) {
         isExpanded={isExpanded}
         galleryImgsArr={projectData.galleryImgsArr}
         YouTubeEmbedURL={projectData.YouTubeEmbedURL}
+        justify={justify}
       />
 
       <ProjectMoreInfo

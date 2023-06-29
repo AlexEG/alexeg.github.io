@@ -82,7 +82,7 @@ export default {
         },
 
         //? <ProjectBox />
-        "project-box-expand-open": {
+        "project-box-expand-open-rl": {
           "0%": {
             transform: "translate(0,0)",
           },
@@ -100,6 +100,27 @@ export default {
 
           "100%": {
             transform: "translate(-223px,0)",
+            height: "100%",
+          },
+        },
+        "project-box-expand-open-lr": {
+          "0%": {
+            transform: "translate(0,0)",
+          },
+          "20%": {
+            transform: "translate(0,0)",
+          },
+
+          "45%": {
+            transform: "translate(418px,0)",
+          },
+          "70%": {
+            transform: "translate(418px,-111px)",
+            height: "24rem",
+          },
+
+          "100%": {
+            transform: "translate(223px,0)",
             height: "100%",
           },
         },

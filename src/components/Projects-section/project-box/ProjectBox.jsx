@@ -17,6 +17,7 @@ function ProjectBox({
   isExpanded,
   galleryImgsArr,
   YouTubeEmbedURL,
+  justify,
 }) {
   // ---------------------
   const [imageInView, setImageInView] = useState(img);
@@ -35,13 +36,16 @@ function ProjectBox({
         : prevImg;
     });
   }
-  // transition-all -translate-x-[418px] duration-1000 delay-1000
+
+  const expandAnimation =
+    justify === "justify-end"
+      ? "animate-[project-box-expand-open-rl_3s_ease-in-out_1_forwards]"
+      : "animate-[project-box-expand-open-lr_3s_ease-in-out_1_forwards]";
+
   return (
     <div
       className={` ${
-        isExpanded
-          ? "justify-center animate-[project-box-expand-open_3s_ease-in-out_1_forwards]  "
-          : "bg-gray-950"
+        isExpanded ? `justify-center ${expandAnimation}` : "bg-gray-950"
       } text-gray-50 font-semibold aspect-video h-96  bg-gray-950 group z-10 relative overflow-hidden`}
     >
       <ProjectTitle projectName={projectName} />
