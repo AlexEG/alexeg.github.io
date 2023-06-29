@@ -8,6 +8,7 @@ function ProjectMoreInfo({
   isDisplay,
   githubRepoName,
   wakatimeProjectID,
+  isExpanded,
 }) {
   const [description, setDescription] = useState("???????? ???? ??????? ????");
 
@@ -21,18 +22,20 @@ function ProjectMoreInfo({
     justify === "justify-start"
       ? `${
           isDisplay
-            ? "animate-[project-info-l-open_1s_ease-in-out_1_forwards]"
-            : "animate-[project-info-l-close_1s_ease-in-out_1_forwards]"
+            ? "animate-[projectInfoLeftBoxOpen_1s_ease-in-out_1_forwards]"
+            : "animate-[projectInfoLeftBoxClose_1s_ease-in-out_1_forwards]"
         } right-0`
       : `${
           isDisplay
-            ? "animate-[project-info-r-open_1s_ease-in-out_1_forwards]"
-            : "animate-[project-info-r-close_1s_ease-in-out_1_forwards]"
+            ? "animate-[projectInfoRightBoxOpen_1s_ease-in-out_1_forwards]"
+            : "animate-[projectInfoRightBoxClose_1s_ease-in-out_1_forwards]"
         } left-0`;
 
   return (
     <div
-      className={` bg-gray-900 w-[calc(100%-690px)] h-full z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
+      className={` bg-gray-900 w-[calc(100%-690px)] ${
+        isExpanded && "invisible"
+      } h-full z-0 absolute top-0 p-3  ${rightLeftOpenCloseAnimation} `}
     >
       <ProjectShields
         githubRepoName={githubRepoName}
@@ -40,7 +43,7 @@ function ProjectMoreInfo({
       />
       <ProjectGithubAPI githubRepoName={githubRepoName} />
 
-      <div className="{/*border border-pink-600*/ } w-full h-40">
+      <div className="border border-pink-600  w-full h-40">
         <h3 className="text-gray-200 font-bold text-lg ">Description</h3>
         <p className=" text-gray-300">{description}</p>
       </div>

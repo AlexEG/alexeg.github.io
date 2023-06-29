@@ -1,105 +1,43 @@
 /** @type {import('tailwindcss').Config} */
+
+// <Header />
+import { languagesToolsRowsAnimationRL } from "./src/components/Header-section/HeaderLanguagesToolsAnimation";
+import { languagesToolsRowsAnimationLR } from "./src/components/Header-section/HeaderLanguagesToolsAnimation";
+
+// <ProjectBox />
+import { projectBoxExpandOpenLR } from "./src/components/Projects-section/project-box/ProjectBoxAinmation";
+import { projectBoxExpandOpenRL } from "./src/components/Projects-section/project-box/ProjectBoxAinmation";
+
+// <ProjectContainer />
+import { projectContainerExpandOpen } from "./src/components/Projects-section/projectContainerAnimation";
+
+// <ProjectMoreInfo />
+import { projectInfoLeftBoxClose } from "./src/components/Projects-section/project-more-info/ProjectMoreInfoAnimation";
+import { projectInfoLeftBoxOpen } from "./src/components/Projects-section/project-more-info/ProjectMoreInfoAnimation";
+import { projectInfoRightBoxClose } from "./src/components/Projects-section/project-more-info/ProjectMoreInfoAnimation";
+import { projectInfoRightBoxOpen } from "./src/components/Projects-section/project-more-info/ProjectMoreInfoAnimation";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       keyframes: {
-        // project box in the left side
-        "project-info-l-close": {
-          "0%": {
-            left: "690px",
-            visibility: "visible",
-            opacity: "1",
-          },
+        //* <ProjectMoreInfo /> *//
+        projectInfoLeftBoxClose,
+        projectInfoLeftBoxOpen,
+        projectInfoRightBoxClose,
+        projectInfoRightBoxOpen,
 
-          "100%": {
-            left: "0px",
-            visibility: "hidden",
-            opacity: "0",
-          },
-        },
-        "project-info-l-open": {
-          "0%": {
-            left: "0",
-            visibility: "hidden",
-            opacity: "0",
-          },
-          "1%": {
-            left: "0",
-            visibility: "visible",
-            opacity: "0",
-          },
+        //* <ProjectContainer /> *//
+        projectContainerExpandOpen,
 
-          "100%": {
-            left: "690px",
-            opacity: "1",
-          },
-        },
-        // project box in the right side
-        "project-info-r-close": {
-          "0%": {
-            left: "0px",
-            visibility: "visible",
-            opacity: "1",
-          },
+        //* <ProjectBox /> *//
+        projectBoxExpandOpenRL,
+        projectBoxExpandOpenLR,
 
-          "100%": {
-            left: "690px",
-            visibility: "hidden",
-            opacity: "0",
-          },
-        },
-        "project-info-r-open": {
-          "0%": {
-            left: "690px",
-            visibility: "hidden",
-            opacity: "0",
-          },
-          "1%": {
-            left: "690px",
-            visibility: "visible",
-            opacity: "0",
-          },
-
-          "100%": {
-            left: "0",
-            opacity: "1",
-          },
-        },
-        //todo isExpanded <ProjectBox />
-
-        // Animation '<AlexEG />'
-        // 'header-alexeg': {
-        //   from {
-        //     'background-position': 0% center
-        //   }
-        // }
-
-        "languages-tools-rows-animation-rl": {
-          "0%": {
-            transform: "translateX(100%)",
-            opacity: "0",
-          },
-          "50%": {
-            opacity: "1",
-          },
-
-          "100%": {
-            transform: "translateX(0)",
-          },
-        },
-        "languages-tools-rows-animation-lr": {
-          "0%": {
-            transform: "translateX(-100%)",
-            opacity: "0",
-          },
-          "50%": {
-            opacity: "1",
-          },
-          "100%": {
-            transform: "translateX(0)",
-          },
-        },
+        //* <Header /> *//
+        languagesToolsRowsAnimationRL,
+        languagesToolsRowsAnimationLR,
       },
     },
   },

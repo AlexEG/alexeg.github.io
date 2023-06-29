@@ -27,11 +27,13 @@ function GalleryImg({
         }`}
       />
       {projectImg === galleryImgsArr[galleryImgsArr.length - 1] && (
-        <div className=" w-full h-full bg-[#00000055] absolute top-0 left-0 flex justify-center items-center cursor-pointer ">
+        <div
+          onClick={changeImageInView}
+          className=" w-full h-full bg-[#00000055] absolute top-0 left-0 flex justify-center items-center cursor-pointer p-2"
+        >
           <img
-            onClick={changeImageInView}
             src={youtubeLogo}
-            className="max-h-full max-w-full hover:animate-pulse"
+            className="max-h-full max-w-full animate-pulse"
             alt="YouTube"
           />
         </div>

@@ -1,10 +1,10 @@
-import statsPreviewCardComponentImg from "../../../assets/localhost_5173_.png";
-import Every_Day_Calendar from "../../../assets/Every Day Calendar.png";
+import statsPreviewCardComponentImg from "../../assets/localhost_5173_.png";
+import Every_Day_Calendar from "../../assets/Every Day Calendar.png";
 
 // images
 import ProjectsImages from "./ProjectsImages";
 
-import Icons from "./Icons";
+import Icons from "../Projects-section/Icons";
 
 class Project {
   static projectsCount = 0;

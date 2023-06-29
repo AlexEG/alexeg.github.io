@@ -28,8 +28,10 @@ function ProjectContainer({ projectData }) {
   return (
     <div
       className={`w-full ${
-        isExpanded ? "h-[620px] py-2 bg-zinc-900 justify-center" : "h-96"
-      } flex ${justify} relative overflow-hidden `}
+        isExpanded
+          ? "p-2 bg-zinc-900   rounded-lg  items-end animate-[projectContainerExpandOpen_1s_ease-in-out_1_forwards]"
+          : `h-96 `
+      } flex  relative ${justify} overflow-hidden  -pink-700 `}
     >
       <button
         onClick={displayMoreInfo}
@@ -51,15 +53,16 @@ function ProjectContainer({ projectData }) {
         isExpanded={isExpanded}
         galleryImgsArr={projectData.galleryImgsArr}
         YouTubeEmbedURL={projectData.YouTubeEmbedURL}
+        justify={justify}
       />
-      {!isExpanded && (
-        <ProjectMoreInfo
-          justify={justify}
-          isDisplay={isDisplay ? true : false}
-          githubRepoName={projectData.githubLink.slice(26)}
-          wakatimeProjectID={projectData.wakatimeProjectID}
-        />
-      )}
+
+      <ProjectMoreInfo
+        justify={justify}
+        isExpanded={isExpanded}
+        isDisplay={isDisplay ? true : false}
+        githubRepoName={projectData.githubLink.slice(26)}
+        wakatimeProjectID={projectData.wakatimeProjectID}
+      />
     </div>
   );
 }
