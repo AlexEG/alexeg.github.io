@@ -39,8 +39,8 @@ function ProjectBox({
 
   const expandAnimation =
     justify === "justify-end"
-      ? "animate-[project-box-expand-open-rl_3s_ease-in-out_1_forwards]"
-      : "animate-[project-box-expand-open-lr_3s_ease-in-out_1_forwards]";
+      ? "animate-[projectBoxExpandOpenRL_3s_ease-in-out_1_forwards]"
+      : "animate-[projectBoxExpandOpenLR_3s_ease-in-out_1_forwards]";
 
   return (
     <div

@@ -29,7 +29,7 @@ function ProjectContainer({ projectData }) {
     <div
       className={`w-full ${
         isExpanded
-          ? "p-2 bg-zinc-900   rounded-lg  items-end animate-[ProjectContainer-expand-open_1s_ease-in-out_1_forwards]"
+          ? "p-2 bg-zinc-900   rounded-lg  items-end animate-[projectContainerExpandOpen_1s_ease-in-out_1_forwards]"
           : `h-96 `
       } flex  relative ${justify} overflow-hidden  -pink-700 `}
     >

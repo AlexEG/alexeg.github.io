@@ -48,7 +48,6 @@ function HeaderSection() {
   // console.log(row2);
   // console.log(row3);
   // console.log(row4);
-
   return (
     <div className=" h-96  overflow-hidden ">
       {/* logo & name [start] */}
@@ -59,16 +58,16 @@ function HeaderSection() {
       </div>
       {/* logo & name [end] */}
 
-      <div className=" animate-[languages-tools-rows-animation-rl_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-end ">
+      <div className=" animate-[languagesToolsRowsAnimationRL_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-end ">
         <div className="flex flex-wrap gap-3">{row1}</div>
       </div>
-      <div className=" animate-[languages-tools-rows-animation-lr_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-start ">
+      <div className=" animate-[languagesToolsRowsAnimationLR_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-start ">
         <div className="flex flex-wrap gap-3">{row2}</div>
       </div>
-      <div className=" animate-[languages-tools-rows-animation-rl_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-end ">
+      <div className=" animate-[languagesToolsRowsAnimationRL_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-end ">
         <div className="flex flex-wrap gap-3">{row3}</div>
       </div>
-      <div className=" animate-[languages-tools-rows-animation-lr_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-start ">
+      <div className=" animate-[languagesToolsRowsAnimationLR_2.5s_ease-in-out_1_forwards] max-w-screen-lg mx-auto flex gap-3 mb-3 justify-start ">
         <div className="flex flex-wrap gap-3">{row4}</div>
       </div>
     </div>

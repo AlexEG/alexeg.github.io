@@ -22,13 +22,13 @@ function ProjectMoreInfo({
     justify === "justify-start"
       ? `${
           isDisplay
-            ? "animate-[project-info-l-open_1s_ease-in-out_1_forwards]"
-            : "animate-[project-info-l-close_1s_ease-in-out_1_forwards]"
+            ? "animate-[projectInfoLeftBoxOpen_1s_ease-in-out_1_forwards]"
+            : "animate-[projectInfoLeftBoxClose_1s_ease-in-out_1_forwards]"
         } right-0`
       : `${
           isDisplay
-            ? "animate-[project-info-r-open_1s_ease-in-out_1_forwards]"
-            : "animate-[project-info-r-close_1s_ease-in-out_1_forwards]"
+            ? "animate-[projectInfoRightBoxOpen_1s_ease-in-out_1_forwards]"
+            : "animate-[projectInfoRightBoxClose_1s_ease-in-out_1_forwards]"
         } left-0`;
 
   return (
