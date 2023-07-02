@@ -14,6 +14,20 @@ function HeaderSection() {
   // console.log(allLanguagesToolsIconsArr);
   // console.log(allLanguagesToolsIconsArrTitle);
 
+  //* https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm
+  function languagesToolRandomOrder(array1, array2) {
+    for (let i = array1.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array1[i], array1[j]] = [array1[j], array1[i]];
+      [array2[i], array2[j]] = [array2[j], array2[i]];
+    }
+  }
+
+  languagesToolRandomOrder(
+    allLanguagesToolsIconsArr,
+    allLanguagesToolsIconsArrTitle
+  );
+
   const [row1, row2, row3, row4] = [[], [], [], []];
 
   function imgJsx(icon, i) {
