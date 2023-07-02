@@ -5,9 +5,9 @@ import { languagesToolsGoodAt } from "../User-data/UserData";
 import { languagesToolsStudyingNow } from "../User-data/UserData";
 
 function HeaderSection() {
-  const unknownLangTool = `brightness-[0.35]`;
+  const unknownLangTool = `brightness-[0.35] hover:brightness-50 grayscale-[10%]  hover:grayscale-0`;
   const studyingNowLangTool = `animate-pulse brightness-75`;
-  const goodAtLangTool = `brightness-110`;
+  const goodAtLangTool = `brightness-110 hover:brightness-125`;
 
   const allLanguagesToolsIconsArr = Object.values(Icons);
   const allLanguagesToolsIconsArrTitle = Object.keys(Icons);
@@ -29,20 +29,20 @@ function HeaderSection() {
   );
 
   const [row1, row2, row3, row4] = [[], [], [], []];
+  const iconStyleType = (i) =>
+    languagesToolsGoodAt.includes(allLanguagesToolsIconsArrTitle[i])
+      ? goodAtLangTool
+      : languagesToolsStudyingNow.includes(allLanguagesToolsIconsArrTitle[i])
+      ? studyingNowLangTool
+      : unknownLangTool;
 
   function imgJsx(icon, i) {
     return (
       <img
         key={icon}
-        className={`w-11 ${
-          languagesToolsGoodAt.includes(allLanguagesToolsIconsArrTitle[i])
-            ? goodAtLangTool
-            : languagesToolsStudyingNow.includes(
-                allLanguagesToolsIconsArrTitle[i]
-              )
-            ? studyingNowLangTool
-            : unknownLangTool
-        }`}
+        className={`w-11 transition  hover:drop-shadow-langTool ${iconStyleType(
+          i
+        )}`}
         src={icon}
         alt={allLanguagesToolsIconsArrTitle[i]}
         title={allLanguagesToolsIconsArrTitle[i]}

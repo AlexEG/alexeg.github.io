@@ -39,6 +39,9 @@ export default {
         languagesToolsRowsAnimationRL,
         languagesToolsRowsAnimationLR,
       },
+      dropShadow: {
+        langTool: " 0 0 10px rgba(147 51 234 / 1)",
+      },
     },
   },
   plugins: [],

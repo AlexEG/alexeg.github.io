@@ -59,7 +59,6 @@ function StatisticsSection() {
             src="https://img.shields.io/github/followers/AlexEG?logo=github&"
           />
         </a>
-
         <a
           href="https://github.com/AlexEG?tab=repositories"
           rel="noreferrer"
@@ -67,7 +66,7 @@ function StatisticsSection() {
           title="GitHub Repos"
         >
           <div className="h-5 rounded-sm flex overflow-hidden cursor-default">
-            <span className=" bg-slate-700 font-semibold text-slate-200 text-sm px-2">
+            <span className=" bg-slate-700 font-semibold cursor-pointer text-slate-200 text-sm px-2">
               GitHub public Repos
             </span>
             <span className="bg-slate-900 px-2 text-sm text-slate-50 font-bold text-center">
@@ -76,9 +75,7 @@ function StatisticsSection() {
           </div>
         </a>
       </div>
-
       {/* ------------------------------------- */}
-
       {/* GitHub start */}
       <div className=" mx-auto mt-7 w-fit ">
         <div className="flex mb-1 gap-1">
