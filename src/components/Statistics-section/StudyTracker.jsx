@@ -8,7 +8,7 @@ function StudyTracker() {
   const august =
     "2PACX-1vQgYWvVsgjAUCJgfWjluI8BftuJxOtEo7TgMusK5lxOAGzDpBD5SBFIswcGRuWiYCoNvfIAT9ifmX95/pubchart?oid=442379549&amp;format=interactive";
 
-  const [selectedMonth, setSelectedMonth] = useState(june);
+  const [selectedMonth, setSelectedMonth] = useState(july);
 
   function changeSelectedMonth() {
     let chartMonth = document.querySelector("#chartmonth").value;
