@@ -69,7 +69,7 @@ import Supabase_Icon from "../../assets/icons/Supabase-Dark.svg";
 import MaterialUI_Icon from "../../assets/icons/MaterialUI-Dark.svg";
 import Swift_Icon from "../../assets/icons/Swift.svg";
 import WebAssembly_Icon from "../../assets/icons/WebAssembly.svg";
-import Webflow_Icon from "../../assets/icons/Webflow.svg";
+import framerMotion_Icon from "../../assets/icons/framerMotion.webp";
 
 export default {
   AWS: AWS_Icon,
@@ -141,7 +141,7 @@ export default {
   Vite: Vite_Icon,
   VueJS: VueJS_Icon,
   WebAssembly: WebAssembly_Icon,
-  Webflow: Webflow_Icon,
+  framerMotion: framerMotion_Icon,
   WindiCSS: WindiCSS_Icon,
   Zig: Zig_Icon,
 };
