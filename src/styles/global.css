@@ -8,6 +8,79 @@
  @tailwind components;
  @tailwind utilities; */
 
+/* scorllbar  */
+/* ----------------- SCROLLBAR MAIN ----------------- */
+
+/* main::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+#settings section::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 2.5rem;
+}
+main::-webkit-scrollbar-track {
+  background: transparent;
+}
+#settings section::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb {
+  background: rgb(67 56 202);
+}
+#settings section::-webkit-scrollbar-thumb:hover,
+main::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 125, 209);
+} */
+/* 010409 */
+/* ----------------- AniList ----------------- */
+body::-webkit-scrollbar-track {
+  background: #010409;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  /* background: rgb(225 29 72); */
+  background: #30363d;
+  /* border-radius: 5px; */
+}
+
+/* Code Block  */
+
+pre.astro-code.github-dark {
+  padding: 20px;
+  margin-bottom: 2em;
+  font-size: medium;
+  background-color: black !important;
+}
+/* pre.astro-code.github-dark::selection {
+  user-select: text;
+  background-color: red;
+} */
+/* pre.astro-code.github-dark > code {
+  background-color: red;
+} */
+pre.astro-code.github-dark::-webkit-scrollbar-thumb {
+  background: #010409;
+}
+pre.astro-code.github-dark::-webkit-scrollbar-track {
+  margin-inline: 0.2rem;
+}
+pre.astro-code.github-dark::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+pre.astro-code.github-dark::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 5px;
+}
+pre.astro-code.github-dark::-webkit-scrollbar-thumb:hover {
+  background: #636f7e;
+  cursor: grab;
+}
+
 :root {
   --accent: #2337ff;
   --accent-dark: #000d8a;
