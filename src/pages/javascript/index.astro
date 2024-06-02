@@ -1,12 +1,14 @@
 ---
 import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import NavigationSidebar from "../../components/NavigationSidebar/index.astro";
 
 const posts = (await getCollection("javascript")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
@@ -40,35 +42,32 @@ const posts = (await getCollection("javascript")).sort(
       }
       ul li:first-child img {
         width: 100%;
-        filter: brightness(1);
       }
       ul li:first-child .title {
         font-size: 2.369rem;
       }
       ul li img {
         margin-bottom: 0.5rem;
-        border-radius: 2px;
+        border-radius: 12px;
       }
       ul li a {
         display: block;
       }
       .title {
         margin: 0;
-        color: var(--accent-dark);
+        color: rgb(var(--black));
         line-height: 1;
       }
       .date {
         margin: 0;
-        color: var(--text-dark);
+        color: rgb(var(--gray));
       }
-      ul li a:hover h4 {
-        color: var(--accent);
-      }
+      ul li a:hover h4,
       ul li a:hover .date {
-        color: var(--text-light);
+        color: rgb(var(--accent));
       }
       ul a:hover img {
-        /* box-shadow: var(--box-shadow); */
+        box-shadow: var(--box-shadow);
       }
       @media (max-width: 720px) {
         ul {
@@ -85,16 +84,12 @@ const posts = (await getCollection("javascript")).sort(
           font-size: 1.563em;
         }
       }
-      .main-window {
-        background-color: var(--main-dark);
-        min-height: 100vh;
-        width: 100%;
-      }
     </style>
   </head>
   <body class="pl-[47px]">
+    <!-- <Header /> -->
     <NavigationSidebar />
-    <div class="main-window">
+    <div class="w-full min-h-screen bg-[#010409]">
       <main>
         <section>
           <ul>
@@ -107,7 +102,6 @@ const posts = (await getCollection("javascript")).sort(
                       height={360}
                       src={post.data.heroImage}
                       alt=""
-                      class="brightness-75 hover:brightness-110"
                     />
                     <h4 class="title">{post.data.title}</h4>
                     <p class="date">
@@ -121,5 +115,6 @@ const posts = (await getCollection("javascript")).sort(
         </section>
       </main>
     </div>
+    <!-- <Footer /> -->
   </body>
 </html>
