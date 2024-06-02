@@ -8,43 +8,19 @@
  @tailwind components;
  @tailwind utilities; */
 
-/* scorllbar  */
-/* ----------------- SCROLLBAR MAIN ----------------- */
-
-/* main::-webkit-scrollbar {
-  width: 6px;
-  height: 10px;
-}
-#settings section::-webkit-scrollbar-track {
-  background: transparent;
-  margin-top: 2.5rem;
-}
-main::-webkit-scrollbar-track {
-  background: transparent;
-}
-#settings section::-webkit-scrollbar-thumb,
-main::-webkit-scrollbar-thumb {
-  background: rgb(67 56 202);
-}
-#settings section::-webkit-scrollbar-thumb:hover,
-main::-webkit-scrollbar-thumb:hover {
-  background: rgb(100, 125, 209);
-} */
-/* 010409 */
-/* ----------------- AniList ----------------- */
 body::-webkit-scrollbar-track {
-  background: #010409;
+  background: var(--main-dark);
 }
-
 body::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-
 body::-webkit-scrollbar-thumb {
-  /* background: rgb(225 29 72); */
-  background: #30363d;
-  /* border-radius: 5px; */
+  background: var(--accent);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+  cursor: grab;
 }
 
 /* Code Block  */
@@ -55,15 +31,8 @@ pre.astro-code.github-dark {
   font-size: medium;
   background-color: black !important;
 }
-/* pre.astro-code.github-dark::selection {
-  user-select: text;
-  background-color: red;
-} */
-/* pre.astro-code.github-dark > code {
-  background-color: red;
-} */
 pre.astro-code.github-dark::-webkit-scrollbar-thumb {
-  background: #010409;
+  background: var(--main-dark);
 }
 pre.astro-code.github-dark::-webkit-scrollbar-track {
   margin-inline: 0.2rem;
@@ -73,24 +42,31 @@ pre.astro-code.github-dark::-webkit-scrollbar {
   height: 10px;
 }
 pre.astro-code.github-dark::-webkit-scrollbar-thumb {
-  background: #30363d;
+  background: var(--accent);
   border-radius: 5px;
 }
 pre.astro-code.github-dark::-webkit-scrollbar-thumb:hover {
-  background: #636f7e;
+  background: var(--accent-hover);
   cursor: grab;
 }
 
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
+  --main-dark: hsl(218, 80%, 2%);
+  --accent: hsl(212, 12%, 21%);
+  --accent-dark: hsl(216, 28%, 7%);
+
+  --text-light: hsla(218, 12%, 75%, 0.9);
+  --text-dark: hsla(218, 12%, 20%, 0.9);
+
+  --accent-rgb: 48, 54, 61;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-  --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
-    0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
+  --box-shadow: 0 2px 6px rgba(var(--accent-rgb), 25%),
+    0 8px 24px rgba(var(--accent-rgb), 33%),
+    0 16px 32px rgba(var(--accent-rgb), 33%);
 }
 @font-face {
   font-family: "Atkinson";

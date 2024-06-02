@@ -26,7 +26,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       .hero-image img {
         display: block;
         margin: 0 auto;
-        border-radius: 12px;
+        border-radius: 8px;
         /* box-shadow: var(--box-shadow); */
       }
       .prose {
@@ -34,8 +34,41 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         max-width: calc(100% - 2em);
         margin: auto;
         padding: 1em;
-        /* color: rgb(var(--gray-dark)); */
+        color: var(--text-light);
+
+        ul {
+          list-style-type: disc;
+          margin-bottom: 15px;
+          ol {
+            list-style-type: decimal;
+            margin-left: 25px;
+            margin-block: 0px;
+          }
+          ul {
+            list-style-type: circle;
+            margin-left: 25px;
+            margin-block: 0px;
+          }
+        }
+        ol {
+          list-style-type: decimal;
+          margin-bottom: 15px;
+          ol {
+            margin-left: 25px;
+            margin-block: 0px;
+          }
+          ul {
+            list-style-type: circle;
+            margin-left: 25px;
+            margin-block: 0px;
+          }
+        }
+        ul li::marker,
+        ol li::marker {
+          color: var(--text-dark);
+        }
       }
+
       .title {
         margin-bottom: 1em;
         padding: 1em 0;
@@ -44,10 +77,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }
       .title h1 {
         margin: 0 0 0.5em 0;
+        color: var(--text-dark);
       }
       .date {
+        color: var(--accent-light);
         margin-bottom: 0.5em;
-        /* color: rgb(var(--gray)); */
       }
       .last-updated-on {
         font-style: italic;
@@ -60,7 +94,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <NavigationSidebar />
     <div class="w-full min-h-screen bg-[#010409]">
       <main>
-        <article class="text-white/60">
+        <article>
           <div class="hero-image">
             {
               heroImage && (
@@ -88,6 +122,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         </article>
       </main>
     </div>
-    <!-- <Footer /> -->
   </body>
 </html>

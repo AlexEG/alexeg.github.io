@@ -1,20 +1,128 @@
 ---
-import SettingsBtn from "./Settings.astro";
-import Home from "./Home.astro";
-import About from "./About.astro";
-import Japanese from "./Japanese.astro";
-import JavaScript from "./JavaScript.astro";
+import SidebarNavigationBtn from "./SidebarNavigationBtn.astro";
 ---
 
-<nav
-  class="fixed bg-[#0d1117] top-0 left-0 bottom-0 w-[47px] border-r border-[#30363d] flex flex-col"
->
-  <Home />
-  <Japanese />
-  <JavaScript />
+<nav>
+  <SidebarNavigationBtn tooltipText="Home" likeTo="/">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.6"
+      stroke="#ffffff"
+      class="w-7 h-7 opacity-40 group-hover:opacity-90"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+      ></path>
+    </svg>
+  </SidebarNavigationBtn>
+  <SidebarNavigationBtn tooltipText="Japanese" likeTo="/japanese">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 46 46"
+      stroke-width="1.6"
+      stroke="#ffffff"
+      class="w-7 h-7 opacity-40 group-hover:opacity-90"
+    >
+      <path
+        d="M18.0524 5C17.3857 13 17.0524 30.7 21.0524 37.5"
+        stroke="#fff"
+        stroke-width="3"
+        stroke-linecap="round"></path><path
+        d="M8.05237 11C12.719 11.1667 24.8524 11.1 36.0524 9.5"
+        stroke="#fff"
+        stroke-width="3"
+        stroke-linecap="round"></path><path
+        d="M28.5524 16C28.0524 20.6667 25.1524 31.3 17.5524 36.5C9.95236 41.7 7.38569 37.3333 7.05236 34.5C6.6406 31 8.55236 24 16.5524 21C19.8857 19.6667 27.8191 18.631 33.0524 20.5C40.0524 23 45.0524 37.5 25.0524 41"
+        stroke="#fff"
+        stroke-width="3"
+        stroke-linecap="round"></path>
+    </svg>
+  </SidebarNavigationBtn>
+  <SidebarNavigationBtn tooltipText="JavaScript" likeTo="/javascript">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 512 512"
+      stroke-width="1.6"
+      stroke="#ffffff"
+      class="w-7 h-7 opacity-40 group-hover:opacity-90"
+      xml:space="preserve"
+    >
+      <g id="5151e0c8492e5103c096af88a51e7e7e">
+        <path
+          display="inline"
+          fill="#fff"
+          d="M218.195,257.521c0,64.719,4.624,119.1-27.309,151.283c-17.961,18.105-46.301,28.772-81.17,28.772
+        c-57.192,0-88.947-27.862-109.215-66.416c19.512-12.459,39.452-24.502,59.775-36.154c8.292,23.188,36.291,49.258,67.888,33.21
+        c20.027-10.18,17.715-41.04,17.715-74.537c0-69.549,0-149.78,0-212.528c-0.063-1.044-0.125-2.087,0.732-2.214
+        c23.866,0,47.728,0,71.585,0C218.195,134.832,218.195,198.069,218.195,257.521z M399.727,215.462
+        c-18.247-7.814-40.928-17.058-46.488-33.952c-6.233-18.934,4.396-34.533,16.231-39.841c26.023-11.688,57.038,7.556,63.463,27.301
+        c19.583-11.657,39.103-23.384,56.826-36.896c-20.826-34.584-51.354-59.342-107.003-57.561
+        c-30.64,0.979-53.657,10.652-70.841,25.088c-16.771,14.085-29.721,33.854-31.737,61.989
+        c-6.025,84.212,56.988,105.708,110.695,129.137c16.93,7.385,35.751,14.842,43.54,29.517c16.061,30.282-12.389,50.26-36.898,52.397
+        c-39.336,3.427-65.858-19.587-81.175-43.54c-19.133,11.86-39.938,22.045-58.298,34.683c25.537,44.908,67.409,73.98,132.831,73.793
+        c66.74-0.188,116.219-32.366,120.281-92.977C516.677,262.216,454.956,239.105,399.727,215.462z"
+        >
+        </path>
+      </g>
+    </svg>
+  </SidebarNavigationBtn>
 
   <div class="mt-auto">
-    <About />
-    <SettingsBtn />
+    <SidebarNavigationBtn tooltipText="About" likeTo="/about">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.6"
+        stroke="#ffffff"
+        class="w-7 h-7 opacity-40 group-hover:opacity-90"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+        ></path>
+      </svg>
+    </SidebarNavigationBtn>
+    <SidebarNavigationBtn tooltipText="Settings" likeTo="/settings">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.8"
+        stroke="#ffffff"
+        class="w-7 h-7 opacity-40 hover:opacity-90"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+        ></path>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+      </svg>
+    </SidebarNavigationBtn>
   </div>
 </nav>
+
+<style>
+  nav {
+    background-color: var(--accent-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 47px;
+    border-right: solid 1px var(--accent);
+    display: flex;
+    flex-direction: column;
+  }
+</style>
