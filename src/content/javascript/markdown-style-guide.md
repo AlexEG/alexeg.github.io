@@ -2,6 +2,7 @@
 title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
 pubDate: "Mar 05 2024"
+tags: "DOM Manipulation"
 heroImage: "/blog-placeholder-1.jpg"
 ---
 
