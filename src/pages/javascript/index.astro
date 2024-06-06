@@ -9,7 +9,7 @@ import { isDateAtLeastAWeekOld } from "../../scripts/dateUtils";
 const posts = (await getCollection("javascript")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-console.log(posts);
+// console.log(posts);
 ---
 
 <!doctype html>
