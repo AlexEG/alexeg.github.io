@@ -1,0 +1,105 @@
+---
+import SidebarGroupContent from "./SidebarGroupContent.astro";
+import HideSidebarBtn from "./HideSidebarBtn.astro";
+---
+
+<div
+  data-state="open"
+  data-slot="sidebar-container"
+  class="fixed inset-y-0 left-12 z-10 hidden h-svh w-(--sidebar-width) transition-[left,right,width] duration-200 ease-linear md:flex group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l text-neutral-100/90 bg-neutral-500/10 w-60"
+>
+  <div
+    data-sidebar="sidebar"
+    data-slot="sidebar-inner"
+    class="bg-sidebar group-data-[variant=floating]:border-sidebar-border flex h-full w-full flex-col group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:shadow-sm"
+  >
+    <div
+      data-slot="sidebar-content"
+      data-sidebar="content"
+      class="flex min-h-0 flex-1 flex-col gap-2 overflow-auto group-data-[collapsible=icon]:overflow-hidden"
+    >
+      <div
+        data-slot="sidebar-group"
+        data-sidebar="group"
+        class="relative flex w-full min-w-0 flex-col p-2"
+      >
+        <div
+          data-slot="sidebar-group-content"
+          data-sidebar="group-content"
+          class="w-full text-sm"
+        >
+          <ul
+            data-slot="sidebar-menu"
+            data-sidebar="menu"
+            class="flex w-full min-w-0 flex-col gap-1"
+          >
+            <slot />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <HideSidebarBtn />
+</div>
+
+<script>
+  // SidebarGroupContent2
+  const buttons = document.querySelectorAll(
+    "[data-sidebar-group-content-collapsible-trigger]"
+  );
+
+  // Add event listeners to fire confetti when a button is clicked.
+  buttons.forEach((button) => {
+    button.addEventListener("click", () =>
+      SidebarGroupContentCollapsibleBtn(button)
+    );
+  });
+
+  function SidebarGroupContentCollapsibleBtn(button: any) {
+    const groupContainer = button.parentElement?.parentElement;
+
+    // Change container state
+    const groupContainerState = groupContainer?.dataset.state;
+    groupContainerState === "open"
+      ? groupContainer?.setAttribute("data-state", "closed")
+      : groupContainer?.setAttribute("data-state", "open");
+
+    // change button state
+    const buttonState = button?.dataset.state;
+    buttonState === "open"
+      ? button?.setAttribute("data-state", "closed")
+      : button?.setAttribute("data-state", "open");
+
+    // Change SubMenu State && Hide group items
+    const subMenuSate = button?.parentElement?.lastElementChild;
+    subMenuSate?.classList.toggle("hidden");
+
+    subMenuSate?.dataset.state === "open"
+      ? subMenuSate?.setAttribute("data-state", "closed")
+      : subMenuSate?.setAttribute("data-state", "open");
+  }
+
+  // toggle sidebar
+  const hideSidebarBtn = document.querySelectorAll(
+    "[data-sidebar-collapsible-trigger]"
+  );
+
+  hideSidebarBtn.forEach((button) => {
+    button.addEventListener("click", () => toggleSidebar(button));
+  });
+
+  function toggleSidebar(button: Element) {
+    const sidebarState = button?.parentElement;
+
+    // change state
+    sidebarState?.dataset.state === "open"
+      ? sidebarState?.setAttribute("data-state", "closed")
+      : sidebarState?.setAttribute("data-state", "open");
+
+    // change style
+    button?.previousElementSibling?.classList.toggle("hidden");
+    sidebarState?.classList.toggle("w-60");
+
+    button?.classList.toggle("left-60");
+  }
+</script>
