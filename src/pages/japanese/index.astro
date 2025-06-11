@@ -7,10 +7,31 @@ import NavigationSidebar from "../../components/NavigationSidebar/index.astro";
 import { isDateAtLeastAWeekOld } from "../../scripts/dateUtils";
 import ContentSidebar from "../../components/ContentSidebar/index.astro";
 import SidebarGroupContent from "../../components/ContentSidebar/SidebarGroupContent.astro";
+import GroupContentMeunItem from "../../components/ContentSidebar/GroupContentMeunItem.astro";
+
 const posts = (await getCollection("japanese")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-// console.log(posts);
+
+// const folderSet = new Set();
+
+// for (const post of posts) {
+//   const dirTitle = post.slug.split("/")[0];
+//   folderSet.add(dirTitle);
+// }
+
+// const uniqueFolders = Array.from(folderSet);
+
+// Group posts by folder
+const folderMap = new Map();
+
+for (const post of posts) {
+  const [folder, file] = post.slug.split("/");
+  if (!folderMap.has(folder)) {
+    folderMap.set(folder, []);
+  }
+  folderMap.get(folder).push(post);
+}
 ---
 
 <!doctype html>
@@ -24,7 +45,18 @@ const posts = (await getCollection("japanese")).sort(
     <div class="w-full min-h-screen bg-[#010409] py-10">
       <main class="mx-auto max-w-4xl">
         <ContentSidebar>
-          {posts.map((post) => <SidebarGroupContent title={post.slug} />)}
+          {
+            Array.from(folderMap.entries()).map(([folder, folderPosts]) => (
+              <SidebarGroupContent title={folder}>
+                {folderPosts.map((post: any) => (
+                  <GroupContentMeunItem
+                    title={post.slug.split("/")[1]}
+                    dirTitle={post.slug.split("/")[0]}
+                  />
+                ))}
+              </SidebarGroupContent>
+            ))
+          }
         </ContentSidebar>
       </main>
       <!-- <Footer /> -->
