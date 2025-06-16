@@ -16,10 +16,11 @@ Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut c
 
 Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
 
+so this is the new nvim editor where everything is working just fine out of the box kinda
 ![](../assets/blog/images/c.png)
 
 ![](../assets/blog/images/20240225225653.png)
-
+but yeah now that i got my hands on wakatime and git working just fine with lazyvim it's now almost the perfect IDE 
 ```js
 const x = "ffff";
 const y = 6564654;
