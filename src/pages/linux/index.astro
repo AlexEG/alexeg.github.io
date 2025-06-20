@@ -1,0 +1,61 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import NavigationSidebar from "../../components/NavigationSidebar/index.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { isDateAtLeastAWeekOld } from "../../scripts/dateUtils";
+const posts = (await getCollection("linux")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="pl-[47px]">
+    <!-- <Header /> -->
+    <NavigationSidebar />
+    <div class="w-full min-h-screen bg-[#010409] py-10">
+      <main class="mx-auto max-w-4xl">
+        <section>
+                <ul class="flex flex-wrap gap-8">
+            {
+              posts.map((post) => (
+                <li class="w-[calc(50%-1rem)] first-of-type:w-full text-center mb-4 relative overflow-hidden">
+                  <a href={`/linux/${post.slug}/`}>
+                    {isDateAtLeastAWeekOld() && (
+                      <span class="bg-black text-white absolute top-2.5 -right-4 text-xs rotate-45 px-5 z-50">
+                        NEW
+                      </span>
+                    )}
+
+                    <div class="relative">
+                      <img
+                        class="first-of-type:w-full rounded-sm"
+                        width={720}
+                        height={360}
+                        src={post.data.heroImage}
+                        alt=""
+                      />
+                      <div class="absolute bottom-1 left-1 text-xs leading-none text-white/80 bg-black/80 px-2 py-1 rounded-md">
+                        {post.data.tags}
+                      </div>
+                      <p class="absolute bottom-1 right-1 text-xs text-white/50">
+                        <FormattedDate date={post.data.pubDate} />
+                      </p>
+                    </div>
+                    <h4 class="text-lg mt-2 leading-none text-white/80">
+                      {post.data.title}
+                    </h4>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>        </section>
+      </main>
+    </div>
+  </body>
+</html>
