@@ -21,12 +21,12 @@ const posts = (await getCollection("linux")).sort(
     <div class="w-full min-h-screen bg-[#010409] py-10">
       <main class="mx-auto max-w-4xl">
         <section>
-                <ul class="flex flex-wrap gap-8">
+          <ul class="flex flex-wrap gap-8">
             {
               posts.map((post) => (
                 <li class="w-[calc(50%-1rem)] first-of-type:w-full text-center mb-4 relative overflow-hidden">
                   <a href={`/linux/${post.slug}/`}>
-                    {isDateAtLeastAWeekOld() && (
+                    {isDateAtLeastAWeekOld(String(post.data.pubDate)) && (
                       <span class="bg-black text-white absolute top-2.5 -right-4 text-xs rotate-45 px-5 z-50">
                         NEW
                       </span>
@@ -54,7 +54,8 @@ const posts = (await getCollection("linux")).sort(
                 </li>
               ))
             }
-          </ul>        </section>
+          </ul>
+        </section>
       </main>
     </div>
   </body>
