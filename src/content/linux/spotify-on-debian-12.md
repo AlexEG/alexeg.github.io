@@ -3,7 +3,7 @@ title: "Spotify On Debian 12"
 description: "How did I install Spotify with Spic"
 pubDate: "May 18 2025"
 updateDate: "May 20 2025"
-tags: "Debian 12, Spotify, adblocker, Spicetify"
+tags: "Debian-12, Spotify, adblocker, Spicetify"
 heroImage: "/blog-placeholder-3.jpg"
 ---
 
