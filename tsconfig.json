@@ -1,14 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "strictNullChecks": true,
-    "baseUrl": "/home/adam/GitHub/alexeg.github.io",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "strictNullChecks": true
   }
 }

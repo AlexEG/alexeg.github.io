@@ -1,20 +1,13 @@
 ---
-import { Button } from "@/components/ui/button"
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "@/components/ui/menubar"
+import Layout from "../../layouts/BlogPost.astro";
 ---
 
-<div class="bg-neutral-950 w-full min-h-screen">
-
-  <Button variant="outline" size="lg" className="bg-purple-700 text-neutral-200">TEST</Button>
-
-
-</div>
-
+<Layout
+  title="Settings"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  tags="Settings"
+  heroImage="/blog-placeholder-about.jpg"
+>
+  <h1>Settings</h1>
+</Layout>
