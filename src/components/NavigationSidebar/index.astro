@@ -4,7 +4,25 @@ import Home from "./Home.astro";
 import About from "./About.astro";
 import Japanese from "./Japanese.astro";
 import JavaScript from "./JavaScript.astro";
-import Linux from "./Linux.astro";
+import NavbarBtn from "./NavbarBtn.astro"
+import navlayout from "../../data/navlayout.json"
+console.log(navlayout)
+
+import javascripIcon from "../../assets/icon/javascript.svg"
+
+
+import fs from "node:fs/promises"
+import path from "node:path"
+
+const iconBasePath = path.resolve("./src/assets/icon")
+const withIcons = await Promise.all(navlayout.map(async (item) => {
+  const iconPath = path.join(iconBasePath, item.icon)
+  const iconContent = await fs.readFile(iconPath, 'utf-8');
+
+  return {...item, iconContent}
+}))
+
+console.log(withIcons)
 ---
 
 <nav
@@ -13,7 +31,10 @@ import Linux from "./Linux.astro";
   <Home />
   <Japanese />
   <JavaScript />
-  <Linux />
+  {
+withIcons.map((item)=> <NavbarBtn label={item.label} path={item.path} iconContent={item.iconContent} />)
+  }
+ 
 
   <div class="mt-auto">
     <About />

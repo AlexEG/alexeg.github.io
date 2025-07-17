@@ -1,0 +1,46 @@
+---
+
+// const { title, description, image = '' } = Astro.props;
+---
+
+
+
+
+<nav
+  class="fixed bg-[#0d1117] top-0 left-0 bottom-0 w-[47px] border-r border-[#30363d] flex flex-col z-50"
+>
+
+  <div class="mt-auto">
+    
+  </div>
+</nav>
+
+
+
+<style>
+  button .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -4px;
+    border-width: 4px;
+    border-color: transparent #0d1117 transparent transparent;
+  }
+  button .tooltiptext::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -6px;
+    border-width: 6px;
+    border-color: transparent #30363d transparent transparent;
+  }
+  button:hover .tooltiptext {
+    visibility: visible;
+  }
+  button .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+  }
+</style>
