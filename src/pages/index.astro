@@ -4,6 +4,7 @@ import BaseHead from "../components/BaseHead.astro";
 // import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar/index.astro";
+import { Button } from "@/components/ui/button";
 ---
 
 <!doctype html>
@@ -15,6 +16,7 @@ import NavigationSidebar from "../components/NavigationSidebar/index.astro";
     <NavigationSidebar />
     <main class="w-full h-screen bg-[#010409] grid place-content-center">
       <h1 class="text-white">HOME</h1>
+      <Button>Button</Button>
     </main>
   </body>
 </html>
