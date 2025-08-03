@@ -9,5 +9,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://alexeg.github.io",
-  integrations: [mdx(), sitemap(), tailwind(), react()]
+  // integrations: [mdx(), sitemap(), tailwind(), react()]
+  integrations: [mdx(), sitemap(), tailwind()]
 });

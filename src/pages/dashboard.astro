@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/DashbaordLayout.astro";
+import DashboardCard from "@/components/DashboardCard.astro";
+import dashboardData from "../data/dashboard.json";
+---
+
+<Layout>
+  <section
+    class="grid grid-cols-[repeat(20,minmax(50px,1fr))] grid-rows-[repeat(20,minmax(50px,1fr))] gap-4 mx-auto min-h-screen max-w-7xl col-spa"
+  >
+    <!-- Grid items go here -->
+
+    <!-- Row-1  -->
+    <DashboardCard w="col-span-5" h="row-span-3" />
+    <DashboardCard w="col-span-3" h="row-span-3" />
+    <DashboardCard w="col-span-12" h="row-span-3" />
+
+    <!-- Row-2  -->
+    <DashboardCard w="col-span-full" h="row-span-5" />
+
+    <!-- Row-3  -->
+    {
+      dashboardData.map((item) => (
+        <DashboardCard w="col-span-6" h="row-span-3">
+          <p class="text-neutral-50 text-center">{item.test1}</p>
+
+          {item.test2}
+          {item.test3}
+        </DashboardCard>
+      ))
+    }
+
+    <!-- <DashboardCard w="col-span-8" h="row-span-3" />
+    <DashboardCard w="col-span-6" h="row-span-3" /> -->
+  </section>
+</Layout>
