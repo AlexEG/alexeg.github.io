@@ -6,6 +6,9 @@ import Japanese from "./Japanese.astro";
 import JavaScript from "./JavaScript.astro";
 import Linux from "./Linux.astro";
 import Dashbaord from "./Dashboard.astro";
+import Academia from "./Academia.astro";
+import Gallery from "./Gallery.astro";
+import Projects from "./Projects.astro";
 // import NavbarBtn from "./NavbarBtn.astro";
 // import navlayout from "../../data/navlayout.json";
 // console.log(navlayout);
@@ -29,13 +32,16 @@ import Dashbaord from "./Dashboard.astro";
 ---
 
 <nav
-  class="fixed bg-[#0d1117] top-0 left-0 bottom-0 w-[47px] border-r border-[#30363d] flex flex-col z-50"
+  class="fixed bg-neutral-900 top-0 left-0 bottom-0 w-[47px] border-r border-neutral-500/75 flex flex-col z-50"
 >
   <Home />
-  <Japanese />
-  <JavaScript />
-  <Linux />
+  <!-- <Japanese /> -->
+  <!-- <JavaScript /> -->
   <Dashbaord />
+  <Academia />
+  <Gallery />
+  <Projects />
+  <!-- <Linux /> -->
   <!--   
   {
     withIcons.map((item) => (
