@@ -1,0 +1,25 @@
+---
+const { title, hrs, percentage } = Astro.props;
+---
+
+<div
+  class="flex justify-between rounded-2xl mt-1 mx-1 py-1 px-2 gap-2 items-center"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-4 h-4"
+    fill="none"
+    viewBox="0 0 256 256"
+  >
+    <title>{title}</title>
+    <slot />
+  </svg>
+  <p class="text-neutral-300 text-lg">
+    {hrs}
+    <i class="text-xs text-neutral-600">hrs</i>
+  </p>
+  <span
+    class="border border-neutral-600 px-2 py-0.5 rounded-full text-xs cursor-default text-neutral-400"
+    >{percentage}%</span
+  >
+</div>
