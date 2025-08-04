@@ -1,12 +1,27 @@
 ---
-const { label, path, iconContent } = Astro.props;
+const { label, path, viewBox, isHighlighted } = Astro.props;
 
-console.log(path);
+const highlighted1 =
+  "group w-full h-12 grid place-content-center bg-neutral-700 relative before:absolute before:w-0.5 before:h-full before:bg-neutral-200";
+const highlighted2 = "w-7 h-7 opacity-90";
+
+const normal1 = "group w-full h-12 grid place-content-center relative";
+const normal2 = "w-7 h-7 opacity-40 group-hover:opacity-90";
 ---
 
-<a href={path}>
-  <button class="group w-full h-12 grid place-content-center relative">
-    <!-- {Astro.raw(iconContent)} -->
+<a href=`/${path}`>
+  <button class={isHighlighted ? highlighted1 : normal1}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox=`${viewBox}`
+      stroke-width="1.6"
+      stroke="#ffffff"
+      class={isHighlighted ? highlighted2 : normal2}
+    >
+      <slot />
+    </svg>
+
     <span
       class="tooltiptext px-2 py-0.5 border border-[#30363d] bg-[#0d1117] text-sm text-white/75 rounded-[3.2px] top-1/2 -translate-y-1/2 left-[51px] select-text selection:text-white"
       >{label}</span

@@ -1,5 +1,5 @@
 ---
-const { title } = Astro.props;
+const { title, viewBox } = Astro.props;
 ---
 
 <div
@@ -7,11 +7,10 @@ const { title } = Astro.props;
 >
   <svg
     class="w-4 h-4 invert"
-    viewBox="0 0 256 256"
+    viewBox=`${viewBox}`
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    preserveAspectRatio="xMidYMid"
   >
     <slot />
   </svg>

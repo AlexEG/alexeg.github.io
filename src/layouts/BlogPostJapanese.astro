@@ -2,7 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import FormattedDate from "../components/FormattedDate.astro";
-import NavigationSidebar from "../components/NavigationSidebar/index.astro";
+import NavigationSidebar from "../components/NavigationSidebar.astro";
 import { getCollection } from "astro:content";
 import ContentSidebar from "../components/ContentSidebar/index.astro";
 import SidebarGroupContent from "../components/ContentSidebar/SidebarGroupContent.astro";
@@ -12,7 +12,7 @@ type Props = CollectionEntry<"japanese">["data"];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 const posts = (await getCollection("japanese")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 const folderMap = new Map();
 

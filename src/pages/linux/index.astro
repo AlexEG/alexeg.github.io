@@ -2,11 +2,11 @@
 import BaseHead from "../../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
-import NavigationSidebar from "../../components/NavigationSidebar/index.astro";
+import NavigationSidebar from "../../components/NavigationSidebar.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import { isDateAtLeastAWeekOld } from "../../scripts/dateUtils";
 const posts = (await getCollection("linux")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 

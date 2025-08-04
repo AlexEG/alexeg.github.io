@@ -1,5 +1,5 @@
 ---
-import NavigationSidebar from "../components/NavigationSidebar/index.astro";
+import NavigationSidebar from "../components/NavigationSidebar.astro";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const title = "Dashbaord";
@@ -38,7 +38,7 @@ const description = "Dashbaord for all related info about me.";
   </head>
 
   <body class="pl-[47px]">
-    <NavigationSidebar />
+    <NavigationSidebar HighlightedSectionName="dashboard" />
     <div class="w-full min-h-screen bg-neutral-950 py-10">
       <main>
         <slot />
