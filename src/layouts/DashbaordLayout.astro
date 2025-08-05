@@ -37,10 +37,12 @@ const description = "Dashbaord for all related info about me.";
     <meta name="description" content={description} />
   </head>
 
-  <body class="pl-[47px]">
+  <body class="md:pl-[47px]">
     <NavigationSidebar HighlightedSectionName="dashboard" />
-    <div class="w-full min-h-screen bg-neutral-950 py-10">
-      <main>
+    <div
+      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-10 overflow-y-scroll"
+    >
+      <main class="flex justify-center">
         <slot />
       </main>
     </div>
