@@ -1,6 +1,7 @@
 ---
 import DashboardCard from "../DashboardCard.astro";
 import DashboardCardTitle from "../DashboardCardTitle.astro";
+import KeyValueRow from "../KeyValueRow.astro";
 ---
 
 <!-- CodeWars -->
@@ -16,55 +17,23 @@ import DashboardCardTitle from "../DashboardCardTitle.astro";
     ></path>
   </DashboardCardTitle>
 
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Name</span>
-    <span class="text-neutral-200">AlexEG</span>
-  </p>
+  <KeyValueRow key="Name" value="AlexEG" />
+  <KeyValueRow key="Rank" value="KYU 5" />
+  <KeyValueRow key="Honor" value="488" />
+  <KeyValueRow key="Total Completed Kata" value="122" />
+  <KeyValueRow key="Leaderboard position" value="#129,465" />
+  <KeyValueRow key="Honor Percentil" value="Top 17.983%" />
 
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Rank</span>
-    <span class="text-neutral-200">KYU 5</span>
-  </p>
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Honor</span>
-    <span class="text-neutral-200">488</span>
-  </p>
-
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm"
-      >Total Completed Kata</span
-    >
-    <span class="text-neutral-200">122</span>
-  </p>
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm"
-      >Leaderboard position</span
-    >
-    <span class="text-neutral-200">#129,465</span>
-  </p>
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Honor Percentil</span>
-    <span class="text-neutral-200">Top 17.983%</span>
-  </p>
-
-  <p class="flex justify-between px-3 my-1.5">
+  <!-- <p class="flex justify-between px-3 my-1.5">
     <span class="text-neutral-500 font-semibold text-sm">Member Since</span>
     <span class="text-neutral-200">Mar 2023</span>
-  </p>
+  </p> -->
   <!-- <p class="flex justify-between px-3 my-1.5">
     <span class="text-neutral-500 font-semibold text-sm">Last Seen</span>
     <span class="text-neutral-200">Jun 2024</span>
   </p> -->
+
+  <i class="text-[11px] px-1 text-neutral-700 text-center block pt-2"
+    >Member Since Mar 2023</i
+  >
 </DashboardCard>

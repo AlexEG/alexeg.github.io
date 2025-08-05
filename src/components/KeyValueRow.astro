@@ -1,0 +1,10 @@
+---
+const { key, value } = Astro.props;
+---
+
+<p
+  class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
+>
+  <span class="text-neutral-500 font-semibold text-sm">{key}</span>
+  <span class="text-neutral-200">{value}</span>
+</p>

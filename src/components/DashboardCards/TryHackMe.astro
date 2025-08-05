@@ -1,11 +1,12 @@
 ---
 import DashboardCardTitle from "../DashboardCardTitle.astro";
 import DashboardCard from "../DashboardCard.astro";
+import KeyValueRow from "../KeyValueRow.astro";
 ---
 
 <DashboardCard
   col_from="col-start-4"
-  col_to="col-end-6 md:col-end-7"
+  col_to="col-end-6 md:col-end-8"
   row_from="row-start-5"
   row_to="row-end-8"
 >
@@ -15,33 +16,10 @@ import DashboardCard from "../DashboardCard.astro";
     ></path>
   </DashboardCardTitle>
 
-  <p
-    class="flex justify-between px-3 my-1 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Name</span>
-    <span class="text-neutral-200">AlexEG</span>
-  </p>
-
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Level</span>
-    <span class="text-neutral-200">[0x3]</span>
-  </p>
-
-  <p
-    class="flex justify-between px-3 my-1.5 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Rank</span>
-    <span class="text-neutral-200">701364</span>
-  </p>
-
-  <p
-    class="flex justify-between px-3 my-1 relative after:absolute after:w-2/3 after:h-[1px] after:bg-neutral-700 after:-bottom-0.5 after:left-1/2 after:transform after:-translate-x-1/2"
-  >
-    <span class="text-neutral-500 font-semibold text-sm">Badges</span>
-    <span class="text-neutral-200">2</span>
-  </p>
+  <KeyValueRow key="Name" value="AlexEG" />
+  <KeyValueRow key="Level" value="[0x3]" />
+  <KeyValueRow key="Rank" value="#701364" />
+  <KeyValueRow key="Badges" value="2" />
 
   <p class="flex justify-between px-3 my-1">
     <span class="text-neutral-500 font-semibold text-sm">Completed Rooms</span>

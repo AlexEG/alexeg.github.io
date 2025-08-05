@@ -1,0 +1,29 @@
+---
+import DashboardCard from "../DashboardCard.astro";
+import DuoLogo from "../../assets/icon/duolingo.ico";
+import KeyValueRow from "../KeyValueRow.astro";
+---
+
+<DashboardCard
+  col_from="col-start-8"
+  col_to="col-end-12"
+  row_from="md:row-start-1"
+  row_to="row-span-3 +md:row-end-3"
+>
+  <div
+    class="flex bg-neutral-700 rounded-2xl mt-1 mx-1 py-1 pl-2 gap-2 items-center text-neutral-300 text-sm"
+  >
+    <img class="grayscale w-4 h-4" src={DuoLogo} alt="" />
+    <p>Duolingo</p>
+  </div>
+
+  <KeyValueRow key="Name" value="AlexEG_" />
+  <KeyValueRow key="Total XP" value="81,084" />
+  <KeyValueRow key="Followers" value="109" />
+  <KeyValueRow key="Current League" value="Pearl" />
+  <!-- <KeyValueRow key="Member Since" value="June 2022" /> -->
+
+  <i class="text-[11px] px-1 text-neutral-700 text-center block pt-1"
+    >Member Since June 2022</i
+  >
+</DashboardCard>
