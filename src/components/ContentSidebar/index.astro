@@ -1,5 +1,5 @@
 ---
-import SidebarGroupContent from "./SidebarGroupContent.astro";
+// import SidebarGroupContent from "./SidebarGroupContent.astro";
 import HideSidebarBtn from "./HideSidebarBtn.astro";
 ---
 
@@ -45,13 +45,13 @@ import HideSidebarBtn from "./HideSidebarBtn.astro";
 <script>
   // SidebarGroupContent2
   const buttons = document.querySelectorAll(
-    "[data-sidebar-group-content-collapsible-trigger]"
+    "[data-sidebar-group-content-collapsible-trigger]",
   );
 
   // Add event listeners to fire confetti when a button is clicked.
   buttons.forEach((button) => {
     button.addEventListener("click", () =>
-      SidebarGroupContentCollapsibleBtn(button)
+      SidebarGroupContentCollapsibleBtn(button),
     );
   });
 
@@ -81,7 +81,7 @@ import HideSidebarBtn from "./HideSidebarBtn.astro";
 
   // toggle sidebar
   const hideSidebarBtn = document.querySelectorAll(
-    "[data-sidebar-collapsible-trigger]"
+    "[data-sidebar-collapsible-trigger]",
   );
 
   hideSidebarBtn.forEach((button) => {

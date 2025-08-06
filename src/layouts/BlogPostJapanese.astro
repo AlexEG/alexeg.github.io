@@ -17,7 +17,7 @@ const posts = (await getCollection("japanese")).sort(
 const folderMap = new Map();
 
 for (const post of posts) {
-  const [folder, file] = post.slug.split("/");
+  const [folder] = post.slug.split("/");
   if (!folderMap.has(folder)) {
     folderMap.set(folder, []);
   }

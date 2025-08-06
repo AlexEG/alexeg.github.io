@@ -2,15 +2,15 @@
 import BaseHead from "../../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
-import NavigationSidebar from "../../components/NavigationSidebar/index.astro";
-import { isDateAtLeastAWeekOld } from "../../scripts/dateUtils";
+// import FormattedDate from "../../components/FormattedDate.astro";
+import NavigationSidebar from "../../components/NavigationSidebar.astro";
+// import { isDateAtLeastAWeekOld } from "../../scripts/dateUtils";
 import ContentSidebar from "../../components/ContentSidebar/index.astro";
 import SidebarGroupContent from "../../components/ContentSidebar/SidebarGroupContent.astro";
 import GroupContentMeunItem from "../../components/ContentSidebar/GroupContentMeunItem.astro";
 
 const posts = (await getCollection("japanese")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 // const folderSet = new Set();
@@ -26,7 +26,7 @@ const posts = (await getCollection("japanese")).sort(
 const folderMap = new Map();
 
 for (const post of posts) {
-  const [folder, file] = post.slug.split("/");
+  const [folder] = post.slug.split("/");
   if (!folderMap.has(folder)) {
     folderMap.set(folder, []);
   }
