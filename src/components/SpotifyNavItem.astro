@@ -1,10 +1,10 @@
 ---
-const { text, isHighlighted } = Astro.props;
+const { id, text, isHighlighted } = Astro.props;
 
 const highlighted =
   "border border-neutral-400 text-neutral-950 px-2 py-0.5 rounded-full text-[10px] cursor-default bg-neutral-400";
 const normal =
-  "border border-neutral-600 px-2 py-0.5 rounded-full text-[10px] cursor-default text-neutral-400";
+  "border border-neutral-600 px-2 py-0.5 rounded-full text-[10px] text-neutral-400 cursor-pointer";
 ---
 
-<span class={isHighlighted ? highlighted : normal}>{text}</span>
+<span id={id} class={isHighlighted ? highlighted : normal}>{text}</span>

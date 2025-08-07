@@ -4,10 +4,10 @@ const { songArtcover, name, artist, link } = Astro.props;
 ---
 
 <li
-  class="bg-neutral-700 flex justify-between items-center rounded-xl overflow-hidden pr-2"
+  class="h-12 bg-neutral-800+ flex justify-between items-center rounded-xl+ overflow-hidden pr-2"
 >
   <div class="flex items-center gap-4">
-    <Image class="aspect-square w-14" src={songArtcover} alt="image" />
+    <Image class="aspect-square w-12" src={songArtcover} alt="image" />
     <p class="text-neutral-200 font-semibold truncate">{name}</p>
   </div>
 
@@ -15,7 +15,7 @@ const { songArtcover, name, artist, link } = Astro.props;
     <p class="text-neutral-400 font-medium text-xs max-w-40 truncate">
       {artist}
     </p>
-    <a href=`https://open.spotify.com/track/${link}`>
+    <a href=`https://open.spotify.com/${link}` target="_blank">
       <svg
         class="w-6 h-6"
         viewBox="0 0 48 48"
@@ -23,7 +23,7 @@ const { songArtcover, name, artist, link } = Astro.props;
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        <title>Open this track on Spotify</title>
+        <title>Open on Spotify</title>
         <g
           id="Icons"
           stroke="none"

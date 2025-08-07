@@ -55,213 +55,285 @@ import SpotifyNavItem from "../SpotifyNavItem.astro";
   </DashboardCardTitle>
 
   <!-- ----- Main bar ----- -->
-  <nav class="flex justify-between px-2 mt-2 mb-4">
+  <nav
+    id="spotify-nav"
+    data-tap-opened="top-tracks"
+    class="flex justify-between px-2 mt-2 mb-4"
+  >
     <div>
-      <SpotifyNavItem text="Top Tracks" isHighlighted={true} />
-      <SpotifyNavItem text="Top Artists" isHighlighted={false} />
-      <SpotifyNavItem text="Top Genres" isHighlighted={false} />
+      <SpotifyNavItem id="top-tracks" text="Top Tracks" isHighlighted={true} />
+      <SpotifyNavItem
+        id="top-artists"
+        text="Top Artists"
+        isHighlighted={false}
+      />
+      <SpotifyNavItem id="top-geres" text="Top Genres" isHighlighted={false} />
     </div>
 
     <!-- Time periods -->
     <div>
-      <SpotifyNavItem text="4 Weeks" isHighlighted={false} />
-      <SpotifyNavItem text="6 Months" isHighlighted={false} />
-      <SpotifyNavItem text="12 Months" isHighlighted={true} />
+      <SpotifyNavItem id="4-weeks" text="4 Weeks" isHighlighted={true} />
+      <SpotifyNavItem id="6-months" text="6 Months" isHighlighted={false} />
+      <SpotifyNavItem id="12-months" text="12 Months" isHighlighted={false} />
     </div>
   </nav>
 
   <!-- ----- Content List ----- -->
 
   <!-- ----- 4 WEEKS ----- -->
-  <!-- <ul class="grid grid-cols-1 grid-rows-12 gap-2 w-full h-full px-2">
+  <ul id="top-tracks-4-weeks" class="flex flex-col gap-2 w-full px-2">
     <SpotifyListItem
       songArtcover={top10Track_4weeks_1}
       name="GIRLS!"
       artist="YNG Martyr!"
-      link="7hkgz7F6Z8UeRVmwp1ztzU"
+      link="track/7hkgz7F6Z8UeRVmwp1ztzU"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_2}
       name="1-800"
       artist="bbno$, Ironmouse"
-      link="6NBZu27n3cxEk4y4c2Kxi8"
+      link="track/6NBZu27n3cxEk4y4c2Kxi8"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_3}
       name="Super Smash Bros."
       artist="BABY GRAVY, Yung Gravy, bbno$"
-      link="3SQ7A39UtrUO61jnICPImu"
+      link="track/3SQ7A39UtrUO61jnICPImu"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_4}
       name="WHEYFU ANTHEM"
       artist="Ham Sandwich"
-      link="4W4GSMBHUIZPgr4t3ANBBG"
+      link="track/4W4GSMBHUIZPgr4t3ANBBG"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_5}
       name="My Dear"
       artist="Swink"
-      link="1L6Vg2msTjW0got3qAZYmd"
+      link="track/1L6Vg2msTjW0got3qAZYmd"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_6}
       name="swiper no swiping!"
       artist="BABY GRAVY, Yung Gravy, bbno$"
-      link="62hVvAo7NlbwYb37cV9c2A"
+      link="track/62hVvAo7NlbwYb37cV9c2A"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_7}
       name="boom"
       artist="bbno$"
-      link="6zhyXTuRkMSabSHvmMchpp"
+      link="track/6zhyXTuRkMSabSHvmMchpp"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_8}
       name="edamame"
       artist="bbno$, Rich Brian"
-      link="1golLrmqyxDWedF7YUHCOD"
+      link="track/1golLrmqyxDWedF7YUHCOD"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_9}
       name="two"
       artist="bbno$"
-      link="6DRZmJa38MaMNthwG3fCBD"
+      link="track/6DRZmJa38MaMNthwG3fCBD"
     />
     <SpotifyListItem
       songArtcover={top10Track_4weeks_10}
       name="Bunny Girl Senpai Drill"
       artist="Breeton Boi, Ham Sandwich, Lord Nekros"
-      link="1ScvSWPC6IeZszPzISCbgl"
+      link="track/1ScvSWPC6IeZszPzISCbgl"
     />
-  </ul> -->
+  </ul>
   <!-- ----- 6 MONTHS ----- -->
-  <!-- <ul class="grid grid-cols-1 grid-rows-12 gap-2 w-full h-full px-2">
+  <ul id="top-tracks-6-months" class="hidden flex flex-col gap-2 w-full px-2">
     <SpotifyListItem
       songArtcover={top10Track_6months_1}
       name="Hands up, It's a robbery!"
       artist="870glizzy, xlout, Trunja"
-      link="0yIKATkR5POHBGGVw0Ionn"
+      link="track/0yIKATkR5POHBGGVw0Ionn"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_2}
       name="Addict"
       artist="PiNKII, Daegho"
-      link="1gQ14vXcS1SpmEbm0NlvXf"
+      link="track/1gQ14vXcS1SpmEbm0NlvXf"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_3}
       name="Taste"
       artist="Jake Daniels"
-      link="4WhyCuUqYIBO7ELvwL8FHI"
+      link="track/4WhyCuUqYIBO7ELvwL8FHI"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_4}
       name="Cute Circus"
       artist="Tsundere Twintails"
-      link="6l7jWmaWGBA1eD2glvB8Ds"
+      link="track/6l7jWmaWGBA1eD2glvB8Ds"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_5}
       name="GIRLS!"
       artist="YNG Martyr"
-      link="7hkgz7F6Z8UeRVmwp1ztzU"
+      link="track/7hkgz7F6Z8UeRVmwp1ztzU"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_6}
       name="Roi - Instrumental"
       artist="Mckyyy"
-      link="2L5ZLwbqYIBKq5ZdqUxgZg"
+      link="track/2L5ZLwbqYIBKq5ZdqUxgZg"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_7}
       name="EAGLE CLUSTER BOMB"
       artist="99zed, Saliva Grey"
-      link="1ODIzMW741kn7ltMb92DIt"
+      link="track/1ODIzMW741kn7ltMb92DIt"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_8}
       name="Flashing Lights"
       artist="Kanye West, Dwele"
-      link="5TRPicyLGbAF2LGBFbHGvO"
+      link="track/5TRPicyLGbAF2LGBFbHGvO"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_9}
       name="til i die"
       artist="LOAT!"
-      link="79jY7Iv23vZE7c0E3W7dRH"
+      link="track/79jY7Iv23vZE7c0E3W7dRH"
     />
     <SpotifyListItem
       songArtcover={top10Track_6months_10}
       name="Wannabe"
       artist="Cardeairè Jack, Tumaggz"
-      link="7hYsfvf47vTWVsPspfyaOb"
+      link="track/7hYsfvf47vTWVsPspfyaOb"
     />
-  </ul> -->
+  </ul>
   <!-- ----- 12 MONTHS ----- -->
-  <ul class="grid grid-cols-1 grid-rows-12 gap-2 w-full h-full px-2">
+  <ul id="top-tracks-12-months" class="hidden flex flex-col gap-2 w-full px-2">
     <SpotifyListItem
       songArtcover={top10Track_12months_1}
       name="Water World"
       artist="Derek Pope"
-      link="557GPWoXsbALezINZhftNf"
+      link="track/557GPWoXsbALezINZhftNf"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_2}
       name="Terminal Velocity"
       artist="DROELOE"
-      link="5rJQiusoWpTjvn4vszZuXW"
+      link="track/5rJQiusoWpTjvn4vszZuXW"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_3}
       name="偽顔"
       artist="yama"
-      link="1CuCtAmIi4Gjk3q9wkWOKw"
+      link="track/1CuCtAmIi4Gjk3q9wkWOKw"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_4}
       name="Who?"
       artist="Azari"
-      link="6K13hIU8J8NSSKMfLWu8sn"
+      link="track/6K13hIU8J8NSSKMfLWu8sn"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_5}
       name="DESPERADO"
       artist="ALI, J-Rexxx"
-      link="1jFdZdOTsMqrntJjGKd3C2"
+      link="track/1jFdZdOTsMqrntJjGKd3C2"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_6}
       name="Wink (feat. ロス)"
       artist="Azari, ロス"
-      link="1nLDU3dM6emHxIIjlyWD6i"
+      link="track/1nLDU3dM6emHxIIjlyWD6i"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_7}
       name="華奢なリップ (feat. ちゃんみな)"
       artist="Genie High, CHANMINA"
-      link="6GG2Jrj5XSA24NSzigyA4A"
+      link="track/6GG2Jrj5XSA24NSzigyA4A"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_8}
       name="MAN IN THE CASTLE"
       artist="Gao the Arsonist, NotNevi"
-      link="6gx68XLCoHJs9QC0GYfUOB"
+      link="track/6gx68XLCoHJs9QC0GYfUOB"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_9}
       name="Magnetic"
       artist="ILLIT"
-      link="1aKvZDoLGkNMxoRYgkckZG"
+      link="track/1aKvZDoLGkNMxoRYgkckZG"
     />
     <SpotifyListItem
       songArtcover={top10Track_12months_10}
       name="snowfall"
       artist="Øneheart, reidenshi"
-      link="4xF4ZBGPZKxECeDFrqSAG4"
+      link="track/4xF4ZBGPZKxECeDFrqSAG4"
     />
   </ul>
 </DashboardCard>
+
+<script>
+  const topTracks4Weeks = document.getElementById("top-tracks-4-weeks")!;
+  const topTracks6Months = document.getElementById("top-tracks-6-months")!;
+  const topTracks12Months = document.getElementById("top-tracks-12-months")!;
+
+  const timePeriod4weeks = document.getElementById("4-weeks")!;
+  const timePeriod6Months = document.getElementById("6-months")!;
+  const timePeriod12Months = document.getElementById("12-months")!;
+
+  const highlighted =
+    "border border-neutral-400 text-neutral-950 px-2 py-0.5 rounded-full text-[10px] cursor-default bg-neutral-400";
+  const normal =
+    "border border-neutral-600 px-2 py-0.5 rounded-full text-[10px] text-neutral-400 cursor-pointer";
+
+  const tapOpened = document.getElementById("spotify-nav")?.dataset.tapOpened;
+
+  // ----- 4 Weeks -----
+  timePeriod4weeks?.addEventListener("click", () => {
+    console.log(tapOpened);
+    // Top Tracks
+    if (tapOpened === "top-tracks") {
+      topTracks4Weeks?.classList.remove("hidden");
+      topTracks6Months?.classList.add("hidden");
+      topTracks12Months?.classList.add("hidden");
+
+      timePeriod4weeks.className = highlighted;
+      timePeriod6Months.className = normal;
+      timePeriod12Months.className = normal;
+    }
+  });
+
+  // ----- 6 Months -----
+  timePeriod6Months?.addEventListener("click", () => {
+    console.log(tapOpened);
+    // Top Tracks
+    if (tapOpened === "top-tracks") {
+      topTracks4Weeks?.classList.add("hidden");
+      topTracks6Months?.classList.remove("hidden");
+      topTracks12Months?.classList.add("hidden");
+
+      timePeriod4weeks.className = normal;
+      timePeriod6Months.className = highlighted;
+      timePeriod12Months.className = normal;
+    }
+  });
+
+  // ----- 12 Months -----
+  timePeriod12Months?.addEventListener("click", () => {
+    console.log(tapOpened);
+    // Top Tracks
+    if (tapOpened === "top-tracks") {
+      topTracks4Weeks?.classList.add("hidden");
+      topTracks6Months?.classList.add("hidden");
+      topTracks12Months?.classList.remove("hidden");
+
+      timePeriod4weeks.className = normal;
+      timePeriod6Months.className = normal;
+      timePeriod12Months.className = highlighted;
+    }
+  });
+</script>
+
+<!-- Top Podcast -->
 
 <!-- Top 10 Genres last 4 weeks  -->
 <!-- 1. Anime Rap
