@@ -39,10 +39,10 @@ import SpotifyNavItem from "../SpotifyNavItem.astro";
 ---
 
 <DashboardCard
-  col_from="col-start-12"
-  col_to="col-span-8"
-  row_from="row-start-1"
-  row_to="row-span-10"
+  col_from="col-start-1 lg:col-start-12"
+  col_to="col-span-4 lg:col-span-8"
+  row_from="row-start-[30] lg:row-start-1"
+  row_to="row-span-12 lg:row-span-10"
 >
   <!-- col_from="col-start-4"
   col_to="col-end-11"
@@ -58,7 +58,7 @@ import SpotifyNavItem from "../SpotifyNavItem.astro";
   <nav
     id="spotify-nav"
     data-tap-opened="top-tracks"
-    class="flex justify-between px-2 mt-2 mb-4"
+    class="lg:flex w-full justify-between px-2 mt-2 mb-4"
   >
     <div>
       <SpotifyNavItem id="top-tracks" text="Top Tracks" isHighlighted={true} />
@@ -71,7 +71,7 @@ import SpotifyNavItem from "../SpotifyNavItem.astro";
     </div>
 
     <!-- Time periods -->
-    <div>
+    <div class="mt-2">
       <SpotifyNavItem id="4-weeks" text="4 Weeks" isHighlighted={true} />
       <SpotifyNavItem id="6-months" text="6 Months" isHighlighted={false} />
       <SpotifyNavItem id="12-months" text="12 Months" isHighlighted={false} />

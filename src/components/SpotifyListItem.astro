@@ -11,7 +11,7 @@ const { songArtcover, name, artist, link } = Astro.props;
     <p class="text-neutral-200 font-semibold truncate">{name}</p>
   </div>
 
-  <div class="flex items-center gap-4">
+  <div class="grid grid-cols-[1fr,25px] items-center gap-4">
     <p class="text-neutral-400 font-medium text-xs max-w-40 truncate">
       {artist}
     </p>

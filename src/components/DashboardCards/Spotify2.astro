@@ -4,10 +4,10 @@ import DashboardCard from "../DashboardCard.astro";
 ---
 
 <DashboardCard
-  col_from="col-start-1"
-  col_to="col-end-4"
-  row_from="row-start-11"
-  row_to="row-span-2"
+  col_from="col-strt-1 lg:col-start-1"
+  col_to="col-span-2 lg:col-end-4"
+  row_from="row-start-3 lg:row-start-11"
+  row_to="row-span-2 lg:row-span-2"
 >
   <DashboardCardTitle title="Spotify" viewBox="0 0 32 32">
     <path
@@ -16,7 +16,8 @@ import DashboardCard from "../DashboardCard.astro";
   </DashboardCardTitle>
 
   <p class="text-neutral-100 text-center text-lg py-3 flex justify-center">
-    5,091 <svg
+    <span> 5,091 </span>
+    <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="rgb(219 39 119)"
       viewBox="0 0 24 24"
