@@ -1,0 +1,64 @@
+---
+import DashboardCardTitle from "../DashboardCardTitle.astro";
+import DashboardCard from "../DashboardCard.astro";
+---
+
+<DashboardCard
+  col_from="col-start-1 lg:col-start-1"
+  col_to="col-span-4 lg:col-end-12"
+  row_from="row-start-[54] lg:row-start-[17]"
+  row_to="row-span-2 lg:row-span-2"
+>
+  <DashboardCardTitle title="GitHub" viewBox="0 0 24 24">
+    <path
+      d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"
+    ></path>
+  </DashboardCardTitle>
+
+  <div class="flex justify-evenly pt-1 lg:pt-2">
+    <p class="text-center py-2 relative">
+      <span class="text-neutral-200 font-semibold">10</span>
+      <i class="text-[11px] px-1 text-neutral-600 text-center block pt-1"
+        >followers</i
+      >
+    </p>
+    <span
+      class="relative after:absolute after:top-2 after:bottom-2 after:right-0 after:w-0.5 after:bg-neutral-600"
+    ></span>
+    <p class="text-center py-2">
+      <span class="text-neutral-200 font-semibold">25</span>
+      <i class="text-[11px] px-1 text-neutral-600 text-center block pt-1"
+        >following</i
+      >
+    </p>
+
+    <span
+      class="relative after:absolute after:top-2 after:bottom-2 after:right-0 after:w-0.5 after:bg-neutral-600"
+    ></span>
+    <p class="text-center py-2">
+      <span class="text-neutral-200 font-semibold">1,960</span>
+      <i class="text-[11px] px-1 text-neutral-600 text-center block pt-1"
+        >Contributions</i
+      >
+    </p>
+
+    <span
+      class="relative after:absolute after:top-2 after:bottom-2 after:right-0 after:w-0.5 after:bg-neutral-600"
+    ></span>
+    <p class="text-center py-2">
+      <span class="text-neutral-200 font-semibold">68</span>
+      <i class="text-[11px] px-1 text-neutral-600 text-center block pt-1"
+        >repositories</i
+      >
+    </p>
+    <span
+      class="relative after:absolute after:top-2 after:bottom-2 after:right-0 after:w-0.5 after:bg-neutral-600"
+    ></span>
+    <p class="text-center py-2">
+      <span class="text-neutral-200 font-semibold">88</span>
+      <i class="text-[11px] px-1 text-neutral-600 text-center block pt-1"
+        >Total PRs</i
+      >
+    </p>
+  </div>
+</DashboardCard>

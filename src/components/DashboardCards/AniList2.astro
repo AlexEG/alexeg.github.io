@@ -1,0 +1,85 @@
+---
+import DashboardCardTitle from "../DashboardCardTitle.astro";
+import DashboardCard from "../DashboardCard.astro";
+const genreOverviewData = {
+  romance: 117,
+  comedy: 115,
+  drama: 94,
+  sliceofLife: 75,
+};
+const { romance, comedy, drama, sliceofLife } = genreOverviewData;
+const total = romance + comedy + drama + sliceofLife;
+
+const colors = {
+  romance: "bg-rose-500",
+  comedy: "bg-lime-500",
+  drama: "bg-teal-500",
+  sliceofLife: "bg-purple-500",
+
+  romance2: "before:bg-rose-500",
+  comedy2: "before:bg-lime-500",
+  drama2: "before:bg-teal-500",
+  sliceofLife2: "before:bg-purple-500",
+};
+---
+
+<DashboardCard
+  col_from="col-start-1 lg:col-start-[12]"
+  col_to="col-span-4 lg:col-end-[20]"
+  row_from="row-start-[52] lg:row-start-[20]"
+  row_to="row-span-2 lg:row-span-4"
+>
+  <DashboardCardTitle title="AniList" viewBox="0 0 24 24">
+    <path
+      d="M6.361 2.943 0 21.056h4.942l1.077-3.133H11.4l1.052 3.133H22.9c.71 0 1.1-.392 1.1-1.101V17.53c0-.71-.39-1.101-1.1-1.101h-6.483V4.045c0-.71-.392-1.102-1.101-1.102h-2.422c-.71 0-1.101.392-1.101 1.102v1.064l-.758-2.166zm2.324 5.948 1.688 5.018H7.144z"
+    ></path>
+  </DashboardCardTitle>
+
+  <!-- percentage bar -->
+  <div class="w-full px-2 pt-4 pb-2 flex">
+    <span
+      title=`${((romance / total) * 100).toFixed(2)}%`
+      style=`width:${((romance / total) * 100).toFixed(2)}%`
+      class=`${colors.romance} h-4 block rounded-s-full`></span>
+    <span
+      title=`${((comedy / total) * 100).toFixed(2)}%`
+      style=`width:${((comedy / total) * 100).toFixed(2)}%`
+      class=`${colors.comedy} h-4 block`></span>
+    <span
+      title=`${((drama / total) * 100).toFixed(2)}%`
+      style=`width:${((drama / total) * 100).toFixed(2)}%`
+      class=`${colors.drama} h-4 block`></span>
+    <span
+      title=`${((sliceofLife / total) * 100).toFixed(2)}%`
+      style=`width:${((sliceofLife / total) * 100).toFixed(2)}%`
+      class=`${colors.sliceofLife} h-4 block rounded-e-full`></span>
+  </div>
+
+  <!-- Languages Title  -->
+
+  <div
+    class="w-full px-2 flex justify-between text-neutral-300 font-medium text-xs"
+  >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.romance2} before:rounded-full`
+      >Romance</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.comedy2} before:rounded-full`
+      >Comedy</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.drama2} before:rounded-full`
+      >Drama</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.sliceofLife2}before:rounded-full`
+      >Slice of Life</span
+    >
+  </div>
+
+  <!-- Genre Overview -->
+  <i class="text-[11px] px-0 text-neutral-700 text-center block mt-1"
+    >Genre Overview</i
+  >
+</DashboardCard>

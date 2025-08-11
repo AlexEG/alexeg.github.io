@@ -7,13 +7,16 @@ import Wakatime1 from "../components/DashboardCards/Wakatime1.astro";
 import Wakatime2 from "@/components/DashboardCards/Wakatime2.astro";
 // import DashboardCardTitle from "@/components/DashboardCardTitle.astro";
 import CodeWars from "@/components/DashboardCards/CodeWars.astro";
-import AniList from "@/components/DashboardCards/AniList.astro";
+import AniList1 from "@/components/DashboardCards/AniList1.astro";
+import AniList2 from "@/components/DashboardCards/AniList2.astro";
 import YouTube from "@/components/DashboardCards/YouTube.astro";
 import TryHackMe from "@/components/DashboardCards/TryHackMe.astro";
 import Spotify1 from "@/components/DashboardCards/Spotify1.astro";
 import Spotify2 from "@/components/DashboardCards/Spotify2.astro";
 import MonkeyType from "@/components/DashboardCards/MonkeyType.astro";
-// import GitHub from "@/components/DashboardCards/GitHub.astro";
+// import GitHub1 from "@/components/DashboardCards/GitHub1.astro";
+import GitHub2 from "@/components/DashboardCards/GitHub2.astro";
+import GitHub3 from "@/components/DashboardCards/GitHub3.astro";
 import FreeCodeCamp from "@/components/DashboardCards/FreeCodeCamp.astro";
 import Duolingo1 from "@/components/DashboardCards/Duolingo1.astro";
 import Duolingo2 from "@/components/DashboardCards/Duolingo2.astro";
@@ -22,12 +25,13 @@ import Spotify3 from "@/components/DashboardCards/Spotify3.astro";
 
 <Layout highlighted="dashboard">
   <section
-    class="grid grid-cols-4 grid-rows-[repeat(50,minmax(0,50px))] lg:grid-cols-[repeat(20,50px)] lg:grid-rows-[repeat(20,50px)] gap-2 lg:gap-4 mx-auto min-h-screen max-w-7xl cursor-default px-2"
+    class="grid grid-cols-4 grid-rows-[repeat(60,minmax(0,50px))] lg:grid-cols-[repeat(20,50px)] lg:grid-rows-[repeat(20,50px)] gap-2 lg:gap-4 mx-auto min-h-screen max-w-7xl cursor-default px-2"
   >
     <Wakatime1 />
     <Wakatime2 />
     <CodeWars />
-    <AniList />
+    <AniList1 />
+    <AniList2 />
     <YouTube />
     <TryHackMe />
     <Duolingo1 />
@@ -36,7 +40,9 @@ import Spotify3 from "@/components/DashboardCards/Spotify3.astro";
     <Spotify2 />
     <Spotify3 />
     <MonkeyType />
-    <!-- <GitHub /> -->
+    <!-- <GitHub1 /> -->
+    <GitHub2 />
+    <GitHub3 />
     <FreeCodeCamp />
   </section>
 </Layout>

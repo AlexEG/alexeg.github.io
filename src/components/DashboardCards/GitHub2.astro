@@ -1,0 +1,106 @@
+---
+import DashboardCardTitle from "../DashboardCardTitle.astro";
+import DashboardCard from "../DashboardCard.astro";
+
+const mostUsedLanguagesData = {
+  ts: 50.7,
+  js: 13.17,
+  html: 9.7,
+  go: 9.63,
+  astro: 8.59,
+  scss: 8.2,
+};
+
+const colors = {
+  ts: "bg-blue-500",
+  js: "bg-yellow-500",
+  html: "bg-red-500",
+  go: "bg-sky-500",
+  astro: "bg-orange-500",
+  scss: "bg-pink-500",
+
+  ts2: "before:bg-blue-500",
+  js2: "before:bg-yellow-500",
+  html2: "before:bg-red-500",
+  go2: "before:bg-sky-500",
+  astro2: "before:bg-orange-500",
+  scss2: "before:bg-pink-500",
+};
+---
+
+<DashboardCard
+  col_from="col-start-1 lg:col-start-1"
+  col_to="col-span-4 lg:col-end-12"
+  row_from="row-start-[56] lg:row-start-[15]"
+  row_to="row-span-3 lg:row-span-2"
+>
+  <DashboardCardTitle title="GitHub" viewBox="0 0 24 24">
+    <path
+      d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"
+    ></path>
+  </DashboardCardTitle>
+
+  <!-- percentage bar -->
+  <div class="w-full px-2 py-4 flex">
+    <span
+      title=`${mostUsedLanguagesData.ts}%`
+      style=`width:${mostUsedLanguagesData.ts}%`
+      class=`${colors.ts} h-4 bg-blue-500 block rounded-s-full`></span>
+    <span
+      title=`${mostUsedLanguagesData.js}%`
+      style=`width:${mostUsedLanguagesData.js}%`
+      class=`${colors.js} h-4 bg-yellow-500 block`></span>
+    <span
+      title=`${mostUsedLanguagesData.html}%`
+      style=`width:${mostUsedLanguagesData.html}%`
+      class=`${colors.html} h-4 bg-red-500 block`></span>
+
+    <span
+      title=`${mostUsedLanguagesData.go}%`
+      style=`width:${mostUsedLanguagesData.go}%`
+      class=`${colors.go} h-4 bg-sky-500 block`></span>
+    <span
+      title=`${mostUsedLanguagesData.astro}%`
+      style=`width:${mostUsedLanguagesData.astro}%`
+      class=`${colors.astro} h-4 bg-orange-500 block`></span>
+    <span
+      title=`${mostUsedLanguagesData.scss}%`
+      style=`width:${mostUsedLanguagesData.scss}%`
+      class=`${colors.scss} h-4 bg-pink-500 block rounded-e-full`></span>
+  </div>
+
+  <!-- Languages Title  -->
+
+  <div
+    class="w-full px-2 grid grid-cols-3 lg:flex lg:justify-between text-neutral-300 font-medium text-xs"
+  >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.ts2} before:rounded-full`
+      >TypeScript</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.js2} before:rounded-full`
+      >JavaScript</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.html2} before:rounded-full`
+      >HTML</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.go2} before:rounded-full`
+      >GoLang</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.astro2} before:rounded-full`
+      >Astro</span
+    >
+    <span
+      class=`pl-6 relative before:absolute before:left-0 before:top-1/2 transition before:-translate-y-1/2 before:w-3 before:h-3 ${colors.scss2} before:rounded-full`
+      >SCSS</span
+    >
+  </div>
+
+  <i class="text-[11px] px-0 text-neutral-700 text-center block mt-1"
+    >Most Used Languages Since Oct 22, 2022</i
+  >
+</DashboardCard>
