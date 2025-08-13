@@ -688,7 +688,7 @@ import SpotifyNavItem from "../SpotifyNavItem.astro";
   const normal =
     "border border-neutral-600 px-2 py-0.5 rounded-full text-[10px] text-neutral-400 cursor-pointer";
 
-  const tapOpened = document.getElementById("spotify-nav");
+  const tapOpened = document.getElementById("spotify-nav")!;
 
   // ----- 4 Weeks -----
   timePeriod4weeks?.addEventListener("click", () => {
@@ -831,7 +831,7 @@ import SpotifyNavItem from "../SpotifyNavItem.astro";
 
   // ----- Top Genres Nav Btn -----
   topGenresBtn?.addEventListener("click", () => {
-    if (tapOpened.dataset.tapOpened !== "top-genres") {
+    if (tapOpened?.dataset.tapOpened !== "top-genres") {
       tapOpened.dataset.tapOpened = "top-genres";
 
       topTracks4Weeks?.classList.add("hidden");
