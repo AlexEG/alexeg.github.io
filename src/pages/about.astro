@@ -1,43 +1,34 @@
 ---
-import NavigationSidebar from "../components/NavigationSidebar.astro";
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+import Layout from "../layouts/DashbaordLayout.astro";
 
-const title = "About";
-const description = "This is a simple page for more info about me.";
+// const title = "About";
+// const description = "This is a simple page for more info about me.";
+
+import pfp from "../assets/pfp.jpg";
+import Image from "astro/components/Image.astro";
+
+// languages & Framworks & others
+import AstroIcon from "../assets/icon/astro.svg";
+// import Bash from "../assets/icons/Bash-Dark.svg";
+// import AWS from "../assets/icons/AWS-Dark.svg";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href={canonicalURL} />
-
-    <!-- Primary Meta Tags -->
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="about" content={description} />
-
-    <style>
-      /* ----------------- SCROLLBAR ----------------- */
-      body {
-        scrollbar-color: #7373738a #0a0a0a;
-        scrollbar-width: thin;
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-
-  <body class="md:pl-[47px]">
-    <NavigationSidebar HighlightedSectionName="about" />
-    <div
-      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-scroll"
-    >
-      <main class="flex justify-center">
-        <slot />
-      </main>
+<Layout highlighted="about">
+  <!-- --- --- Hero Section --- --- -->
+  <section class="+bg-pink-500/25 w-full h-fit">
+    <!-- PFP + Name  -->
+    <div class="flex flex-col items-center gap-1">
+      <Image src={pfp} alt="pfp" class="w-20 rounded-[5px]" />
+      <p class="text-neutral-200 font-semibold font-mono">{"<AlexEG />"}</p>
     </div>
-  </body>
-</html>
+
+    <!-- Language + Tools  -->
+    <div class="flex flex-wrap gap-2 max-w-lg mx-auto mt-4">
+      <img src="/public/icons/astro.svg" class="w-10 runded-[5px]" />
+      <img
+        src="/public/icons/azure-dark.svg"
+        class="w-10 runded-[5px] brightness-[0.25]"
+      />
+    </div>
+  </section>
+</Layout>

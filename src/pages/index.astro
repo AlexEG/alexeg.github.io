@@ -4,17 +4,157 @@ import BaseHead from "../components/BaseHead.astro";
 // import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
+import pfp from "../assets/pfp.jpg";
+import Image from "astro/components/Image.astro";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      /* ----------------- SCROLLBAR ----------------- */
+      body {
+        scrollbar-color: #7373738a #0a0a0a;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body>
-    <NavigationSidebar />
-    <main class="w-full h-screen bg-[#010409] grid place-content-center">
-      <h1 class="text-white">HOME</h1>
-    </main>
+  <body class="md:pl-[47px]">
+    <NavigationSidebar HighlightedSectionName="about" />
+    <div
+      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-scroll"
+    >
+      <main class="">
+        <!-- --- --- Hero Section --- --- -->
+        <section class="+bg-pink-500/25 w-full">
+          <!-- PFP + Name  -->
+          <div class="flex flex-col items-center gap-1">
+            <Image src={pfp} alt="pfp" class="w-20 rounded-[5px]" />
+            <p class="text-neutral-200 font-semibold font-mono">
+              {"<AlexEG />"}
+            </p>
+          </div>
+
+          <!-- Language + Tools  -->
+          <div class="grid grid-cols-10 gap-2 w-fit h-fit mx-auto mt-4">
+            <img
+              src="/icons/astro.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/azure-dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Bootstrap.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Cloudflare-Dark.svg"
+              class="w-10 brightness-[0.25]"
+            />
+            <img
+              src="/icons/CSS.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/D3-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/DENO-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Docker.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Electron.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/ExpressJS-Dark.svg"
+              class="w-10 brightness-[0.25]"
+            />
+            <img src="/icons/Figma-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Firebase-Dark.svg"
+              class="w-10 brightness-[0.25]"
+            />
+            <img src="/icons/Flask-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Git.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/GithubActions-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/Github-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/GoLang.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/GraphQL-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Gulp.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Heroku.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/HTML.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/Java-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/JavaScript.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/Jest.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/JQuery.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Laravel-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Linux-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/Markdown-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/MaterialUI-Dark.svg"
+              class="w-10 brightness-[0.25]"
+            />
+            <img src="/icons/MongoDB.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/MySQL-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/NestJS-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Netlify-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img
+              src="/icons/NodeJS-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/PHP-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/React-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/Redis-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Remix-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Ruby.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Rust.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Sass.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/SolidJS-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/TailwindCSS-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/ThreeJS-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Vercel-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img
+              src="/icons/Vite-Dark.svg"
+              class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
+            />
+            <img src="/icons/VueJS-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/WebAssembly.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Webpack-Dark.svg" class="w-10 brightness-[0.25]" />
+            <img src="/icons/Wordpress.svg" class="w-10 brightness-[0.25]" />
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
