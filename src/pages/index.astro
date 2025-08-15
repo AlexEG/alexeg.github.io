@@ -5,6 +5,7 @@ import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
 import pfp from "../assets/pfp.jpg";
+import pfp2 from "../assets/pfp2.jpeg";
 import Image from "astro/components/Image.astro";
 ---
 
@@ -28,17 +29,17 @@ import Image from "astro/components/Image.astro";
     >
       <main class="">
         <!-- --- --- Hero Section --- --- -->
-        <section class="+bg-pink-500/25 w-full">
+        <section class="+bg-pink-500/25 w-full px-2">
           <!-- PFP + Name  -->
           <div class="flex flex-col items-center gap-1">
-            <Image src={pfp} alt="pfp" class="w-20 rounded-[5px]" />
+            <Image src={pfp2} alt="pfp" class="w-20 rounded-[5px]" />
             <p class="text-neutral-200 font-semibold font-mono">
               {"<AlexEG />"}
             </p>
           </div>
 
           <!-- Language + Tools  -->
-          <div class="grid grid-cols-10 gap-2 w-fit h-fit mx-auto mt-4">
+          <div class="grid grid-cols-10 gap-2 w-fit h-fit mx-auto mt-10">
             <img
               src="/icons/astro.svg"
               class="w-10 shadow-lg shadow-neutral-300/25 rounded-lg"
@@ -152,6 +153,34 @@ import Image from "astro/components/Image.astro";
             <img src="/icons/WebAssembly.svg" class="w-10 brightness-[0.25]" />
             <img src="/icons/Webpack-Dark.svg" class="w-10 brightness-[0.25]" />
             <img src="/icons/Wordpress.svg" class="w-10 brightness-[0.25]" />
+          </div>
+
+          <!-- Socials -->
+          <div class="+bg-pink-600/25 w-fit h-fit mx-auto flex gap-x-2 mt-20">
+            <a href="#">
+              <img
+                src="/icons/LinkedIn.svg"
+                class="w-12 brightness-75 rounded-xl hover:brightness-100 transition duration-100"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/icons/whatsapp.svg"
+                class="w-12 brightness-75 rounded-xl hover:brightness-100 transition duration-100"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/icons/Discord.svg"
+                class="w-12 brightness-75 rounded-xl hover:brightness-100 transition duration-100"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/icons/telegram.svg"
+                class="w-12 brightness-75 rounded-xl hover:brightness-100 transition duration-100"
+              />
+            </a>
           </div>
         </section>
       </main>
