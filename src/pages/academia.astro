@@ -1,0 +1,27 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import NavigationSidebar from "../components/NavigationSidebar.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      /* ----------------- SCROLLBAR ----------------- */
+      body {
+        scrollbar-color: #7373738a #0a0a0a;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="md:pl-[47px]">
+    <NavigationSidebar HighlightedSectionName="academia" />
+    <div
+      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-auto grid content-center"
+    >
+      <p class="text-center text-neutral-50 font-bold text-6xl z-50">SOON</p>
+    </div>
+  </body>
+</html>

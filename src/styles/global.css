@@ -10,7 +10,7 @@
 
 /* Code Block  */
 
-pre.astro-code.github-dark {
+/* pre.astro-code.github-dark {
   padding: 20px;
   margin-bottom: 2em;
   font-size: medium;
@@ -23,6 +23,7 @@ pre.astro-code.github-dark {
 /* pre.astro-code.github-dark > code {
   background-color: red;
 } */
+/*  
 pre.astro-code.github-dark::-webkit-scrollbar-thumb {
   background: #010409;
 }
@@ -40,7 +41,7 @@ pre.astro-code.github-dark::-webkit-scrollbar-thumb {
 pre.astro-code.github-dark::-webkit-scrollbar-thumb:hover {
   background: #636f7e;
   cursor: grab;
-}
+}  */
 
 :root {
   --accent: #2337ff;
@@ -53,7 +54,7 @@ pre.astro-code.github-dark::-webkit-scrollbar-thumb:hover {
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 }
-@font-face {
+/* @font-face {
   font-family: "Atkinson";
   src: url("/fonts/atkinson-regular.woff") format("woff");
   font-weight: 400;
@@ -174,7 +175,7 @@ hr {
   body {
     font-size: 18px;
   }
-}
+} */
 
 .sr-only {
   border: 0;
@@ -185,7 +186,6 @@ hr {
   width: 1px;
   overflow: hidden;
   /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-  clip: rect(1px 1px 1px 1px);
   /* maybe deprecated but we need to support legacy browsers */
   clip: rect(1px, 1px, 1px, 1px);
   /* modern browsers, clip-path works inwards from each corner */
