@@ -4,7 +4,7 @@ import BaseHead from "../components/BaseHead.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
 
-type Props = CollectionEntry<"javascript">["data"];
+type Props = CollectionEntry<"linux">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
@@ -13,6 +13,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
     <style>
+      body {
+        scrollbar-color: #7373738a #0a0a0a;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+      }
       main {
         width: 100%;
         max-width: 100%;
@@ -51,12 +56,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         font-style: italic;
       }
     </style>
+    <link rel="stylesheet" href="../styles/blog.css" />
   </head>
 
-  <body class="pl-[47px]">
-    <!-- <Header /> -->
+  <body class="lg:pl-[47px]">
     <NavigationSidebar />
-    <div class="w-full min-h-screen bg-[#010409] py-10">
+    <div
+      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 px-2 py-5 lg:py-10 overflow-y-auto"
+    >
       <main>
         <article class="text-neutral-100">
           <div class="hero-image">
@@ -86,6 +93,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         </article>
       </main>
     </div>
-    <!-- <Footer /> -->
   </body>
 </html>
