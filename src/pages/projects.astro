@@ -2,6 +2,10 @@
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
+import Image from "astro/components/Image.astro";
+import dashbaordPNG from "../assets/projects/dashboard.png";
+import NextPreviousBtns from "../components/Projects/NextPreviousBtns.astro";
+import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
 ---
 
 <!doctype html>
@@ -20,8 +24,29 @@ import NavigationSidebar from "../components/NavigationSidebar.astro";
   <body class="md:pl-[47px]">
     <NavigationSidebar HighlightedSectionName="projects" />
     <div
-      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-auto"
+      class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-auto grid grid-cols-1 gap-y-10 px-2"
     >
+      <!-- --------------------- -->
+
+      <!-- project Component  -->
+      <section class="+bg-teal-500 h-fit w-fit relative mx-auto">
+        <div class="bg-neutral-800 rounded-s-xl rounded-tr-xl w-fit h-fit p-4">
+          <Image src={dashbaordPNG} alt={""} class="w-[1000px]" />
+        </div>
+        <!-- Nice looking buttons -->
+        <NextPreviousBtns />
+        <InfoAndControalBar />
+      </section>
+
+      <section class="+bg-rose-500 h-fit w-fit relative mx-auto">
+        <div class="bg-neutral-800 rounded-s-xl rounded-tr-xl w-fit h-fit p-4">
+          <Image src={dashbaordPNG} alt={""} class="w-[1000px]" />
+        </div>
+        <!-- Nice looking buttons -->
+        <NextPreviousBtns />
+        <InfoAndControalBar />
+      </section>
+      <!-- --------------------- -->
     </div>
   </body>
 </html>
