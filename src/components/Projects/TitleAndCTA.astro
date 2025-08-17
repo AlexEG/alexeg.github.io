@@ -1,15 +1,17 @@
 ---
-
+const { title, repoName, demoLink } = Astro.props;
 ---
 
 <div class="flex justify-between items-start">
-  <p class="text-neutral-100">alexeg.github.io</p>
+  <p class="text-neutral-100">{title}</p>
   <div class="flex justify-center gap-x-2">
     <button class="px-2 py-0.5 bg-neutral-300 rounded-sm text-xs font-medium"
-      >Source Code</button
+      ><a href=`https://github.com/AlexEG/${repoName}` target="_blank"
+        >Source Code</a
+      ></button
     >
     <button class="px-2 py-0.5 bg-neutral-300 rounded-sm text-xs font-medium"
-      >Live Demo</button
+      ><a href={demoLink} target="_blank">Live Demo </a></button
     >
     <button class="px-2 py-0.5 bg-neutral-300 rounded-sm text-xs font-medium"
       >Project History</button

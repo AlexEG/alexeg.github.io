@@ -1,6 +1,8 @@
 ---
 import Badges from "./Badges.astro";
 import TitleAndCTA from "./TitleAndCTA.astro";
+const { title, repoName, description, demoLink, wakatimeId, languageAndTools } =
+  Astro.props;
 ---
 
 <div class="bg-neutral-800 rounded-xl w-full p-2 -mt-9 h-28 relative">
@@ -19,32 +21,24 @@ import TitleAndCTA from "./TitleAndCTA.astro";
   <div class="grid grid-cols-[1fr,130px] h-full">
     <!-- main box -->
     <div class="+border flex flex-col justify-between">
-      <TitleAndCTA />
+      <TitleAndCTA title={title} repoName={repoName} demoLink={demoLink} />
 
       <div class="w-[600px] text-xs text-neutral-100">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo
+        {description}
       </div>
 
-      <Badges
-        projectName="alexeg.github.io"
-        wakatimeProjectURL="4b792bf0-7703-4fb4-a2b8-8d99db6031ac"
-      />
+      <Badges repoName={repoName} wakatimeProjectURL={wakatimeId} />
     </div>
 
     <!-- right side box -->
     <div
       class="mt-11 +border +bg-teal-400 flex flex-wrap justify-end gap-1 pl-6"
     >
-      <img src="/icons/astro.svg" class="w-5" />
-      <img src="/icons/Vite-Light.svg" class="w-5" />
-      <img src="/icons/TailwindCSS-Light.svg" class="w-5" />
-      <img src="/icons/GithubActions-Light.svg" class="w-5" />
-      <img src="/icons/Markdown-Light.svg" class="w-5" />
-      <img src="/icons/React-Light.svg" class="w-5" />
-      <img src="/icons/TypeScript.svg" class="w-5" />
+      {
+        languageAndTools.map((img) => {
+          return <img src={`/icons/${img}.svg`} class="w-5" />;
+        })
+      }
     </div>
   </div>
 </div>

@@ -1,0 +1,34 @@
+---
+import NextPreviousBtns from "@/components/Projects/NextPreviousBtns.astro";
+import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
+
+const {
+  title,
+  repoName,
+  description,
+  demoLink,
+  youtubePreview,
+  screenshotsPreview,
+  wakatimeId,
+  languageAndTools,
+} = Astro.props;
+---
+
+<section class="+bg-rose-500 h-fit w-fit relative mx-auto">
+  <div class="bg-neutral-800 rounded-s-xl rounded-tr-xl w-fit h-fit p-4">
+    <img
+      src=`/src/assets/projects/the-periodic-table/${screenshotsPreview[0]}`
+      alt={""}
+      class="w-[1000px]"
+    />
+  </div>
+  <NextPreviousBtns />
+  <InfoAndControalBar
+    title={title}
+    repoName={repoName}
+    description={description}
+    demoLink={demoLink}
+    wakatimeId={wakatimeId}
+    languageAndTools={languageAndTools}
+  />
+</section>

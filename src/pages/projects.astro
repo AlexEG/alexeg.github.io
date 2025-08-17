@@ -2,10 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
-import Image from "astro/components/Image.astro";
-import dashbaordPNG from "../assets/projects/dashboard.png";
-import NextPreviousBtns from "../components/Projects/NextPreviousBtns.astro";
-import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
+import ProjectShowcaseComponent from "@/components/Projects/ProjectShowcaseComponent.astro";
 ---
 
 <!doctype html>
@@ -27,25 +24,32 @@ import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
       class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-auto grid grid-cols-1 gap-y-10 px-2"
     >
       <!-- --------------------- -->
+      <img src="/src/assets/projects/the-periodic-table/" alt="" />
+      <ProjectShowcaseComponent
+        title="ThePeriodicTable"
+        repoName="ThePeriodicTable"
+        description="All Data & design is from National Institutes of Health (.gov) 'USA' Link: https://pubchem.ncbi.nlm.nih.gov/periodic-table"
+        demoLink="https://the-periodic-table-of-elements.netlify.app"
+        screenshotsPreview={[
+          "the-periodic-table-of-elements.netlify.app_.png",
+          "Screenshot 2023-09-12 112556.jpg",
+          "Screenshot 2025-08-17 021449.jpg",
+        ]}
+        youtubePreview="https://www.youtube.com/watch?v=_4ep-S8eDcY"
+        wakatimeId="c1682788-77f6-488c-8f31-b81775d2faf7"
+        languageAndTools={[
+          "TypeScript",
+          "JavaScript",
+          "CSS",
+          "HTML",
+          "Vite-Light",
+          "TailwindCSS-Light",
+          "React-Light",
+          "Netlify-Light",
+        ]}
+      />
+      <!-- <ProjectShowcaseComponent /> -->
 
-      <!-- project Component  -->
-      <section class="+bg-teal-500 h-fit w-fit relative mx-auto">
-        <div class="bg-neutral-800 rounded-s-xl rounded-tr-xl w-fit h-fit p-4">
-          <Image src={dashbaordPNG} alt={""} class="w-[1000px]" />
-        </div>
-        <!-- Nice looking buttons -->
-        <NextPreviousBtns />
-        <InfoAndControalBar />
-      </section>
-
-      <section class="+bg-rose-500 h-fit w-fit relative mx-auto">
-        <div class="bg-neutral-800 rounded-s-xl rounded-tr-xl w-fit h-fit p-4">
-          <Image src={dashbaordPNG} alt={""} class="w-[1000px]" />
-        </div>
-        <!-- Nice looking buttons -->
-        <NextPreviousBtns />
-        <InfoAndControalBar />
-      </section>
       <!-- --------------------- -->
     </div>
   </body>
