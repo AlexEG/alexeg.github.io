@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
 import ProjectShowcaseComponent from "@/components/Projects/ProjectShowcaseComponent.astro";
-import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
+// import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
 
 const projectsData = [
   {
@@ -53,7 +53,7 @@ const projectsData = [
     >
       <!-- --------------------- -->
       <ProjectShowcaseComponent projectID="0" projectsData={projectsData[0]} />
-      <ProjectShowcaseComponent projectID="1" projectsData={projectsData[0]} />
+      <!-- <ProjectShowcaseComponent projectID="1" projectsData={projectsData[0]} /> -->
 
       <!-- --------------------- -->
     </div>
@@ -87,7 +87,7 @@ const projectsData = [
       if (imageInViewNum == -1) imageInViewNum = maxPreviewImages;
       previewImg?.setAttribute(
         "src",
-        `/src/assets/projects/${screenshotsArray[imageInViewNum]}`,
+        `/projects/${screenshotsArray[imageInViewNum]}`,
       );
       previewImg?.setAttribute("data-img-num", imageInViewNum);
 
@@ -103,7 +103,7 @@ const projectsData = [
       if (imageInViewNum > maxPreviewImages) imageInViewNum = 0;
       previewImg?.setAttribute(
         "src",
-        `/src/assets/projects/${screenshotsArray[imageInViewNum]}`,
+        `/projects/${screenshotsArray[imageInViewNum]}`,
       );
       previewImg?.setAttribute("data-img-num", imageInViewNum);
 

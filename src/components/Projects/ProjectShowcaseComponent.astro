@@ -14,11 +14,12 @@ const { projectID, projectsData } = Astro.props;
     class="bg-neutral-800 rounded-s-xl rounded-tr-xl p-4 w-[1000px] aspect-video"
   >
     <img
-      src=`../../assets/projects/${projectsData.screenshotsPreview[0]}`
+      src=`/projects/${projectsData.screenshotsPreview[0]}`
       alt={"Project Showcase Image"}
       class="w-full h-full object-cover"
       data-img-num="0"
       data-screenshots-array={projectsData.screenshotsPreview}
+      loading="lazy"
     />
   </div>
   <div
