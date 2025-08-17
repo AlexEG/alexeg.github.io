@@ -1,34 +1,71 @@
 ---
-import NextPreviousBtns from "@/components/Projects/NextPreviousBtns.astro";
+// import NextPreviousBtns from "@/components/Projects/NextPreviousBtns.astro";
 import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
 
-const {
-  title,
-  repoName,
-  description,
-  demoLink,
-  youtubePreview,
-  screenshotsPreview,
-  wakatimeId,
-  languageAndTools,
-} = Astro.props;
+const { projectID, projectsData } = Astro.props;
+// console.log(projectsData);
 ---
 
-<section class="+bg-rose-500 h-fit w-fit relative mx-auto">
-  <div class="bg-neutral-800 rounded-s-xl rounded-tr-xl w-fit h-fit p-4">
+<section
+  id=`project-${projectID}`
+  class="+bg-rose-500 h-fit w-fit relative mx-auto"
+>
+  <div
+    class="bg-neutral-800 rounded-s-xl rounded-tr-xl p-4 w-[1000px] aspect-video"
+  >
     <img
-      src=`/src/assets/projects/the-periodic-table/${screenshotsPreview[0]}`
-      alt={""}
-      class="w-[1000px]"
+      src=`/src/assets/projects/${projectsData.screenshotsPreview[0]}`
+      alt={"Project Showcase Image"}
+      class="w-full h-full object-cover"
+      data-img-num="0"
+      data-screenshots-array={projectsData.screenshotsPreview}
     />
   </div>
-  <NextPreviousBtns />
+  <div
+    class="bg-neutral-800 w-fit ml-auto px-4 pb-4 rounded-b-xl relative z-10"
+  >
+    <span
+      class="absolute top-0 left-0 w-2 h-2 bg-neutral-800 transform -translate-x-full after:w-2 after:block after:h-full after:bg-neutral-950 after:rounded-tr-xl"
+    >
+    </span>
+    <button id="next-btn" class="px-2.5 py-1.5 bg-neutral-300 rounded-md 1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgb(10 10 10)"
+        stroke-width="2"
+        class="w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <button class="px-2.5 py-1.5 bg-neutral-300 rounded-md 2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgb(10 10 10)"
+        stroke-width="2"
+        class="w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+  </div>
+
   <InfoAndControalBar
-    title={title}
-    repoName={repoName}
-    description={description}
-    demoLink={demoLink}
-    wakatimeId={wakatimeId}
-    languageAndTools={languageAndTools}
+    title={projectsData.title}
+    repoName={projectsData.repoName}
+    description={projectsData.description}
+    demoLink={projectsData.demoLink}
+    wakatimeId={projectsData.wakatimeId}
+    languageAndTools={projectsData.languageAndTools}
   />
 </section>

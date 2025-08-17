@@ -35,8 +35,8 @@ const { title, repoName, description, demoLink, wakatimeId, languageAndTools } =
       class="mt-11 +border +bg-teal-400 flex flex-wrap justify-end gap-1 pl-6"
     >
       {
-        languageAndTools.map((img) => {
-          return <img src={`/icons/${img}.svg`} class="w-5" />;
+        languageAndTools.map((imgURL: string) => {
+          return <img src={`/icons/${imgURL}.svg`} class="w-5" />;
         })
       }
     </div>

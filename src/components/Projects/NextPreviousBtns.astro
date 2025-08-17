@@ -1,5 +1,5 @@
 ---
-
+const { repoName, screenshotsPreview } = Astro.props;
 ---
 
 <div class="bg-neutral-800 w-fit ml-auto px-4 pb-4 rounded-b-xl relative z-10">
@@ -7,8 +7,10 @@
     class="absolute top-0 left-0 w-2 h-2 bg-neutral-800 transform -translate-x-full after:w-2 after:block after:h-full after:bg-neutral-950 after:rounded-tr-xl"
   >
   </span>
-
-  <button class="px-2.5 py-1.5 bg-neutral-300 rounded-md">
+  <button
+    onclick=`console.log("imgElement");`
+    class="px-2.5 py-1.5 bg-neutral-300 rounded-md"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
