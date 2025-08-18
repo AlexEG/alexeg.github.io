@@ -1,6 +1,7 @@
 ---
 // import NextPreviousBtns from "@/components/Projects/NextPreviousBtns.astro";
 import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
+import YouTubeVid from "../YouTubeVid.astro";
 
 const { projectID, projectsData } = Astro.props;
 // console.log(projectsData);
@@ -13,13 +14,18 @@ const { projectID, projectsData } = Astro.props;
   <div
     class="bg-neutral-800 rounded-s-xl rounded-tr-xl p-4 w-[1000px] aspect-video"
   >
-    <img
+    <!-- <img
       src=`/projects/${projectsData.screenshotsPreview[0]}`
       alt={"Project Showcase Image"}
       class="w-full h-full object-cover"
       data-img-num="0"
       data-screenshots-array={projectsData.screenshotsPreview}
       loading="lazy"
+    /> -->
+
+    <YouTubeVid
+      id={projectsData.youtubePreviewId}
+      title="Official music video"
     />
   </div>
   <div

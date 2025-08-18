@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import NavigationSidebar from "../components/NavigationSidebar.astro";
 import ProjectShowcaseComponent from "@/components/Projects/ProjectShowcaseComponent.astro";
+
 // import InfoAndControalBar from "@/components/Projects/InfoAndControalBar.astro";
 
 const projectsData = [
@@ -17,7 +18,7 @@ const projectsData = [
       "the-periodic-table/Screenshot 2023-09-12 112556.jpg",
       "the-periodic-table/Screenshot 2025-08-17 021449.jpg",
     ],
-    youtubePreview: "https://www.youtube.com/watch?v=_4ep-S8eDcY",
+    youtubePreviewId: "_4ep-S8eDcY",
     wakatimeId: "c1682788-77f6-488c-8f31-b81775d2faf7",
     languageAndTools: [
       "TypeScript",
@@ -52,6 +53,7 @@ const projectsData = [
       class="w-full h-[calc(100vh-49px)] md:min-h-screen bg-neutral-950 py-5 lg:py-10 overflow-y-auto grid grid-cols-1 gap-y-10 px-2"
     >
       <!-- --------------------- -->
+
       <ProjectShowcaseComponent projectID="0" projectsData={projectsData[0]} />
       <!-- <ProjectShowcaseComponent projectID="1" projectsData={projectsData[0]} /> -->
 
@@ -62,8 +64,8 @@ const projectsData = [
 
 <script>
   // -----  Projects  ----- //
-  NextPreviousProjectPreviewBtns(0);
-  NextPreviousProjectPreviewBtns(1);
+  // NextPreviousProjectPreviewBtns(0);
+  // NextPreviousProjectPreviewBtns(1);
 
   // --------------------- //
   function NextPreviousProjectPreviewBtns(projectID: number) {
@@ -110,10 +112,63 @@ const projectsData = [
       console.log(imageInViewNum);
     });
 
-    console.log(project1);
-    console.log(previewImg);
-    console.log(nextBtn);
-    console.log(previousBtn);
-    console.log(screenshotsArray);
+    // console.log(project1);
+    // console.log(previewImg);
+    // console.log(nextBtn);
+    // console.log(previousBtn);
+    // console.log(screenshotsArray);
   }
+  // -----  YouTube embed  ----- //
+  function initYouTubeEmbeds() {
+    console.log("🚀 Astro YouTube Embed Script Initialized");
+
+    const videoEmbeds =
+      document.querySelectorAll<HTMLElement>(".youtube-embed");
+    console.log(`🔎 Found ${videoEmbeds.length} YouTube video(s) on the page.`);
+
+    videoEmbeds.forEach((container, index) => {
+      // Check if an event listener has already been added to avoid duplicates
+      if (container.dataset.listenerAdded === "true") {
+        console.log(
+          `➡️ Listener for video ${index + 1} already exists. Skipping.`,
+        );
+        return;
+      }
+
+      console.log(
+        `➕ Adding click listener to video ${index + 1} (ID: ${container.dataset.videoid})`,
+      );
+      container.dataset.listenerAdded = "true"; // Mark as having a listener
+
+      container.addEventListener(
+        "click",
+        () => {
+          const videoId = container.dataset.videoid;
+          console.log(`✅ Click detected! Loading video ID: ${videoId}`);
+
+          if (!videoId) {
+            console.error("❌ Error: Video ID not found on the container.");
+            return;
+          }
+
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+          iframe.title = "YouTube video player";
+          iframe.frameBorder = "0";
+          iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          iframe.classList.add("w-full", "h-full");
+          container.innerHTML = "";
+          container.appendChild(iframe);
+        },
+        { once: true },
+      );
+    });
+  }
+
+  // This ensures the script runs on initial page load AND on page transitions with Astro's View Transitions
+  document.addEventListener("astro:page-load", initYouTubeEmbeds);
+  // Run it once on initial load just in case
+  initYouTubeEmbeds();
 </script>
